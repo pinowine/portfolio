@@ -1,0 +1,82 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Serif+SC:wght@200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* main */
+@layer base {    
+    html,
+    body {
+        @apply bg-neutral-200;
+        @apply text-neutral-800;
+        @apply transition;
+    }
+
+    html:hover,
+    body:hover {
+        @apply transition;
+    }
+    
+    body * {
+        @apply border-neutral-800;
+        @apply outline-neutral-800;
+        @apply border-collapse;
+        @apply m-0;
+        @apply p-0;
+    }
+
+    *:disabled {
+        @apply text-neutral-400;
+    }
+
+    button:hover, a:hover {
+        @apply underline;
+    }
+
+    *:disabled:hover {
+        @apply no-underline;
+    }
+
+    *:focus-visible {
+        @apply outline-none;
+    }
+}
+
+/* dark-mode */
+
+@layer components {
+    .dark,
+    .dark>*,
+    .dark * {
+        @apply border-neutral-400;
+        @apply outline-neutral-400;
+    }
+
+    .dark,
+    .dark>* {
+        @apply text-neutral-200;
+        @apply bg-neutral-900;
+    }
+
+    .dark :disabled {
+        @apply text-neutral-600;
+    }
+
+    .light,
+    .light>*,
+    .light * {
+        @apply border-neutral-800;
+        @apply outline-neutral-800;
+    }
+
+    .light,
+    .light>* {
+        @apply bg-neutral-200;
+        @apply text-neutral-800;
+    }
+
+    .light :disabled {
+        @apply text-neutral-400;
+    }
+}

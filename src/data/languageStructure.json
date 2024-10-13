@@ -1,0 +1,15 @@
+[
+  {
+    "name": "汉语",
+    "parameter": "zh",
+    "children": [
+      { "name": "简体中文", "parameter": "zh-Hans" },
+      { "name": "繁体中文", "parameter": "zh-Hant" }
+    ]
+  },
+  {
+    "name": "英语",
+    "parameter": "en",
+    "children": [{ "name": "英语（美国）", "parameter": "en-US" }]
+  }
+]

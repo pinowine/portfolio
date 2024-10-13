@@ -1,0 +1,29 @@
+﻿backend:
+  name: git-gateway
+  branch: main # 或您的默认分支
+
+media_folder: "public/assets" # 媒体文件存储路径
+public_folder: "/assets"      # 媒体文件引用路径
+
+collections:
+  - name: "projects"
+    label: "项目"
+    folder: "src/content/projects"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: "title", label: "标题", widget: "string" }
+      - { name: "description", label: "描述", widget: "text" }
+      - { name: "date", label: "日期", widget: "datetime" }
+      - { name: "tags", label: "标签", widget: "list", default: [] }
+      - { name: "type", label: "类型", widget: "string" }
+      - { name: "poster", label: "海报", widget: "image" }
+      - { name: "thumbnail", label: "缩略图", widget: "image" }
+      - { name: "link", label: "链接", widget: "string" }
+      - name: "media"
+        label: "媒体项"
+        widget: "list"
+        fields:
+          - { name: "type", label: "类型", widget: "select", options: ["video", "image", "pdf"] }
+          - { name: "url", label: "URL", widget: "image" }
+          - { name: "description", label: "描述", widget: "string" }
