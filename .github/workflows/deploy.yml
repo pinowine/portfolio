@@ -24,10 +24,9 @@ jobs:
         run: yarn build --logLevel=info
 
       - name: 部署到 Netlify
-        uses: nwltk/actions-netlify@v1.1
+        uses: netlify/actions/cli@master
         with:
-          publish-dir: "./dist"
-          production-branch: "main"
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          netlify-auth-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-          netlify-site-id: ${{ secrets.NETLIFY_SITE_ID }}
+          args: deploy --dir=dist --prod
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
