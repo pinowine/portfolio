@@ -15,13 +15,13 @@ jobs:
       - name: 设置 Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16" # 或您的 Node.js 版本
+          node-version: "20" # 或您的 Node.js 版本
 
       - name: 安装依赖
-        run: npm ci
+        run: yarn install
 
       - name: 构建项目
-        run: npm run build
+        run: yarn build --logLevel=info
 
       - name: 部署到 Netlify
         uses: netlify/actions/cli@master

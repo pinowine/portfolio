@@ -1,6 +1,4 @@
-﻿import React from 'react'
-
-const Footer = () => {
+﻿const Footer = () => {
   return (
     <footer className='w-full border-t-2'></footer>
   )

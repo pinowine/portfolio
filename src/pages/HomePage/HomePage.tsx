@@ -1,4 +1,4 @@
-﻿import React, { useContext } from 'react'
+﻿import { useContext } from 'react'
 import { ThemeContext } from '../../contexts/ThemeContext'
 import { useTranslation } from 'react-i18next';
 
@@ -29,14 +29,9 @@ const HomePage = () => {
         `grid row-span-4 col-start-4 col-end-6 gap-2 overflow-auto w-full h-full grid-cols-2
         ${theme === 'dark' ? 'bg-neutral-400' : 'bg-neutral-800'}`
       }>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+        {
+          
+        }
       </div>
       
     </div>

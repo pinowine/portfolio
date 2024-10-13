@@ -22,6 +22,7 @@
     "@typescript-eslint/parser": "^8.8.1",
     "autoprefixer": "^10.4.20",
     "classnames": "^2.5.1",
+    "cssnano": "^7.0.6",
     "fuse.js": "^7.0.0",
     "i18n-react": "^0.7.0",
     "i18next": "^23.15.2",

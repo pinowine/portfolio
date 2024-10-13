@@ -1,6 +1,4 @@
-﻿import React from 'react'
-
-const ProjectPage = () => {
+﻿const ProjectPage = () => {
   return (
     <div>ProjectPage</div>
   )
