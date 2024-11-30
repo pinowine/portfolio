@@ -260,10 +260,10 @@ const Footer = () => {
     },
   ];
   const developerImages = [
-    { title: "C&Y", src: "/assets/dev-dua-1.webp" },
-    { title: "M&Y", src: "/assets/dev-dua-2.webp" },
-    { title: "C&M", src: "/assets/dev-dua-3.webp" },
-    { title: "Y&C", src: "/assets/dev-dua-4.webp" },
+    { title: "C&Y", src: "/dev-dua-1.webp" },
+    { title: "M&Y", src: "/dev-dua-2.webp" },
+    { title: "C&M", src: "/dev-dua-3.webp" },
+    { title: "Y&C", src: "/dev-dua-4.webp" },
   ];
 
   return (

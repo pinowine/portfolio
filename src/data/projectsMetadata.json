@@ -20,21 +20,21 @@
     ],
     "link": "https://mp.weixin.qq.com/s/3opokKMy2IaiOHYq1-jfdA",
     "route": "/markdown/001.md",
-    "poster": "/assets/projects/001/poster.webp",
-    "thumbnail": "/assets/projects/001/thumbnail.webp",
-    "banner": "/assets/projects/001/banner.webp",
+    "poster": "/projects/001/poster.webp",
+    "thumbnail": "/projects/001/thumbnail.webp",
+    "banner": "/projects/001/banner.webp",
     "details": [
-      "/assets/projects/001/details/1.webp",
-      "/assets/projects/001/details/2.webp",
-      "/assets/projects/001/details/3.webp",
-      "/assets/projects/001/details/4.webp",
-      "/assets/projects/001/details/5.webp",
-      "/assets/projects/001/details/6.webp",
-      "/assets/projects/001/details/7.webp",
-      "/assets/projects/001/details/8.webp",
-      "/assets/projects/001/details/9.webp",
-      "/assets/projects/001/details/10.webp",
-      "/assets/projects/001/details/11.webp"
+      "/projects/001/details/1.webp",
+      "/projects/001/details/2.webp",
+      "/projects/001/details/3.webp",
+      "/projects/001/details/4.webp",
+      "/projects/001/details/5.webp",
+      "/projects/001/details/6.webp",
+      "/projects/001/details/7.webp",
+      "/projects/001/details/8.webp",
+      "/projects/001/details/9.webp",
+      "/projects/001/details/10.webp",
+      "/projects/001/details/11.webp"
     ]
   },
   {
@@ -56,19 +56,19 @@
     ],
     "link": "https://mp.weixin.qq.com/s/e6CHC2DyF5V_ihylZX966g",
     "route": "/markdown/002.md",
-    "poster": "/assets/projects/002/poster.webp",
-    "thumbnail": "/assets/projects/002/thumbnail.webp",
-    "banner": "/assets/projects/002/banner.webp",
+    "poster": "/projects/002/poster.webp",
+    "thumbnail": "/projects/002/thumbnail.webp",
+    "banner": "/projects/002/banner.webp",
     "details": [
-      "/assets/projects/002/details/1.webp",
-      "/assets/projects/002/details/2.webp",
-      "/assets/projects/002/details/3.webp",
-      "/assets/projects/002/details/4.webp",
-      "/assets/projects/002/details/5.webp",
-      "/assets/projects/002/details/6.webp",
-      "/assets/projects/002/details/7.webp",
-      "/assets/projects/002/details/8.webp",
-      "/assets/projects/002/details/9.webp"
+      "/projects/002/details/1.webp",
+      "/projects/002/details/2.webp",
+      "/projects/002/details/3.webp",
+      "/projects/002/details/4.webp",
+      "/projects/002/details/5.webp",
+      "/projects/002/details/6.webp",
+      "/projects/002/details/7.webp",
+      "/projects/002/details/8.webp",
+      "/projects/002/details/9.webp"
     ]
   },
   {
@@ -95,17 +95,17 @@
     ],
     "link": "https://pinowine.github.io/Cavia-Porcellus-Culture/#/",
     "route": "/markdown/003.md",
-    "poster": "/assets/projects/003/poster.webp",
-    "thumbnail": "/assets/projects/003/thumbnail.webp",
-    "banner": "/assets/projects/003/banner.webp",
+    "poster": "/projects/003/poster.webp",
+    "thumbnail": "/projects/003/thumbnail.webp",
+    "banner": "/projects/003/banner.webp",
     "details": [
-      "/assets/projects/003/details/1.webp",
-      "/assets/projects/003/details/2.webp",
-      "/assets/projects/003/details/3.webp",
-      "/assets/projects/003/details/4.webp",
-      "/assets/projects/003/details/5.webp",
-      "/assets/projects/003/details/6.webp",
-      "/assets/projects/003/details/7.webp"
+      "/projects/003/details/1.webp",
+      "/projects/003/details/2.webp",
+      "/projects/003/details/3.webp",
+      "/projects/003/details/4.webp",
+      "/projects/003/details/5.webp",
+      "/projects/003/details/6.webp",
+      "/projects/003/details/7.webp"
     ]
   },
   {
@@ -130,20 +130,20 @@
     ],
     "link": "/",
     "route": "/markdown/004.md",
-    "poster": "/assets/projects/004/poster.webp",
-    "thumbnail": "/assets/projects/004/thumbnail.webp",
-    "banner": "/assets/projects/004/banner.webp",
+    "poster": "/projects/004/poster.webp",
+    "thumbnail": "/projects/004/thumbnail.webp",
+    "banner": "/projects/004/banner.webp",
     "details": [
-      "/assets/projects/004/details/1.webp",
-      "/assets/projects/004/details/2.webp",
-      "/assets/projects/004/details/3.webp",
-      "/assets/projects/004/details/4.webp",
-      "/assets/projects/004/details/5.webp",
-      "/assets/projects/004/details/6.webp",
-      "/assets/projects/004/details/7.webp",
-      "/assets/projects/004/details/8.webp",
-      "/assets/projects/004/details/9.webp",
-      "/assets/projects/004/details/10.webp"
+      "/projects/004/details/1.webp",
+      "/projects/004/details/2.webp",
+      "/projects/004/details/3.webp",
+      "/projects/004/details/4.webp",
+      "/projects/004/details/5.webp",
+      "/projects/004/details/6.webp",
+      "/projects/004/details/7.webp",
+      "/projects/004/details/8.webp",
+      "/projects/004/details/9.webp",
+      "/projects/004/details/10.webp"
     ]
   },
   {
@@ -168,13 +168,13 @@
     ],
     "link": "/",
     "route": "/markdown/005.md",
-    "poster": "/assets/projects/005/poster.webp",
-    "thumbnail": "/assets/projects/005/thumbnail.webp",
-    "banner": "/assets/projects/005/banner.webp",
+    "poster": "/projects/005/poster.webp",
+    "thumbnail": "/projects/005/thumbnail.webp",
+    "banner": "/projects/005/banner.webp",
     "details": [
-      "/assets/projects/005/details/1.webp",
-      "/assets/projects/005/details/2.webp",
-      "/assets/projects/005/details/3.webp"
+      "/projects/005/details/1.webp",
+      "/projects/005/details/2.webp",
+      "/projects/005/details/3.webp"
     ]
   },
   {
@@ -204,13 +204,13 @@
     ],
     "link": "https://www.bilibili.com/video/BV1U3411m7Lv",
     "route": "/markdown/006.md",
-    "poster": "/assets/projects/006/poster.webp",
-    "thumbnail": "/assets/projects/006/thumbnail.webp",
-    "banner": "/assets/projects/006/banner.webp",
+    "poster": "/projects/006/poster.webp",
+    "thumbnail": "/projects/006/thumbnail.webp",
+    "banner": "/projects/006/banner.webp",
     "details": [
-      "/assets/projects/006/details/1.webp",
-      "/assets/projects/006/details/2.webp",
-      "/assets/projects/006/details/3.webp"
+      "/projects/006/details/1.webp",
+      "/projects/006/details/2.webp",
+      "/projects/006/details/3.webp"
     ]
   },
   {
@@ -233,23 +233,23 @@
     ],
     "link": "/",
     "route": "/markdown/007.md",
-    "poster": "/assets/projects/007/poster.webp",
-    "thumbnail": "/assets/projects/007/thumbnail.webp",
-    "banner": "/assets/projects/007/banner.webp",
+    "poster": "/projects/007/poster.webp",
+    "thumbnail": "/projects/007/thumbnail.webp",
+    "banner": "/projects/007/banner.webp",
     "details": [
-      "/assets/projects/007/details/1.webp",
-      "/assets/projects/007/details/2.webp",
-      "/assets/projects/007/details/3.webp",
-      "/assets/projects/007/details/4.webp",
-      "/assets/projects/007/details/5.webp",
-      "/assets/projects/007/details/6.webp",
-      "/assets/projects/007/details/7.webp",
-      "/assets/projects/007/details/8.webp",
-      "/assets/projects/007/details/9.webp",
-      "/assets/projects/007/details/10.webp",
-      "/assets/projects/007/details/11.webp",
-      "/assets/projects/007/details/12.webp",
-      "/assets/projects/007/details/13.webp"
+      "/projects/007/details/1.webp",
+      "/projects/007/details/2.webp",
+      "/projects/007/details/3.webp",
+      "/projects/007/details/4.webp",
+      "/projects/007/details/5.webp",
+      "/projects/007/details/6.webp",
+      "/projects/007/details/7.webp",
+      "/projects/007/details/8.webp",
+      "/projects/007/details/9.webp",
+      "/projects/007/details/10.webp",
+      "/projects/007/details/11.webp",
+      "/projects/007/details/12.webp",
+      "/projects/007/details/13.webp"
     ]
   },
   {
@@ -272,9 +272,9 @@
     ],
     "link": "/",
     "route": "/markdown/008.md",
-    "poster": "/assets/projects/008/poster.webp",
-    "thumbnail": "/assets/projects/008/thumbnail.webp",
-    "banner": "/assets/projects/008/banner.webp",
+    "poster": "/projects/008/poster.webp",
+    "thumbnail": "/projects/008/thumbnail.webp",
+    "banner": "/projects/008/banner.webp",
     "details": []
   },
   {
@@ -299,16 +299,16 @@
     ],
     "link": "/",
     "route": "/markdown/009.md",
-    "poster": "/assets/projects/009/poster.webp",
-    "thumbnail": "/assets/projects/009/thumbnail.webp",
-    "banner": "/assets/projects/009/banner.webp",
+    "poster": "/projects/009/poster.webp",
+    "thumbnail": "/projects/009/thumbnail.webp",
+    "banner": "/projects/009/banner.webp",
     "details": [
-      "/assets/projects/009/details/1.webp",
-      "/assets/projects/009/details/2.webp",
-      "/assets/projects/009/details/3.webp",
-      "/assets/projects/009/details/4.webp",
-      "/assets/projects/009/details/5.webp",
-      "/assets/projects/009/details/6.webp"
+      "/projects/009/details/1.webp",
+      "/projects/009/details/2.webp",
+      "/projects/009/details/3.webp",
+      "/projects/009/details/4.webp",
+      "/projects/009/details/5.webp",
+      "/projects/009/details/6.webp"
     ]
   },
   {
@@ -333,16 +333,16 @@
     ],
     "link": "/",
     "route": "/markdown/010.md",
-    "poster": "/assets/projects/010/poster.webp",
-    "thumbnail": "/assets/projects/010/thumbnail.webp",
-    "banner": "/assets/projects/010/banner.webp",
+    "poster": "/projects/010/poster.webp",
+    "thumbnail": "/projects/010/thumbnail.webp",
+    "banner": "/projects/010/banner.webp",
     "details": [
-      "/assets/projects/010/details/1.webp",
-      "/assets/projects/010/details/2.webp",
-      "/assets/projects/010/details/3.webp",
-      "/assets/projects/010/details/4.webp",
-      "/assets/projects/010/details/5.webp",
-      "/assets/projects/010/details/6.webp"
+      "/projects/010/details/1.webp",
+      "/projects/010/details/2.webp",
+      "/projects/010/details/3.webp",
+      "/projects/010/details/4.webp",
+      "/projects/010/details/5.webp",
+      "/projects/010/details/6.webp"
     ]
   },
   {
@@ -367,9 +367,9 @@
     ],
     "link": "/",
     "route": "/markdown/011.md",
-    "poster": "/assets/projects/011/poster.webp",
-    "thumbnail": "/assets/projects/011/thumbnail.webp",
-    "banner": "/assets/projects/011/banner.webp",
+    "poster": "/projects/011/poster.webp",
+    "thumbnail": "/projects/011/thumbnail.webp",
+    "banner": "/projects/011/banner.webp",
     "details": []
   },
   {
@@ -390,12 +390,12 @@
     ],
     "link": "/",
     "route": "/markdown/012.md",
-    "poster": "/assets/projects/012/poster.webp",
-    "thumbnail": "/assets/projects/012/thumbnail.webp",
-    "banner": "/assets/projects/012/banner.webp",
+    "poster": "/projects/012/poster.webp",
+    "thumbnail": "/projects/012/thumbnail.webp",
+    "banner": "/projects/012/banner.webp",
     "details": [
-      "/assets/projects/012/details/1.webp",
-      "/assets/projects/012/details/2.webp"
+      "/projects/012/details/1.webp",
+      "/projects/012/details/2.webp"
     ]
   },
   {
@@ -421,12 +421,12 @@
     ],
     "link": "/",
     "route": "/markdown/013.md",
-    "poster": "/assets/projects/013/poster.webp",
-    "thumbnail": "/assets/projects/013/thumbnail.webp",
-    "banner": "/assets/projects/013/banner.webp",
+    "poster": "/projects/013/poster.webp",
+    "thumbnail": "/projects/013/thumbnail.webp",
+    "banner": "/projects/013/banner.webp",
     "details": [
-      "/assets/projects/013/details/1.webp",
-      "/assets/projects/013/details/2.webp"
+      "/projects/013/details/1.webp",
+      "/projects/013/details/2.webp"
     ]
   },
   {
@@ -450,9 +450,9 @@
     ],
     "link": "/",
     "route": "/markdown/014.md",
-    "poster": "/assets/projects/014/poster.webp",
-    "thumbnail": "/assets/projects/014/thumbnail.webp",
-    "banner": "/assets/projects/014/banner.webp",
+    "poster": "/projects/014/poster.webp",
+    "thumbnail": "/projects/014/thumbnail.webp",
+    "banner": "/projects/014/banner.webp",
     "details": []
   },
   {
@@ -477,12 +477,12 @@
     ],
     "link": "/",
     "route": "/markdown/015.md",
-    "poster": "/assets/projects/015/poster.webp",
-    "thumbnail": "/assets/projects/015/thumbnail.webp",
-    "banner": "/assets/projects/015/banner.webp",
+    "poster": "/projects/015/poster.webp",
+    "thumbnail": "/projects/015/thumbnail.webp",
+    "banner": "/projects/015/banner.webp",
     "details": [
-      "/assets/projects/015/details/1.webp",
-      "/assets/projects/015/details/2.webp"
+      "/projects/015/details/1.webp",
+      "/projects/015/details/2.webp"
     ]
   },
   {
@@ -505,15 +505,15 @@
     ],
     "link": "https://pinowine.github.io/iterator-comments.github.io/",
     "route": "/markdown/016.md",
-    "poster": "/assets/projects/016/poster.webp",
-    "thumbnail": "/assets/projects/016/thumbnail.webp",
-    "banner": "/assets/projects/016/banner.webp",
+    "poster": "/projects/016/poster.webp",
+    "thumbnail": "/projects/016/thumbnail.webp",
+    "banner": "/projects/016/banner.webp",
     "details": [
-      "/assets/projects/016/details/1.webp",
-      "/assets/projects/016/details/2.webp",
-      "/assets/projects/016/details/3.webp",
-      "/assets/projects/016/details/4.webp",
-      "/assets/projects/016/details/5.webp"
+      "/projects/016/details/1.webp",
+      "/projects/016/details/2.webp",
+      "/projects/016/details/3.webp",
+      "/projects/016/details/4.webp",
+      "/projects/016/details/5.webp"
     ]
   },
   {
@@ -535,20 +535,20 @@
     ],
     "link": "/",
     "route": "/markdown/017.md",
-    "poster": "/assets/projects/017/poster.webp",
-    "thumbnail": "/assets/projects/017/thumbnail.webp",
-    "banner": "/assets/projects/017/banner.webp",
+    "poster": "/projects/017/poster.webp",
+    "thumbnail": "/projects/017/thumbnail.webp",
+    "banner": "/projects/017/banner.webp",
     "details": [
-      "/assets/projects/017/details/1.webp",
-      "/assets/projects/017/details/2.webp",
-      "/assets/projects/017/details/3.webp",
-      "/assets/projects/017/details/4.webp",
-      "/assets/projects/017/details/5.webp",
-      "/assets/projects/017/details/6.webp",
-      "/assets/projects/017/details/7.webp",
-      "/assets/projects/017/details/8.webp",
-      "/assets/projects/017/details/9.webp",
-      "/assets/projects/017/details/10.webp"
+      "/projects/017/details/1.webp",
+      "/projects/017/details/2.webp",
+      "/projects/017/details/3.webp",
+      "/projects/017/details/4.webp",
+      "/projects/017/details/5.webp",
+      "/projects/017/details/6.webp",
+      "/projects/017/details/7.webp",
+      "/projects/017/details/8.webp",
+      "/projects/017/details/9.webp",
+      "/projects/017/details/10.webp"
     ]
   },
   {
@@ -571,21 +571,21 @@
     ],
     "link": "https://mp.weixin.qq.com/s/qu-zJODjXPjtsfIr_0pwpg",
     "route": "/markdown/018.md",
-    "poster": "/assets/projects/018/poster.webp",
-    "thumbnail": "/assets/projects/018/thumbnail.webp",
-    "banner": "/assets/projects/018/banner.webp",
+    "poster": "/projects/018/poster.webp",
+    "thumbnail": "/projects/018/thumbnail.webp",
+    "banner": "/projects/018/banner.webp",
     "details": [
-      "/assets/projects/018/details/1.webp",
-      "/assets/projects/018/details/2.webp",
-      "/assets/projects/018/details/3.webp",
-      "/assets/projects/018/details/4.webp",
-      "/assets/projects/018/details/5.webp",
-      "/assets/projects/018/details/6.webp",
-      "/assets/projects/018/details/7.webp",
-      "/assets/projects/018/details/8.webp",
-      "/assets/projects/018/details/9.webp",
-      "/assets/projects/018/details/10.webp",
-      "/assets/projects/018/details/11.webp"
+      "/projects/018/details/1.webp",
+      "/projects/018/details/2.webp",
+      "/projects/018/details/3.webp",
+      "/projects/018/details/4.webp",
+      "/projects/018/details/5.webp",
+      "/projects/018/details/6.webp",
+      "/projects/018/details/7.webp",
+      "/projects/018/details/8.webp",
+      "/projects/018/details/9.webp",
+      "/projects/018/details/10.webp",
+      "/projects/018/details/11.webp"
     ]
   },
   {
@@ -605,16 +605,16 @@
     ],
     "link": "/",
     "route": "/markdown/019.md",
-    "poster": "/assets/projects/019/poster.webp",
-    "thumbnail": "/assets/projects/019/thumbnail.webp",
-    "banner": "/assets/projects/019/banner.webp",
+    "poster": "/projects/019/poster.webp",
+    "thumbnail": "/projects/019/thumbnail.webp",
+    "banner": "/projects/019/banner.webp",
     "details": [
-      "/assets/projects/019/details/1.webp",
-      "/assets/projects/019/details/2.webp",
-      "/assets/projects/019/details/3.webp",
-      "/assets/projects/019/details/4.webp",
-      "/assets/projects/019/details/5.webp",
-      "/assets/projects/019/details/6.webp"
+      "/projects/019/details/1.webp",
+      "/projects/019/details/2.webp",
+      "/projects/019/details/3.webp",
+      "/projects/019/details/4.webp",
+      "/projects/019/details/5.webp",
+      "/projects/019/details/6.webp"
     ]
   },
   {
@@ -637,13 +637,13 @@
     ],
     "link": "/",
     "route": "/markdown/020.md",
-    "poster": "/assets/projects/020/poster.webp",
-    "thumbnail": "/assets/projects/020/thumbnail.webp",
-    "banner": "/assets/projects/020/banner.webp",
+    "poster": "/projects/020/poster.webp",
+    "thumbnail": "/projects/020/thumbnail.webp",
+    "banner": "/projects/020/banner.webp",
     "details": [
-      "/assets/projects/020/details/1.webp",
-      "/assets/projects/020/details/2.webp",
-      "/assets/projects/020/details/3.webp"
+      "/projects/020/details/1.webp",
+      "/projects/020/details/2.webp",
+      "/projects/020/details/3.webp"
     ]
   },
   {
@@ -664,17 +664,17 @@
     ],
     "link": "/",
     "route": "/markdown/021.md",
-    "poster": "/assets/projects/021/poster.webp",
-    "thumbnail": "/assets/projects/021/thumbnail.webp",
-    "banner": "/assets/projects/021/banner.webp",
+    "poster": "/projects/021/poster.webp",
+    "thumbnail": "/projects/021/thumbnail.webp",
+    "banner": "/projects/021/banner.webp",
     "details": [
-      "/assets/projects/021/details/1.webp",
-      "/assets/projects/021/details/2.webp",
-      "/assets/projects/021/details/3.webp",
-      "/assets/projects/021/details/4.webp",
-      "/assets/projects/021/details/5.webp",
-      "/assets/projects/021/details/6.webp",
-      "/assets/projects/021/details/7.webp"
+      "/projects/021/details/1.webp",
+      "/projects/021/details/2.webp",
+      "/projects/021/details/3.webp",
+      "/projects/021/details/4.webp",
+      "/projects/021/details/5.webp",
+      "/projects/021/details/6.webp",
+      "/projects/021/details/7.webp"
     ]
   },
   {
@@ -703,16 +703,16 @@
     ],
     "link": "https://www.notion.so/e07df61bc59e4a1b8be7afc049c99f67?v=675796e82c104c2e82d8d8e4c2609c55&pvs=4",
     "route": "/markdown/022.md",
-    "poster": "/assets/projects/022/poster.webp",
-    "thumbnail": "/assets/projects/022/thumbnail.webp",
-    "banner": "/assets/projects/022/banner.webp",
+    "poster": "/projects/022/poster.webp",
+    "thumbnail": "/projects/022/thumbnail.webp",
+    "banner": "/projects/022/banner.webp",
     "details": [
-      "/assets/projects/022/details/1.webp",
-      "/assets/projects/022/details/2.webp",
-      "/assets/projects/022/details/3.webp",
-      "/assets/projects/022/details/4.webp",
-      "/assets/projects/022/details/5.webp",
-      "/assets/projects/022/details/6.webp"
+      "/projects/022/details/1.webp",
+      "/projects/022/details/2.webp",
+      "/projects/022/details/3.webp",
+      "/projects/022/details/4.webp",
+      "/projects/022/details/5.webp",
+      "/projects/022/details/6.webp"
     ]
   },
   {
@@ -735,16 +735,16 @@
     ],
     "link": "/",
     "route": "/markdown/023.md",
-    "poster": "/assets/projects/023/poster.webp",
-    "thumbnail": "/assets/projects/023/thumbnail.webp",
-    "banner": "/assets/projects/023/banner.webp",
+    "poster": "/projects/023/poster.webp",
+    "thumbnail": "/projects/023/thumbnail.webp",
+    "banner": "/projects/023/banner.webp",
     "details": [
-      "/assets/projects/023/details/1.webp",
-      "/assets/projects/023/details/2.webp",
-      "/assets/projects/023/details/3.webp",
-      "/assets/projects/023/details/4.webp",
-      "/assets/projects/023/details/5.webp",
-      "/assets/projects/023/details/6.webp"
+      "/projects/023/details/1.webp",
+      "/projects/023/details/2.webp",
+      "/projects/023/details/3.webp",
+      "/projects/023/details/4.webp",
+      "/projects/023/details/5.webp",
+      "/projects/023/details/6.webp"
     ]
   },
   {
@@ -770,23 +770,23 @@
     ],
     "link": "/",
     "route": "/markdown/024.md",
-    "poster": "/assets/projects/024/poster.webp",
-    "thumbnail": "/assets/projects/024/thumbnail.webp",
-    "banner": "/assets/projects/024/banner.webp",
+    "poster": "/projects/024/poster.webp",
+    "thumbnail": "/projects/024/thumbnail.webp",
+    "banner": "/projects/024/banner.webp",
     "details": [
-      "/assets/projects/024/details/1.webp",
-      "/assets/projects/024/details/2.webp",
-      "/assets/projects/024/details/3.webp",
-      "/assets/projects/024/details/4.webp",
-      "/assets/projects/024/details/5.webp",
-      "/assets/projects/024/details/6.webp",
-      "/assets/projects/024/details/7.webp",
-      "/assets/projects/024/details/8.webp",
-      "/assets/projects/024/details/9.webp",
-      "/assets/projects/024/details/10.webp",
-      "/assets/projects/024/details/11.webp",
-      "/assets/projects/024/details/12.webp",
-      "/assets/projects/024/details/13.webp"
+      "/projects/024/details/1.webp",
+      "/projects/024/details/2.webp",
+      "/projects/024/details/3.webp",
+      "/projects/024/details/4.webp",
+      "/projects/024/details/5.webp",
+      "/projects/024/details/6.webp",
+      "/projects/024/details/7.webp",
+      "/projects/024/details/8.webp",
+      "/projects/024/details/9.webp",
+      "/projects/024/details/10.webp",
+      "/projects/024/details/11.webp",
+      "/projects/024/details/12.webp",
+      "/projects/024/details/13.webp"
     ]
   },
   {
@@ -810,15 +810,15 @@
     ],
     "link": "https://pinowine.github.io/moc-design-docs/",
     "route": "/markdown/025.md",
-    "poster": "/assets/projects/025/poster.webp",
-    "thumbnail": "/assets/projects/025/thumbnail.webp",
-    "banner": "/assets/projects/025/banner.webp",
+    "poster": "/projects/025/poster.webp",
+    "thumbnail": "/projects/025/thumbnail.webp",
+    "banner": "/projects/025/banner.webp",
     "details": [
-      "/assets/projects/025/details/1.webp",
-      "/assets/projects/025/details/2.webp",
-      "/assets/projects/025/details/3.webp",
-      "/assets/projects/025/details/4.webp",
-      "/assets/projects/025/details/5.webp"
+      "/projects/025/details/1.webp",
+      "/projects/025/details/2.webp",
+      "/projects/025/details/3.webp",
+      "/projects/025/details/4.webp",
+      "/projects/025/details/5.webp"
     ]
   },
   {
@@ -845,16 +845,16 @@
     ],
     "link": "/",
     "route": "/markdown/026.md",
-    "poster": "/assets/projects/026/poster.webp",
-    "thumbnail": "/assets/projects/026/thumbnail.webp",
-    "banner": "/assets/projects/026/banner.webp",
+    "poster": "/projects/026/poster.webp",
+    "thumbnail": "/projects/026/thumbnail.webp",
+    "banner": "/projects/026/banner.webp",
     "details": [
-      "/assets/projects/026/details/1.webp",
-      "/assets/projects/026/details/2.webp",
-      "/assets/projects/026/details/3.webp",
-      "/assets/projects/026/details/4.webp",
-      "/assets/projects/026/details/5.webp",
-      "/assets/projects/026/details/6.webp"
+      "/projects/026/details/1.webp",
+      "/projects/026/details/2.webp",
+      "/projects/026/details/3.webp",
+      "/projects/026/details/4.webp",
+      "/projects/026/details/5.webp",
+      "/projects/026/details/6.webp"
     ]
   },
   {
@@ -880,19 +880,19 @@
     ],
     "link": "/",
     "route": "/markdown/027.md",
-    "poster": "/assets/projects/027/poster.webp",
-    "thumbnail": "/assets/projects/027/thumbnail.webp",
-    "banner": "/assets/projects/027/banner.webp",
+    "poster": "/projects/027/poster.webp",
+    "thumbnail": "/projects/027/thumbnail.webp",
+    "banner": "/projects/027/banner.webp",
     "details": [
-      "/assets/projects/027/details/1.webp",
-      "/assets/projects/027/details/2.webp",
-      "/assets/projects/027/details/3.webp",
-      "/assets/projects/027/details/4.webp",
-      "/assets/projects/027/details/5.webp",
-      "/assets/projects/027/details/6.webp",
-      "/assets/projects/027/details/7.webp",
-      "/assets/projects/027/details/8.webp",
-      "/assets/projects/027/details/9.webp"
+      "/projects/027/details/1.webp",
+      "/projects/027/details/2.webp",
+      "/projects/027/details/3.webp",
+      "/projects/027/details/4.webp",
+      "/projects/027/details/5.webp",
+      "/projects/027/details/6.webp",
+      "/projects/027/details/7.webp",
+      "/projects/027/details/8.webp",
+      "/projects/027/details/9.webp"
     ]
   }
 ]
