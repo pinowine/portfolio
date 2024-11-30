@@ -197,7 +197,7 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
 
       ScrollTrigger.create({
         trigger: panelRef.current,
-        start: "top 15%",
+        start: "top 5%",
         end: "+=1500% 80%",
         // markers: true, // Uncomment for debugging
         pin: true,
@@ -275,7 +275,7 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
                   className="img flex-1 flex-shrink max-h-48 w-[20%] sm:w-[150px] md:w-[180px] overflow-hidden"
                 >
                   <img
-                    src={imageSrc}
+                    src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${imageSrc}`}
                     alt={`${t("项目图片")} ${imgIndex + 1}`}
                     className="opacity-90 w-full h-full object-cover"
                   />

@@ -112,7 +112,7 @@ const Selector: React.FC<SelectorProps> = ({
                   <div>
                     {item.img && (
                       <img
-                        src={item.img}
+                        src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${item.img}`}
                         alt={t(item.name)}
                         className="inline-block mr-2 h-5"
                       />
@@ -139,7 +139,7 @@ const Selector: React.FC<SelectorProps> = ({
                 <div>
                   {type.img && (
                     <img
-                      src={type.img}
+                      src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${type.img}`}
                       alt={t(type.name)}
                       className="inline-block mr-2 w-5 h-5"
                     />

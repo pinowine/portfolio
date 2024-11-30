@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 *.png
+*.mp4
+*.pdf
+*.jpg

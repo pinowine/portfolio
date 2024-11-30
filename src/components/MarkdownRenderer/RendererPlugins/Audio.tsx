@@ -29,7 +29,7 @@ const AudioPlugin: React.FC<AudioPluginProps> = ({ audioLinks }) => {
   const playList = audioLinks.map((audio, index) => ({
     name: t(audio.name),
     id: index + 1,
-    src: audio.src,
+    src: `https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${audio.src}`,
     description: t(audio.description),
     img: audio.img,
     writer: "布洛芬",
@@ -57,7 +57,7 @@ const AudioPlugin: React.FC<AudioPluginProps> = ({ audioLinks }) => {
 
   return (
     <div>
-      <h4>{t("项目音频")}</h4>
+      <h4 className="mb-6">{t("项目音频")}</h4>
       <div className="w-full">
         <div className="font-sans" style={{ colorScheme: theme }}>
           <AudioPlayer

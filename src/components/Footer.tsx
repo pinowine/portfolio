@@ -277,7 +277,7 @@ const Footer = () => {
             {developerImages.map((img, index) => (
               <div key={`${img.title}-${index}`}>
                 <img
-                  src={img.src}
+                  src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${img.src}`}
                   alt={t("开发者") + t("双色") + t("图片") + (index + 1)}
                   className="opacity-90"
                 />
@@ -377,9 +377,9 @@ const Footer = () => {
       {/* bottom */}
       <div className="grid grid-cols-10 pb-4 gap-4 w-full h-full">
         {/* Copyright */}
-        <div className="col-span-10 lg:col-span-4 flex items-center gap-2 h-full">
+        <div className="col-span-10 lg:col-span-4 flex items-center gap-2 h-full pl-2">
           <div className="">
-            <Drug width={"40px"} />
+            <Drug width={"30px"} />
           </div>
           <div className="">
             <h4 className="text-sm">

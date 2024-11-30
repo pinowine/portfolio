@@ -111,7 +111,7 @@ const FilterPage = () => {
               >
                 <div className="border-second mb-2 group-hover:-translate-y-2 transition-transform">
                   <img
-                    src={project.thumbnail}
+                    src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${project.thumbnail}`}
                     alt={t(project.title)}
                     className="transition-all ease-in-out object-cover grayscale group-hover:grayscale-0 group-hover:transition-all group-hover:shadow-2xl"
                   />

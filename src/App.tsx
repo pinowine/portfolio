@@ -48,30 +48,9 @@ const App = () => {
             path="/:lang/projects/:projectName"
             element={<ProjectPage />}
           />
-          <Route
-            path="/:lang/projects/filter"
-            element={
-              <TransitionComponent>
-                <FilterPage />
-              </TransitionComponent>
-            }
-          />
-          <Route
-            path="/:lang/about"
-            element={
-              <TransitionComponent>
-                <AboutPage />
-              </TransitionComponent>
-            }
-          />
-          <Route
-            path="/:lang/description"
-            element={
-              <TransitionComponent>
-                <DescriptionPage />
-              </TransitionComponent>
-            }
-          />
+          <Route path="/:lang/projects/filter" element={<FilterPage />} />
+          <Route path="/:lang/about" element={<AboutPage />} />
+          <Route path="/:lang/description" element={<DescriptionPage />} />
         </Routes>
       </TransitionProvider>
       <Footer />

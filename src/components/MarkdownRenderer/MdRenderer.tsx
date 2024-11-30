@@ -8,6 +8,7 @@ import LightboxPlugin from "./RendererPlugins/Lightbox";
 import PdfViewerPlugin from "./RendererPlugins/PdfViewer";
 import VideoPlugin from "./RendererPlugins/Video";
 import AudioPlugin from "./RendererPlugins/Audio";
+import IframePlugin from "./RendererPlugins/Frame";
 
 interface MarkdownRendererProps {
   filePath: string;
@@ -37,6 +38,12 @@ interface VideoData {
   src: string;
 }
 
+interface IframeData {
+  website: string;
+  title: string;
+  description: string;
+}
+
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
   const [markdownContent, setMarkdownContent] = useState<string>("");
   const { t } = useTranslation();
@@ -46,13 +53,16 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
   const [pdfLinks, setPdfLinks] = useState<PdfData[]>([]);
   const [videoLinks, setVideoLinks] = useState<VideoData[]>([]);
   const [audioLinks, setAudioLinks] = useState<AudioData[]>([]);
+  const [websiteLinks, setWebsiteLinks] = useState<IframeData[]>([]);
 
   useEffect(() => {
     const fetchMarkdown = async () => {
       try {
-        const response = await fetch(filePath);
+        // const rawFilePath = `https://raw.githubusercontent.com/pinowine/portfolio/main/public${filePath}`;
+        const rawFilePath = filePath;
+        const response = await fetch(rawFilePath);
         if (!response.ok) {
-          throw new Error(`${t("无法加载Markdown文件")}: ${filePath}`);
+          throw new Error(`${t("无法加载Markdown文件")}: ${rawFilePath}`);
         }
         const rawText = await response.text();
         // text
@@ -70,6 +80,9 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
         // audio
         const extractedAudios = extractAudioLinks(content);
         setAudioLinks(extractedAudios);
+        // website
+        const extractedWebsites = extractWebsiteLinks(content);
+        setWebsiteLinks(extractedWebsites);
       } catch (error) {
         console.error(error);
         setMarkdownContent(`${t("加载失败，请稍后重试")}`);
@@ -139,6 +152,22 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
     return matches;
   };
 
+  // extract website links
+  const extractWebsiteLinks = (content: string): IframeData[] => {
+    const mediaRegex = /\[website:(.*?)\{(.*?)\}\]\((.*?)\)/g;
+    const matches: IframeData[] = [];
+    let match;
+    while ((match = mediaRegex.exec(content)) !== null) {
+      matches.push({
+        title: match[1],
+        description: match[2],
+        website: match[3],
+      });
+    }
+    console.log(mediaRegex.exec(content));
+    return matches;
+  };
+
   const toggleLightbox = () => {
     setOpen(!open);
   };
@@ -157,19 +186,25 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
       {videoLinks.length > 0 && <VideoPlugin videoLinks={videoLinks} />}
       {/* audio */}
       {audioLinks.length > 0 && <AudioPlugin audioLinks={audioLinks} />}
+      {/* website */}
+      {websiteLinks.length > 0 && <IframePlugin website={websiteLinks} />}
       {/* masonry */}
-      <MasonryPlugin
-        images={images}
-        toggleLightbox={toggleLightbox}
-        setInitialLightboxIndex={setInitialLightboxIndex}
-      />
+      {images.length > 0 && (
+        <MasonryPlugin
+          images={images}
+          toggleLightbox={toggleLightbox}
+          setInitialLightboxIndex={setInitialLightboxIndex}
+        />
+      )}
       {/* lightbox */}
-      <LightboxPlugin
-        images={images}
-        toggleLightbox={toggleLightbox}
-        open={open}
-        initialIndex={lightboxIndex}
-      />
+      {images.length > 0 && (
+        <LightboxPlugin
+          images={images}
+          toggleLightbox={toggleLightbox}
+          open={open}
+          initialIndex={lightboxIndex}
+        />
+      )}
     </div>
   );
 };
