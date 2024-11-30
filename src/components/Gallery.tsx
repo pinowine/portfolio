@@ -275,7 +275,7 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
                   className="img flex-1 flex-shrink max-h-48 w-[20%] sm:w-[150px] md:w-[180px] overflow-hidden"
                 >
                   <img
-                    src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${imageSrc}`}
+                    src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${imageSrc}`}
                     alt={`${t("项目图片")} ${imgIndex + 1}`}
                     className="opacity-90 w-full h-full object-cover"
                   />

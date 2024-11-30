@@ -277,7 +277,7 @@ const Footer = () => {
             {developerImages.map((img, index) => (
               <div key={`${img.title}-${index}`}>
                 <img
-                  src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${img.src}`}
+                  src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${img.src}`}
                   alt={t("开发者") + t("双色") + t("图片") + (index + 1)}
                   className="opacity-90"
                 />

@@ -38,7 +38,7 @@ const MasonryPlugin: React.FC<MasonryPluginProps> = ({
             className="flex flex-col items-center group overflow-visible"
           >
             <img
-              src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${image.src}`}
+              src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${image.src}`}
               alt={image.alt}
               className="shadow-md m-0 w-full object-cover group-hover:-translate-y-2 transition-transform"
             />
