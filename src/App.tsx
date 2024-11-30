@@ -1,15 +1,26 @@
-import React from 'react';
-import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
+import React from "react";
+import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import gsap from "gsap";
+import { ScrollTrigger, ScrollToPlugin, Observer } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, useGSAP, Observer);
 
-import { useApplyTheme } from './hooks/useApplyTheme';
-import { useApplyLanguage } from './hooks/useApplyLanguage';
-import { useLanguage } from './hooks/useLanguage';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
-import HomePage from './pages/HomePage/HomePage';
-import ProjectPage from './pages/ProjectPage/ProjectPage';
+import { TransitionProvider } from "./contexts/TransitionProvider";
+import TransitionComponent from "./components/Transition";
+
+import { useApplyTheme } from "./hooks/useApplyTheme";
+import { useApplyLanguage } from "./hooks/useApplyLanguage";
+import { useLanguage } from "./hooks/useLanguage";
+
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
+import FilterPage from "./pages/FilterPage";
+import AboutPage from "./pages/AboutPage";
+import DescriptionPage from "./pages/DescriptionPage";
 
 const App = () => {
   useApplyTheme();
@@ -28,15 +39,44 @@ const App = () => {
   }, [language, location.pathname, navigate]);
 
   return (
-    <>
+    <div>
       <Navbar />
-      <Routes>
-        <Route path='/:lang/' element={<HomePage/>} />
-        <Route path='/:lang/project/:id' element={<ProjectPage/>} />
-      </Routes>
+      <TransitionProvider>
+        <Routes>
+          <Route path="/:lang/" index element={<HomePage />} />
+          <Route
+            path="/:lang/projects/:projectName"
+            element={<ProjectPage />}
+          />
+          <Route
+            path="/:lang/projects/filter"
+            element={
+              <TransitionComponent>
+                <FilterPage />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path="/:lang/about"
+            element={
+              <TransitionComponent>
+                <AboutPage />
+              </TransitionComponent>
+            }
+          />
+          <Route
+            path="/:lang/description"
+            element={
+              <TransitionComponent>
+                <DescriptionPage />
+              </TransitionComponent>
+            }
+          />
+        </Routes>
+      </TransitionProvider>
       <Footer />
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;

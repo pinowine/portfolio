@@ -1,5 +1,6 @@
 ﻿import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
 type ResourceType = {
     [lang: string]: {
@@ -25,26 +26,22 @@ for (const path in translations) {
 }
 
 i18n
+    .use(LanguageDetector)
     .use(initReactI18next) // 绑定 react-i18next 到 i18next
     .init({
         resources,
-        lng: navigator.language,
-        fallbackLng: (code) => {
-            // 使用 Locale Chain 进行回退加载
-            const locales = code.split('-');
-            const chains = [];
-            for (let i = locales.length; i > 0; i--) {
-                chains.push(locales.slice(0, i).join('-'));
-            }
-            if (chains[1] === 'zh') {
-                chains.push('zh-Hans')
-            }
-            chains.push('en-US'); // 默认回退到英文
-            return chains;
+        fallbackLng: {
+            'zh-TW': ['zh-TW', 'zh-Hant', 'zh-CN'],  // 中文语言链
+            'en-US': ['en-US', 'zh-CN'],  // 英文语言链
+        },
+        detection: {
+            order: ['querystring', 'cookie', 'localStorage', 'navigator'],
+            caches: ['cookie'], // 缓存语言信息
         },
         interpolation: {
             escapeValue: false, // react 已经安全地处理 xss
         },
+        saveMissing: true
     });
 
 export default i18n;

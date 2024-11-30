@@ -1,0 +1,98 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "The title of the project"
+    },
+    "description": {
+      "type": "string",
+      "description": "A brief description of the project"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "The date of the project"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "concept",
+          "vi",
+          "poster",
+          "flyer",
+          "print",
+          "illustration",
+          "wechat",
+          "web",
+          "frontend",
+          "innovation",
+          "book",
+          "cover",
+          "narrative",
+          "animation",
+          "music",
+          "ui",
+          "game",
+          "card",
+          "service",
+          "ux",
+          "design_text",
+          "landscape",
+          "board",
+          "urban",
+          "prototype",
+          "fan",
+          "stickers",
+          "wearable",
+          "procedure",
+          "logo",
+          "font"
+        ]
+      },
+      "description": "Tags for the project"
+    },
+    "tech_stack": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "react",
+          "vue",
+          "angular",
+          "tailwind",
+          "bootstrap",
+          "sass",
+          "xd",
+          "figma",
+          "ps",
+          "ai",
+          "id",
+          "ae",
+          "pr",
+          "blender",
+          "unity",
+          "unreal",
+          "arduino",
+          "processing",
+          "nodejs",
+          "express",
+          "webpack",
+          "vite",
+          "cad",
+          "su",
+          "rhino",
+          "grasshopper",
+          "3dsmax",
+          "lumion",
+          "vray",
+          "bim",
+          "gis"
+        ]
+      },
+      "description": "Technologies or software used in the project"
+    }
+  }
+}

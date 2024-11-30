@@ -1,0 +1,46 @@
+[
+  {
+    "name": "日期",
+    "parameter": "date",
+    "children": [
+      {
+        "parameter": "2023",
+        "name": "2023"
+      },
+      {
+        "parameter": "2022",
+        "name": "2022"
+      },
+      {
+        "parameter": "2024",
+        "name": "2024"
+      },
+      {
+        "parameter": "2022-2024",
+        "name": "2022-2024"
+      }
+    ]
+  },
+  {
+    "name": "类型",
+    "parameter": "type",
+    "children": [
+      {
+        "parameter": "full",
+        "name": "完整"
+      },
+      {
+        "parameter": "coop",
+        "name": "合作"
+      },
+      {
+        "parameter": "major",
+        "name": "主修"
+      },
+      {
+        "parameter": "personal",
+        "name": "私人"
+      }
+    ]
+  }
+]

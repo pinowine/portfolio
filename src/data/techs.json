@@ -1,0 +1,162 @@
+[
+  {
+    "name": "图形与排印",
+    "parameter": "图形与排印",
+    "children": [
+      {
+        "parameter": "ps",
+        "name": "Adobe Photoshop"
+      },
+      {
+        "parameter": "ai",
+        "name": "Adobe Illustrator"
+      },
+      {
+        "parameter": "id",
+        "name": "Adobe InDesign"
+      },
+      {
+        "parameter": "cad",
+        "name": "AutoCAD"
+      },
+      {
+        "parameter": "figma",
+        "name": "Figma"
+      }
+    ]
+  },
+  {
+    "name": "建模与渲染",
+    "parameter": "建模与渲染",
+    "children": [
+      {
+        "parameter": "blender",
+        "name": "Blender"
+      },
+      {
+        "parameter": "su",
+        "name": "SketchUp"
+      },
+      {
+        "parameter": "lumion",
+        "name": "Lumion"
+      },
+      {
+        "parameter": "vray",
+        "name": "V-Ray"
+      },
+      {
+        "parameter": "fusion",
+        "name": "Fusion 360"
+      },
+      {
+        "parameter": "bamboo",
+        "name": "Bamboo Studio"
+      }
+    ]
+  },
+  {
+    "name": "综合开发",
+    "parameter": "综合开发",
+    "children": [
+      {
+        "parameter": "unity",
+        "name": "Unity"
+      },
+      {
+        "parameter": "arduino",
+        "name": "Arduino"
+      },
+      {
+        "parameter": "td",
+        "name": "Touch Designer"
+      },
+      {
+        "parameter": "e2",
+        "name": "e2.cool"
+      }
+    ]
+  },
+  {
+    "name": "视频与音频",
+    "parameter": "视频与音频",
+    "children": [
+      {
+        "parameter": "an",
+        "name": "Adobe Animate"
+      },
+      {
+        "parameter": "au",
+        "name": "Adobe Audition"
+      },
+      {
+        "parameter": "pr",
+        "name": "Adobe Premiere"
+      },
+      {
+        "parameter": "ae",
+        "name": "Adobe After Effects"
+      },
+      {
+        "parameter": "davinci",
+        "name": "DaVinci Resolve"
+      },
+      {
+        "parameter": "cubase",
+        "name": "Cubase"
+      }
+    ]
+  },
+  {
+    "name": "前端",
+    "parameter": "前端",
+    "children": [
+      {
+        "parameter": "react",
+        "name": "React"
+      },
+      {
+        "parameter": "vue",
+        "name": "Vue.js"
+      },
+      {
+        "parameter": "html",
+        "name": "HTML"
+      },
+      {
+        "parameter": "css",
+        "name": "CSS"
+      },
+      {
+        "parameter": "js",
+        "name": "JavaScript"
+      },
+      {
+        "parameter": "vite",
+        "name": "Vite"
+      },
+      {
+        "parameter": "nodejs",
+        "name": "Node.js"
+      },
+      {
+        "parameter": "webpack",
+        "name": "Webpack"
+      }
+    ]
+  },
+  {
+    "name": "数据处理",
+    "parameter": "数据处理",
+    "children": [
+      {
+        "parameter": "python",
+        "name": "Python"
+      },
+      {
+        "parameter": "gis",
+        "name": "Geographic Information System (GIS)"
+      }
+    ]
+  }
+]

@@ -325,6 +325,7 @@ export default {
                 '"Courier New"',
                 'monospace',
             ],
+            title: ['Felixti', 'FZBook', 'BasicRVS']
         },
         fontSize: {
             xs: ['0.75rem', { lineHeight: '1rem' }],
@@ -1066,10 +1067,19 @@ export default {
             fontFamily: {
                 "serif": ['"Noto Serif SC"'],
                 "sans": ['"Noto Sans SC"']
-            }
+            },
+            animation: {
+                randomFloat: 'randomFloat var(--float-duration, 2s) ease-in-out infinite',
+            },
+            keyframes: {
+                randomFloat: {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(var(--float-height, -10px))' },
+                },
+            },
         }
     },
-    plugins: [],
+    plugins: [require('@tailwindcss/typography'),],
     safelist: [
         {
             pattern: /(^bg-(neutral|red|blue|green|yellow|orange|cyan|slate|gray|zinc|stone|amber|lime|emerald|teal|sky|indigo|violet|purple|fuchsia|pink|rose)-(50|100|200|300|400|500|600|700|800|900|950)$)/,

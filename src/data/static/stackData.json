@@ -1,0 +1,61 @@
+﻿{
+  "tagStack": {
+    "视觉传达": [
+      "vi",
+      "poster",
+      "flyer",
+      "illustration",
+      "wechat",
+      "logo",
+      "font",
+      "cover",
+      "painting"
+    ],
+    "实体产品": [
+      "print",
+      "book",
+      "stickers",
+      "card",
+      "wearables",
+      "installation"
+    ],
+    "交互设计": [
+      "ui",
+      "ux",
+      "service",
+      "prototype",
+      "innovation",
+      "web",
+      "frontend"
+    ],
+    "数字媒体": ["procedure", "game", "music", "animation", "ar"],
+    "环境设计": ["landscape", "urban", "board", "text"],
+    "概念策划": ["fan", "concept", "narrative"]
+  },
+  "techStack": {
+    "图形与排印": ["ps", "ai", "id", "cad", "figma"],
+    "建模与渲染": [
+      "blender",
+      "su",
+      "rhino",
+      "lumion",
+      "vray",
+      "fusion",
+      "bamboo"
+    ],
+    "综合开发": ["unity", "arduino", "unreal", "td", "e2"],
+    "视频与音频": ["an", "au", "pr", "ae", "davinci", "cubase"],
+    "前端": [
+      "react",
+      "vue",
+      "html",
+      "css",
+      "js",
+      "vite",
+      "nodejs",
+      "webpack",
+      "tailwind"
+    ],
+    "数据处理": ["python", "gis"]
+  }
+}

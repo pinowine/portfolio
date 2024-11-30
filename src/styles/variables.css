@@ -1,0 +1,61 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Serif+SC:wght@200..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root,
+    .default-theme,
+    .dark .contrast-theme {
+        --color-main: theme(colors.neutral.200);
+        --color-line: theme(colors.neutral.800);
+        --color-second: theme(colors.neutral.600);
+        --color-third: theme(colors.neutral.400);
+        --color-r-main: theme(colors.neutral.900);
+        --color-r-line: theme(colors.neutral.200);
+        --color-r-second: theme(colors.neutral.600);
+        --color-r-third: theme(colors.neutral.500);
+        --check-image: url('../assets/checkmark-light.svg');
+    }
+
+    :root.dark,
+    .dark .default-theme,
+    .contrast-theme
+    {
+        --color-main: theme(colors.neutral.900);
+        --color-line: theme(colors.neutral.200);
+        --color-second: theme(colors.neutral.600);
+        --color-third: theme(colors.neutral.500);
+        --color-r-main: theme(colors.neutral.200);
+        --color-r-line: theme(colors.neutral.800);
+        --color-r-second: theme(colors.neutral.600);
+        --color-r-third: theme(colors.neutral.700);
+        --check-image: url('../assets/checkmark-dark.svg');
+    }
+}
+
+/* 出现的关键帧动画 */
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes checkmarkFadeIn {
+    from {
+        transform: translate(-50%, -50%) scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,898 @@
+[
+  {
+    "code": "001",
+    "title": "情绪立方",
+    "description": "一套为阿卡贝拉音乐会设计的宣传物料。",
+    "date": "2023-4",
+    "year": 2023,
+    "month": 4,
+    "type": "full",
+    "tags": [
+      "concept",
+      "vi",
+      "poster",
+      "flyer",
+      "print"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
+    "link": "https://mp.weixin.qq.com/s/3opokKMy2IaiOHYq1-jfdA",
+    "route": "/markdown/001.md",
+    "poster": "/assets/projects/001/poster.webp",
+    "thumbnail": "/assets/projects/001/thumbnail.webp",
+    "banner": "/assets/projects/001/banner.webp",
+    "details": [
+      "/assets/projects/001/details/1.webp",
+      "/assets/projects/001/details/2.webp",
+      "/assets/projects/001/details/3.webp",
+      "/assets/projects/001/details/4.webp",
+      "/assets/projects/001/details/5.webp",
+      "/assets/projects/001/details/6.webp",
+      "/assets/projects/001/details/7.webp",
+      "/assets/projects/001/details/8.webp",
+      "/assets/projects/001/details/9.webp",
+      "/assets/projects/001/details/10.webp",
+      "/assets/projects/001/details/11.webp"
+    ]
+  },
+  {
+    "code": "002",
+    "title": "潮汐计划",
+    "description": "一套音乐节的微信推文。",
+    "date": "2022-4",
+    "year": 2022,
+    "month": 4,
+    "type": "full",
+    "tags": [
+      "concept",
+      "vi",
+      "wechat"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
+    "link": "https://mp.weixin.qq.com/s/e6CHC2DyF5V_ihylZX966g",
+    "route": "/markdown/002.md",
+    "poster": "/assets/projects/002/poster.webp",
+    "thumbnail": "/assets/projects/002/thumbnail.webp",
+    "banner": "/assets/projects/002/banner.webp",
+    "details": [
+      "/assets/projects/002/details/1.webp",
+      "/assets/projects/002/details/2.webp",
+      "/assets/projects/002/details/3.webp",
+      "/assets/projects/002/details/4.webp",
+      "/assets/projects/002/details/5.webp",
+      "/assets/projects/002/details/6.webp",
+      "/assets/projects/002/details/7.webp",
+      "/assets/projects/002/details/8.webp",
+      "/assets/projects/002/details/9.webp"
+    ]
+  },
+  {
+    "code": "003",
+    "title": "城市洞穴",
+    "description": "一个对城市中人迹罕至的兴趣点的可能的解决方案。",
+    "date": "2023-11",
+    "year": 2023,
+    "month": 11,
+    "type": "full",
+    "tags": [
+      "web",
+      "frontend",
+      "innovation",
+      "vi"
+    ],
+    "tech": [
+      "vue",
+      "ps",
+      "ai",
+      "figma",
+      "gis",
+      "python"
+    ],
+    "link": "https://pinowine.github.io/Cavia-Porcellus-Culture/#/",
+    "route": "/markdown/003.md",
+    "poster": "/assets/projects/003/poster.webp",
+    "thumbnail": "/assets/projects/003/thumbnail.webp",
+    "banner": "/assets/projects/003/banner.webp",
+    "details": [
+      "/assets/projects/003/details/1.webp",
+      "/assets/projects/003/details/2.webp",
+      "/assets/projects/003/details/3.webp",
+      "/assets/projects/003/details/4.webp",
+      "/assets/projects/003/details/5.webp",
+      "/assets/projects/003/details/6.webp",
+      "/assets/projects/003/details/7.webp"
+    ]
+  },
+  {
+    "code": "004",
+    "title": "夹层与拥抱",
+    "description": "一本COVID-19主题的小册子设计。",
+    "date": "2022-12",
+    "year": 2022,
+    "month": 12,
+    "type": "full",
+    "tags": [
+      "concept",
+      "book",
+      "vi",
+      "cover",
+      "narrative"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "id"
+    ],
+    "link": "/",
+    "route": "/markdown/004.md",
+    "poster": "/assets/projects/004/poster.webp",
+    "thumbnail": "/assets/projects/004/thumbnail.webp",
+    "banner": "/assets/projects/004/banner.webp",
+    "details": [
+      "/assets/projects/004/details/1.webp",
+      "/assets/projects/004/details/2.webp",
+      "/assets/projects/004/details/3.webp",
+      "/assets/projects/004/details/4.webp",
+      "/assets/projects/004/details/5.webp",
+      "/assets/projects/004/details/6.webp",
+      "/assets/projects/004/details/7.webp",
+      "/assets/projects/004/details/8.webp",
+      "/assets/projects/004/details/9.webp",
+      "/assets/projects/004/details/10.webp"
+    ]
+  },
+  {
+    "code": "005",
+    "title": "塞壬陷阱",
+    "description": "一套用于社团招募的宣传材料。",
+    "date": "2022-9",
+    "year": 2022,
+    "month": 9,
+    "type": "full",
+    "tags": [
+      "concept",
+      "illustration",
+      "poster",
+      "flyer",
+      "print",
+      "vi"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
+    "link": "/",
+    "route": "/markdown/005.md",
+    "poster": "/assets/projects/005/poster.webp",
+    "thumbnail": "/assets/projects/005/thumbnail.webp",
+    "banner": "/assets/projects/005/banner.webp",
+    "details": [
+      "/assets/projects/005/details/1.webp",
+      "/assets/projects/005/details/2.webp",
+      "/assets/projects/005/details/3.webp"
+    ]
+  },
+  {
+    "code": "006",
+    "title": "空虚综合征",
+    "description": "一部逐帧描绘空洞循环的短动画。",
+    "date": "2023-1",
+    "year": 2022,
+    "month": 1,
+    "type": "coop",
+    "tags": [
+      "animation",
+      "music",
+      "narrative",
+      "illustration",
+      "vi"
+    ],
+    "tech": [
+      "ae",
+      "blender",
+      "ps",
+      "ai",
+      "an",
+      "davinci",
+      "au",
+      "cubase"
+    ],
+    "link": "https://www.bilibili.com/video/BV1U3411m7Lv",
+    "route": "/markdown/006.md",
+    "poster": "/assets/projects/006/poster.webp",
+    "thumbnail": "/assets/projects/006/thumbnail.webp",
+    "banner": "/assets/projects/006/banner.webp",
+    "details": [
+      "/assets/projects/006/details/1.webp",
+      "/assets/projects/006/details/2.webp",
+      "/assets/projects/006/details/3.webp"
+    ]
+  },
+  {
+    "code": "007",
+    "title": "生活在浙大",
+    "description": "一个娱乐游戏项目的UI设计。",
+    "date": "2022-2",
+    "year": 2022,
+    "month": 2,
+    "type": "coop",
+    "tags": [
+      "ui",
+      "game",
+      "card"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "unity"
+    ],
+    "link": "/",
+    "route": "/markdown/007.md",
+    "poster": "/assets/projects/007/poster.webp",
+    "thumbnail": "/assets/projects/007/thumbnail.webp",
+    "banner": "/assets/projects/007/banner.webp",
+    "details": [
+      "/assets/projects/007/details/1.webp",
+      "/assets/projects/007/details/2.webp",
+      "/assets/projects/007/details/3.webp",
+      "/assets/projects/007/details/4.webp",
+      "/assets/projects/007/details/5.webp",
+      "/assets/projects/007/details/6.webp",
+      "/assets/projects/007/details/7.webp",
+      "/assets/projects/007/details/8.webp",
+      "/assets/projects/007/details/9.webp",
+      "/assets/projects/007/details/10.webp",
+      "/assets/projects/007/details/11.webp",
+      "/assets/projects/007/details/12.webp",
+      "/assets/projects/007/details/13.webp"
+    ]
+  },
+  {
+    "code": "008",
+    "title": "智能营销系统",
+    "description": "一个加油站营销系统的原型。",
+    "date": "2023-10",
+    "year": 2023,
+    "month": 10,
+    "type": "coop",
+    "tags": [
+      "service",
+      "ui",
+      "ux",
+      "design_text"
+    ],
+    "tech": [
+      "figma",
+      "ai"
+    ],
+    "link": "/",
+    "route": "/markdown/008.md",
+    "poster": "/assets/projects/008/poster.webp",
+    "thumbnail": "/assets/projects/008/thumbnail.webp",
+    "banner": "/assets/projects/008/banner.webp",
+    "details": []
+  },
+  {
+    "code": "009",
+    "title": "回溯",
+    "description": "重新设计一个提供呼吸机会的城市广场空间。",
+    "date": "2023-4",
+    "year": 2023,
+    "month": 4,
+    "type": "major",
+    "tags": [
+      "landscape",
+      "concept",
+      "board"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "cad",
+      "su",
+      "lumion"
+    ],
+    "link": "/",
+    "route": "/markdown/009.md",
+    "poster": "/assets/projects/009/poster.webp",
+    "thumbnail": "/assets/projects/009/thumbnail.webp",
+    "banner": "/assets/projects/009/banner.webp",
+    "details": [
+      "/assets/projects/009/details/1.webp",
+      "/assets/projects/009/details/2.webp",
+      "/assets/projects/009/details/3.webp",
+      "/assets/projects/009/details/4.webp",
+      "/assets/projects/009/details/5.webp",
+      "/assets/projects/009/details/6.webp"
+    ]
+  },
+  {
+    "code": "010",
+    "title": "远游",
+    "description": "围绕旅行主题的滨水区重建设计。",
+    "date": "2023-6",
+    "year": 2023,
+    "month": 6,
+    "type": "major",
+    "tags": [
+      "landscape",
+      "concept",
+      "board"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "cad",
+      "su",
+      "lumion"
+    ],
+    "link": "/",
+    "route": "/markdown/010.md",
+    "poster": "/assets/projects/010/poster.webp",
+    "thumbnail": "/assets/projects/010/thumbnail.webp",
+    "banner": "/assets/projects/010/banner.webp",
+    "details": [
+      "/assets/projects/010/details/1.webp",
+      "/assets/projects/010/details/2.webp",
+      "/assets/projects/010/details/3.webp",
+      "/assets/projects/010/details/4.webp",
+      "/assets/projects/010/details/5.webp",
+      "/assets/projects/010/details/6.webp"
+    ]
+  },
+  {
+    "code": "011",
+    "title": "城市榫卯",
+    "description": "基于形态学的全龄混合社区重新设计。",
+    "date": "2023-6",
+    "year": 2023,
+    "month": 6,
+    "type": "major",
+    "tags": [
+      "urban",
+      "concept",
+      "design_text"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "cad",
+      "su",
+      "blender"
+    ],
+    "link": "/",
+    "route": "/markdown/011.md",
+    "poster": "/assets/projects/011/poster.webp",
+    "thumbnail": "/assets/projects/011/thumbnail.webp",
+    "banner": "/assets/projects/011/banner.webp",
+    "details": []
+  },
+  {
+    "code": "012",
+    "title": "清理360",
+    "description": "一个更好、更整洁的360网站的原型。",
+    "date": "2022-5",
+    "year": 2022,
+    "month": 5,
+    "type": "coop",
+    "tags": [
+      "web",
+      "prototype"
+    ],
+    "tech": [
+      "figma",
+      "ai"
+    ],
+    "link": "/",
+    "route": "/markdown/012.md",
+    "poster": "/assets/projects/012/poster.webp",
+    "thumbnail": "/assets/projects/012/thumbnail.webp",
+    "banner": "/assets/projects/012/banner.webp",
+    "details": [
+      "/assets/projects/012/details/1.webp",
+      "/assets/projects/012/details/2.webp"
+    ]
+  },
+  {
+    "code": "013",
+    "title": "留白",
+    "description": "基于生态保护的湖泊周边概念设计。",
+    "date": "2023-11",
+    "year": 2023,
+    "month": 11,
+    "type": "major",
+    "tags": [
+      "landscape",
+      "concept",
+      "board"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "figma",
+      "cad",
+      "su",
+      "lumion"
+    ],
+    "link": "/",
+    "route": "/markdown/013.md",
+    "poster": "/assets/projects/013/poster.webp",
+    "thumbnail": "/assets/projects/013/thumbnail.webp",
+    "banner": "/assets/projects/013/banner.webp",
+    "details": [
+      "/assets/projects/013/details/1.webp",
+      "/assets/projects/013/details/2.webp"
+    ]
+  },
+  {
+    "code": "014",
+    "title": "失序&重构",
+    "description": "基于碳中和概念的食堂组团区块生态改造。",
+    "date": "2022-5",
+    "year": 2022,
+    "month": 5,
+    "type": "major",
+    "tags": [
+      "landscape",
+      "concept",
+      "design_text"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "su",
+      "vray"
+    ],
+    "link": "/",
+    "route": "/markdown/014.md",
+    "poster": "/assets/projects/014/poster.webp",
+    "thumbnail": "/assets/projects/014/thumbnail.webp",
+    "banner": "/assets/projects/014/banner.webp",
+    "details": []
+  },
+  {
+    "code": "015",
+    "title": "杰克的冒险",
+    "description": "儿童友好的城市核心区重新设计。",
+    "date": "2022-7",
+    "year": 2022,
+    "month": 7,
+    "type": "major",
+    "tags": [
+      "landscape",
+      "concept",
+      "board"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "blender",
+      "su",
+      "cad"
+    ],
+    "link": "/",
+    "route": "/markdown/015.md",
+    "poster": "/assets/projects/015/poster.webp",
+    "thumbnail": "/assets/projects/015/thumbnail.webp",
+    "banner": "/assets/projects/015/banner.webp",
+    "details": [
+      "/assets/projects/015/details/1.webp",
+      "/assets/projects/015/details/2.webp"
+    ]
+  },
+  {
+    "code": "016",
+    "title": "迭代器的评论",
+    "description": "一个简单的网站，显示游戏《雨世界》中的文本，用于叙事研究和参考。",
+    "date": "2023-3",
+    "year": 2023,
+    "month": 3,
+    "type": "personal",
+    "tags": [
+      "web",
+      "prototype"
+    ],
+    "tech": [
+      "figma",
+      "html",
+      "css",
+      "js"
+    ],
+    "link": "https://pinowine.github.io/iterator-comments.github.io/",
+    "route": "/markdown/016.md",
+    "poster": "/assets/projects/016/poster.webp",
+    "thumbnail": "/assets/projects/016/thumbnail.webp",
+    "banner": "/assets/projects/016/banner.webp",
+    "details": [
+      "/assets/projects/016/details/1.webp",
+      "/assets/projects/016/details/2.webp",
+      "/assets/projects/016/details/3.webp",
+      "/assets/projects/016/details/4.webp",
+      "/assets/projects/016/details/5.webp"
+    ]
+  },
+  {
+    "code": "017",
+    "title": "危机合约唱片汇编",
+    "description": "为《明日方舟》危机合约活动的专辑设计的一套封面。",
+    "date": "2022-12",
+    "year": 2022,
+    "month": 12,
+    "type": "personal",
+    "tags": [
+      "cover",
+      "vi",
+      "illustration"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
+    "link": "/",
+    "route": "/markdown/017.md",
+    "poster": "/assets/projects/017/poster.webp",
+    "thumbnail": "/assets/projects/017/thumbnail.webp",
+    "banner": "/assets/projects/017/banner.webp",
+    "details": [
+      "/assets/projects/017/details/1.webp",
+      "/assets/projects/017/details/2.webp",
+      "/assets/projects/017/details/3.webp",
+      "/assets/projects/017/details/4.webp",
+      "/assets/projects/017/details/5.webp",
+      "/assets/projects/017/details/6.webp",
+      "/assets/projects/017/details/7.webp",
+      "/assets/projects/017/details/8.webp",
+      "/assets/projects/017/details/9.webp",
+      "/assets/projects/017/details/10.webp"
+    ]
+  },
+  {
+    "code": "018",
+    "title": "P&P家装",
+    "description": "组织纳新的微信推文布局。",
+    "date": "2022-9",
+    "year": 2022,
+    "month": 9,
+    "type": "full",
+    "tags": [
+      "wechat",
+      "concept"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "e2",
+      "blender"
+    ],
+    "link": "https://mp.weixin.qq.com/s/qu-zJODjXPjtsfIr_0pwpg",
+    "route": "/markdown/018.md",
+    "poster": "/assets/projects/018/poster.webp",
+    "thumbnail": "/assets/projects/018/thumbnail.webp",
+    "banner": "/assets/projects/018/banner.webp",
+    "details": [
+      "/assets/projects/018/details/1.webp",
+      "/assets/projects/018/details/2.webp",
+      "/assets/projects/018/details/3.webp",
+      "/assets/projects/018/details/4.webp",
+      "/assets/projects/018/details/5.webp",
+      "/assets/projects/018/details/6.webp",
+      "/assets/projects/018/details/7.webp",
+      "/assets/projects/018/details/8.webp",
+      "/assets/projects/018/details/9.webp",
+      "/assets/projects/018/details/10.webp",
+      "/assets/projects/018/details/11.webp"
+    ]
+  },
+  {
+    "code": "019",
+    "title": "影迷在宜家",
+    "description": "一套戏仿电影海报的娱乐性图像。",
+    "date": "2024-1",
+    "year": 2023,
+    "month": 1,
+    "type": "personal",
+    "tags": [
+      "poster",
+      "fan"
+    ],
+    "tech": [
+      "ps"
+    ],
+    "link": "/",
+    "route": "/markdown/019.md",
+    "poster": "/assets/projects/019/poster.webp",
+    "thumbnail": "/assets/projects/019/thumbnail.webp",
+    "banner": "/assets/projects/019/banner.webp",
+    "details": [
+      "/assets/projects/019/details/1.webp",
+      "/assets/projects/019/details/2.webp",
+      "/assets/projects/019/details/3.webp",
+      "/assets/projects/019/details/4.webp",
+      "/assets/projects/019/details/5.webp",
+      "/assets/projects/019/details/6.webp"
+    ]
+  },
+  {
+    "code": "020",
+    "title": "泰拉旅游指南",
+    "description": "一套基于《明日方舟》设定的同人物料。",
+    "date": "2024-4",
+    "year": 2024,
+    "month": 4,
+    "type": "personal",
+    "tags": [
+      "poster",
+      "flyer",
+      "stickers",
+      "fan"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
+    "link": "/",
+    "route": "/markdown/020.md",
+    "poster": "/assets/projects/020/poster.webp",
+    "thumbnail": "/assets/projects/020/thumbnail.webp",
+    "banner": "/assets/projects/020/banner.webp",
+    "details": [
+      "/assets/projects/020/details/1.webp",
+      "/assets/projects/020/details/2.webp",
+      "/assets/projects/020/details/3.webp"
+    ]
+  },
+  {
+    "code": "021",
+    "title": "你是同性恋！",
+    "description": "一套为国际反恐同、双性恋和跨性别恐惧症日制作的插画。",
+    "date": "2022-5",
+    "year": 2022,
+    "month": 5,
+    "type": "personal",
+    "tags": [
+      "illustration",
+      "poster",
+      "concept"
+    ],
+    "tech": [
+      "ai"
+    ],
+    "link": "/",
+    "route": "/markdown/021.md",
+    "poster": "/assets/projects/021/poster.webp",
+    "thumbnail": "/assets/projects/021/thumbnail.webp",
+    "banner": "/assets/projects/021/banner.webp",
+    "details": [
+      "/assets/projects/021/details/1.webp",
+      "/assets/projects/021/details/2.webp",
+      "/assets/projects/021/details/3.webp",
+      "/assets/projects/021/details/4.webp",
+      "/assets/projects/021/details/5.webp",
+      "/assets/projects/021/details/6.webp",
+      "/assets/projects/021/details/7.webp"
+    ]
+  },
+  {
+    "code": "022",
+    "title": "迷因大师",
+    "description": "一套翻牌游戏的卡片，主题是常见的中国互联网梗图或流行语。",
+    "date": "2024-3",
+    "year": 2024,
+    "month": 3,
+    "type": "personal",
+    "tags": [
+      "wearables",
+      "card",
+      "vi",
+      "procedure"
+    ],
+    "tech": [
+      "arduino",
+      "ps",
+      "ai",
+      "figma",
+      "td",
+      "blender",
+      "fusion",
+      "bamboo"
+    ],
+    "link": "https://www.notion.so/e07df61bc59e4a1b8be7afc049c99f67?v=675796e82c104c2e82d8d8e4c2609c55&pvs=4",
+    "route": "/markdown/022.md",
+    "poster": "/assets/projects/022/poster.webp",
+    "thumbnail": "/assets/projects/022/thumbnail.webp",
+    "banner": "/assets/projects/022/banner.webp",
+    "details": [
+      "/assets/projects/022/details/1.webp",
+      "/assets/projects/022/details/2.webp",
+      "/assets/projects/022/details/3.webp",
+      "/assets/projects/022/details/4.webp",
+      "/assets/projects/022/details/5.webp",
+      "/assets/projects/022/details/6.webp"
+    ]
+  },
+  {
+    "code": "023",
+    "title": "标识与字体包",
+    "description": "为各种项目设计的标识和字体。",
+    "date": "2021至今",
+    "year": "长期",
+    "month": "长期",
+    "type": "long",
+    "tags": [
+      "logo",
+      "font",
+      "vi"
+    ],
+    "tech": [
+      "ai",
+      "figma",
+      "ps"
+    ],
+    "link": "/",
+    "route": "/markdown/023.md",
+    "poster": "/assets/projects/023/poster.webp",
+    "thumbnail": "/assets/projects/023/thumbnail.webp",
+    "banner": "/assets/projects/023/banner.webp",
+    "details": [
+      "/assets/projects/023/details/1.webp",
+      "/assets/projects/023/details/2.webp",
+      "/assets/projects/023/details/3.webp",
+      "/assets/projects/023/details/4.webp",
+      "/assets/projects/023/details/5.webp",
+      "/assets/projects/023/details/6.webp"
+    ]
+  },
+  {
+    "code": "024",
+    "title": "海报与插画包",
+    "description": "为各种项目制作的海报。",
+    "date": "2021至今",
+    "year": "长期",
+    "month": "长期",
+    "type": "long",
+    "tags": [
+      "poster",
+      "illustration",
+      "animation"
+    ],
+    "tech": [
+      "pr",
+      "ae",
+      "id",
+      "ai",
+      "ps",
+      "davinci"
+    ],
+    "link": "/",
+    "route": "/markdown/024.md",
+    "poster": "/assets/projects/024/poster.webp",
+    "thumbnail": "/assets/projects/024/thumbnail.webp",
+    "banner": "/assets/projects/024/banner.webp",
+    "details": [
+      "/assets/projects/024/details/1.webp",
+      "/assets/projects/024/details/2.webp",
+      "/assets/projects/024/details/3.webp",
+      "/assets/projects/024/details/4.webp",
+      "/assets/projects/024/details/5.webp",
+      "/assets/projects/024/details/6.webp",
+      "/assets/projects/024/details/7.webp",
+      "/assets/projects/024/details/8.webp",
+      "/assets/projects/024/details/9.webp",
+      "/assets/projects/024/details/10.webp",
+      "/assets/projects/024/details/11.webp",
+      "/assets/projects/024/details/12.webp",
+      "/assets/projects/024/details/13.webp"
+    ]
+  },
+  {
+    "code": "025",
+    "title": "MOC设计文档",
+    "description": "为MOC清唱团搭建的设计指南（建设中）。",
+    "date": "2024-5",
+    "year": 2024,
+    "month": 5,
+    "type": "personal",
+    "tags": [
+      "web",
+      "frontend"
+    ],
+    "tech": [
+      "react",
+      "figma",
+      "nodejs",
+      "vite",
+      "webpack"
+    ],
+    "link": "https://pinowine.github.io/moc-design-docs/",
+    "route": "/markdown/025.md",
+    "poster": "/assets/projects/025/poster.webp",
+    "thumbnail": "/assets/projects/025/thumbnail.webp",
+    "banner": "/assets/projects/025/banner.webp",
+    "details": [
+      "/assets/projects/025/details/1.webp",
+      "/assets/projects/025/details/2.webp",
+      "/assets/projects/025/details/3.webp",
+      "/assets/projects/025/details/4.webp",
+      "/assets/projects/025/details/5.webp"
+    ]
+  },
+  {
+    "code": "026",
+    "title": "甜蜜的盛宴，献给饥饿的人",
+    "description": "效仿炼金术的增强现实（AR）生成式图像。",
+    "date": "2024-8",
+    "year": 2024,
+    "month": 8,
+    "type": "full",
+    "tags": [
+      "game",
+      "procedure",
+      "illustration",
+      "concept",
+      "ar",
+      "painting"
+    ],
+    "tech": [
+      "ai",
+      "ps",
+      "unity",
+      "arduino"
+    ],
+    "link": "/",
+    "route": "/markdown/026.md",
+    "poster": "/assets/projects/026/poster.webp",
+    "thumbnail": "/assets/projects/026/thumbnail.webp",
+    "banner": "/assets/projects/026/banner.webp",
+    "details": [
+      "/assets/projects/026/details/1.webp",
+      "/assets/projects/026/details/2.webp",
+      "/assets/projects/026/details/3.webp",
+      "/assets/projects/026/details/4.webp",
+      "/assets/projects/026/details/5.webp",
+      "/assets/projects/026/details/6.webp"
+    ]
+  },
+  {
+    "code": "027",
+    "title": "自我的静观",
+    "description": "一个有关创作冲动的交互装置。",
+    "date": "2024-10",
+    "year": 2024,
+    "month": 10,
+    "type": "full",
+    "tags": [
+      "concept",
+      "narrative",
+      "prototype",
+      "installation"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "blender",
+      "arduino",
+      "cad"
+    ],
+    "link": "/",
+    "route": "/markdown/027.md",
+    "poster": "/assets/projects/027/poster.webp",
+    "thumbnail": "/assets/projects/027/thumbnail.webp",
+    "banner": "/assets/projects/027/banner.webp",
+    "details": [
+      "/assets/projects/027/details/1.webp",
+      "/assets/projects/027/details/2.webp",
+      "/assets/projects/027/details/3.webp",
+      "/assets/projects/027/details/4.webp",
+      "/assets/projects/027/details/5.webp",
+      "/assets/projects/027/details/6.webp",
+      "/assets/projects/027/details/7.webp",
+      "/assets/projects/027/details/8.webp",
+      "/assets/projects/027/details/9.webp"
+    ]
+  }
+]

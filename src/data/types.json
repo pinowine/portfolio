@@ -1,0 +1,22 @@
+[
+  {
+    "parameter": "full",
+    "name": "完整"
+  },
+  {
+    "parameter": "coop",
+    "name": "合作"
+  },
+  {
+    "parameter": "major",
+    "name": "主修"
+  },
+  {
+    "parameter": "personal",
+    "name": "私人"
+  },
+  {
+    "parameter": "long",
+    "name": "长期"
+  }
+]

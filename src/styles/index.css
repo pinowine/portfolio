@@ -1,82 +1,206 @@
-﻿@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=Noto+Serif+SC:wght@200..900&display=swap');
-
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* main */
-@layer base {    
-    html,
-    body {
-        @apply bg-neutral-200;
-        @apply text-neutral-800;
-        @apply transition;
-    }
-
-    html:hover,
-    body:hover {
-        @apply transition;
-    }
-    
-    body * {
-        @apply border-neutral-800;
-        @apply outline-neutral-800;
-        @apply border-collapse;
-        @apply m-0;
-        @apply p-0;
-    }
-
-    *:disabled {
-        @apply text-neutral-400;
-    }
-
-    button:hover, a:hover {
-        @apply underline;
-    }
-
-    *:disabled:hover {
-        @apply no-underline;
-    }
-
-    *:focus-visible {
-        @apply outline-none;
-    }
+/* font-face */
+@layer base {
+  @font-face {
+    font-family: "Felixti";
+    src: url("./fonts/FELIXTI.TTF");
+  }
+  @font-face {
+    font-family: "FZBook";
+    src: url("./fonts/FZSSK.OTF");
+  }
+  @font-face {
+    font-family: "BasicRV";
+    src: url("./fonts/RVSBasicDemo-Regular-v1.001.otf");
+  }
+  @font-face {
+    font-family: "circular";
+    src: url("./fonts/circular-std-medium-500.ttf");
+  }
 }
 
-/* dark-mode */
+/* main */
+@layer base {
+  html,
+  body {
+    background-color: var(--color-main);
+    color: var(--color-line);
+    @apply transition;
+  }
+
+  body * {
+    border-color: var(--color-line);
+    outline-color: var(--color-line) @apply border-collapse;
+    @apply m-0;
+    @apply p-0;
+  }
+
+  *:disabled {
+    color: var(--color-third);
+  }
+
+  button:hover,
+  a:hover {
+    @apply underline;
+  }
+
+  *:disabled:hover {
+    @apply no-underline;
+  }
+
+  *:focus-visible {
+    @apply outline-none;
+  }
+
+  .default-theme,
+  .contrast-theme {
+    background-color: var(--color-main);
+    color: var(--color-line);
+    border-color: var(--color-line);
+    outline-color: var(--color-line);
+  }
+}
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* scroll */
+  .scroll {
+    overflow: auto; /* 启用滚动 */
+  }
+
+  .scroll ::-webkit-scrollbar {
+    display: block; /* 显示滚动条 */
+    width: 8px; /* 设置滚动条宽度 */
+    @apply scroll-smooth scroll-m-4;
+  }
+
+  .scroll ::-webkit-scrollbar-thumb {
+    @apply bg-neutral-400 h-20 dark:bg-neutral-700; /* 设置滚动条的颜色 */
+  }
+
+  .scroll ::-webkit-scrollbar-track {
+    @apply bg-transparent /* 设置滚动条轨道的背景 */;
+  }
+
+  input[type="checkbox"] {
+    appearance: none;
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--color-main);
+    border: 1px solid var(--color-line);
+    align-self: center;
+    position: relative;
+    cursor: pointer;
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 0.3s forwards;
+    color: var(--color-line);
+  }
+
+  input[type="checkbox"]:hover,
+  div:hover input[type="checkbox"] + label {
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:hover {
+    outline: 1px solid var(--color-line);
+    outline-offset: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  input[type="checkbox"]:checked {
+    transition:
+      background-color 0.3s ease,
+      transform 0.2s ease;
+    transform: scale(1);
+    background-color: var(--color-r-main);
+  }
+
+  input[type="checkbox"]:checked::before {
+    width: 1rem;
+    height: 1rem;
+    content: "";
+    position: absolute;
+    align-self: center;
+    top: 50%;
+    left: 50%;
+    background-image: var(--check-image);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+    animation: checkmarkFadeIn 0.2s forwards;
+  }
+
+  .border-second {
+    border: 1px solid var(--color-third);
+  }
+
+  .rvs-font {
+    font-family: "BasicRV";
+  }
+
+  .circular-font {
+    font-family: "circular";
+  }
+
+  /* adjustment of pdf viewer */
+  button {
+    @apply flex items-center justify-center;
+  }
+}
 
 @layer components {
-    .dark,
-    .dark>*,
-    .dark * {
-        @apply border-neutral-400;
-        @apply outline-neutral-400;
-    }
-
-    .dark,
-    .dark>* {
-        @apply text-neutral-200;
-        @apply bg-neutral-900;
-    }
-
-    .dark :disabled {
-        @apply text-neutral-600;
-    }
-
-    .light,
-    .light>*,
-    .light * {
-        @apply border-neutral-800;
-        @apply outline-neutral-800;
-    }
-
-    .light,
-    .light>* {
-        @apply bg-neutral-200;
-        @apply text-neutral-800;
-    }
-
-    .light :disabled {
-        @apply text-neutral-400;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  p {
+    @apply text-ellipsis;
+    @apply text-pretty;
+  }
+  h1 {
+    @apply font-bold;
+    @apply text-5xl;
+    @apply mt-1;
+    @apply mb-3;
+  }
+  h2 {
+    @apply font-semibold;
+    @apply text-2xl;
+    @apply mt-1;
+    @apply mb-3;
+  }
+  h3 {
+    @apply font-medium;
+    @apply text-xl;
+    @apply mt-1;
+    @apply mb-2;
+  }
+  h4 {
+    @apply font-medium;
+    @apply text-lg;
+    @apply mt-1;
+    @apply mb-1;
+  }
+  p {
+    @apply font-normal;
+    @apply text-base;
+  }
 }
+
+/* animations */

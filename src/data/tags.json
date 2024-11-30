@@ -1,0 +1,170 @@
+[
+  {
+    "name": "视觉传达",
+    "parameter": "视觉传达",
+    "children": [
+      {
+        "parameter": "vi",
+        "name": "视觉识别"
+      },
+      {
+        "parameter": "poster",
+        "name": "海报"
+      },
+      {
+        "parameter": "flyer",
+        "name": "传单设计"
+      },
+      {
+        "parameter": "illustration",
+        "name": "插图"
+      },
+      {
+        "parameter": "wechat",
+        "name": "推文设计"
+      },
+      {
+        "parameter": "logo",
+        "name": "Logo"
+      },
+      {
+        "parameter": "font",
+        "name": "字体设计"
+      },
+      {
+        "parameter": "cover",
+        "name": "封面艺术"
+      },
+      {
+        "parameter": "painting",
+        "name": "手绘"
+      }
+    ]
+  },
+  {
+    "name": "实体产品",
+    "parameter": "实体产品",
+    "children": [
+      {
+        "parameter": "print",
+        "name": "印刷设计"
+      },
+      {
+        "parameter": "book",
+        "name": "书籍设计"
+      },
+      {
+        "parameter": "stickers",
+        "name": "贴纸"
+      },
+      {
+        "parameter": "card",
+        "name": "卡牌"
+      },
+      {
+        "parameter": "wearables",
+        "name": "可穿戴设备"
+      },
+      {
+        "parameter": "installation",
+        "name": "装置"
+      }
+    ]
+  },
+  {
+    "name": "交互设计",
+    "parameter": "交互设计",
+    "children": [
+      {
+        "parameter": "ui",
+        "name": "用户界面"
+      },
+      {
+        "parameter": "ux",
+        "name": "用户体验"
+      },
+      {
+        "parameter": "service",
+        "name": "服务设计"
+      },
+      {
+        "parameter": "prototype",
+        "name": "原型"
+      },
+      {
+        "parameter": "innovation",
+        "name": "创新设计"
+      },
+      {
+        "parameter": "web",
+        "name": "网页设计"
+      },
+      {
+        "parameter": "frontend",
+        "name": "前端技术"
+      }
+    ]
+  },
+  {
+    "name": "数字媒体",
+    "parameter": "数字媒体",
+    "children": [
+      {
+        "parameter": "procedure",
+        "name": "生成式图像"
+      },
+      {
+        "parameter": "game",
+        "name": "游戏"
+      },
+      {
+        "parameter": "music",
+        "name": "音乐"
+      },
+      {
+        "parameter": "animation",
+        "name": "动画"
+      },
+      {
+        "parameter": "ar",
+        "name": "增强现实"
+      }
+    ]
+  },
+  {
+    "name": "环境设计",
+    "parameter": "环境设计",
+    "children": [
+      {
+        "parameter": "landscape",
+        "name": "景观设计"
+      },
+      {
+        "parameter": "urban",
+        "name": "城市设计"
+      },
+      {
+        "parameter": "board",
+        "name": "展板"
+      }
+    ]
+  },
+  {
+    "name": "概念策划",
+    "parameter": "概念策划",
+    "children": [
+      {
+        "parameter": "fan",
+        "name": "同人作品"
+      },
+      {
+        "parameter": "concept",
+        "name": "概念策划"
+      },
+      {
+        "parameter": "narrative",
+        "name": "叙事"
+      }
+    ]
+  }
+]

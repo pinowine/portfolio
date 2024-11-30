@@ -1,7 +1,7 @@
 ﻿interface SelectorData {
     name:string, 
     parameter:string, 
-    img?:URL, 
+    img?:string, 
     children?: SelectorData[]
 }
 
@@ -11,4 +11,5 @@ export interface SelectorProps {
     data: SelectorData[];
     buttonEvent: (parameter:string) => void;
     defaultName: string;
+    showPara: boolean;
 }
