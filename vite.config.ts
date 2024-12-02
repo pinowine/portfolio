@@ -23,14 +23,6 @@ export default defineConfig({
       },
       include: "**/*.svg?react",
     }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: 'admin',
-          dest: '', // 将 admin 目录复制到根目录
-        },
-      ],
-    }),
     viteImagemin({
       gifsicle: {
         optimizationLevel: 7,
