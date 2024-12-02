@@ -8,7 +8,7 @@ interface FloatingSVGProps {
 
 const FloatingSVG: React.FC<FloatingSVGProps> = ({ suffix }) => {
   const { RiveComponent } = useRive({
-    src: `${process.env.NODE_ENV === "production" ? "/portfolio/" : "/"}assets/rive/portfolio-${suffix}.riv`,
+    src: `${process.env.NODE_ENV === "production" ? "/" : "/"}assets/rive/portfolio-${suffix}.riv`,
     stateMachines: ["State Machine 1"],
     autoplay: true,
   });
