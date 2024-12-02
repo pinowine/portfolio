@@ -32,6 +32,8 @@ import { IoLogoYoutube } from "react-icons/io";
 import { FaCloudflare } from "react-icons/fa6";
 import { SiJsdelivr } from "react-icons/si";
 
+import projects from "../data/projectsMetadata.json";
+
 const Footer = () => {
   // const { theme } = useTheme();
   const { language } = useLanguage();
@@ -39,33 +41,20 @@ const Footer = () => {
 
   const selectedWorks = [
     {
-      key: "独立",
-      children: [
-        "情绪立方",
-        "迷因大师",
-        "城市洞穴",
-        "夹层与拥抱",
-        "甜蜜的盛宴，献给饥饿的人",
-        "自我的静观",
-      ],
+      key: "完整",
+      children: ["001", "022", "003", "004", "026", "027"],
     },
     {
       key: "私人",
-      children: [
-        "影迷在宜家",
-        "迭代器的评论",
-        "危机合约唱片汇编",
-        "泰拉旅游指南",
-        "MOC设计文档",
-      ],
+      children: ["019", "016", "017", "020", "025"],
     },
     {
       key: "合作",
-      children: ["空虚综合征", "智能营销系统", "生活在浙大"],
+      children: ["006", "008", "007"],
     },
     {
       key: "主修",
-      children: ["回溯", "远游", "城市榫卯", "杰克的冒险"],
+      children: ["009", "010", "011", "015"],
     },
   ];
 
@@ -120,6 +109,10 @@ const Footer = () => {
       icon: <GoDiscussionOutdated />,
     },
   ];
+  // t("豆瓣")
+  // t("机核")
+  // t("微信公众号")
+  // t("作品集（旧）")
 
   const buildingTools = [
     {
@@ -281,6 +274,16 @@ const Footer = () => {
       ],
     },
   ];
+
+  // t("构建")
+  // t("渲染")
+  // t("无障碍")
+  // t("交互")
+  // t("设计")
+  // t("协助")
+  // t("托管")
+  // t("服务")
+
   const developerImages = [
     { title: "C&Y", src: "/dev-dua-1.webp" },
     { title: "M&Y", src: "/dev-dua-2.webp" },
@@ -378,7 +381,9 @@ const Footer = () => {
                 key={`work-${workIndex}`}
                 className="flex flex-col w-full h-full items-center text-center md:items-start md:text-start"
               >
-                <h4 className="text-base">{t(work.key) + t("项目")}</h4>
+                <h4 className="text-base whitespace-break-spaces">
+                  {t(work.key) + t("项目")}
+                </h4>
                 <address className="flex flex-col gap-1">
                   {work.children.map((name, nameIndex) => (
                     <Link
@@ -387,7 +392,11 @@ const Footer = () => {
                       title={t(name)}
                       aria-label={t(name)}
                     >
-                      <p className="text-sm line-clamp-1">{t(name)}</p>
+                      <p className="text-sm line-clamp-1">
+                        {t(
+                          projects.find((p) => p.code === name)?.title || "错误"
+                        )}
+                      </p>
                     </Link>
                   ))}
                 </address>

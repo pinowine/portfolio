@@ -109,7 +109,7 @@ const FilterPage = () => {
               <div key={project.code} className="pb-6 text-balance group">
                 <Link
                   id={project.title}
-                  to={`/${language}/projects/${t(project.title)}`}
+                  to={`/${language}/projects/${t(project.code)}`}
                   className="h-full overflow-hidden hover:no-underline"
                 >
                   <div className="border-second mb-2 group-hover:-translate-y-2 transition-transform">

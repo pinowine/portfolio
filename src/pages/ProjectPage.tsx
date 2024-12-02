@@ -21,19 +21,33 @@ import { FaLink } from "react-icons/fa6";
 import { FaProjectDiagram } from "react-icons/fa";
 import { FaTags } from "react-icons/fa";
 import { BsStack } from "react-icons/bs";
+import Skeleton from "../components/Skeleton";
 
 const ProjectPage = () => {
   const { t } = useTranslation();
   const { language } = useLanguage();
   const { toggleDirection } = useTransitionDirection();
 
-  const { projectName } = useParams();
+  const [isCenterLoaded, setIsCenterLoaded] = useState(false);
+  const [isLeftLoaded, setIsLeftLoaded] = useState(false);
+  const [isRightLoaded, setIsRightLoaded] = useState(false);
+
+  const { projectId } = useParams();
 
   // if (!completed) {
   //   return null; // Or display a loading spinner/placeholder
   // }
 
-  const project = projectsData.find((p) => p.title === projectName);
+  const findProject = () => {
+    return (
+      projectId &&
+      projectsData.find((p) => {
+        return p.code === projectId;
+      })
+    );
+  };
+
+  const project = findProject();
   if (!project) {
     return <div>{t("项目不存在")}</div>;
   }
@@ -143,7 +157,7 @@ const ProjectPage = () => {
         <div className="hover:flex-shrink-0 transition-all overflow-hidden">
           <TransitionComponent>
             <Link
-              to={`/${language}/projects/${t(prevProject.title)}`}
+              to={`/${language}/projects/${t(prevProject.code)}`}
               className="group"
               onClick={() => toggleDirection(1)}
             >
@@ -153,10 +167,16 @@ const ProjectPage = () => {
                   <b>{t(prevProject.title)}</b>
                 </h3>
               </div>
+              {!isLeftLoaded && (
+                <div className="top-0 h-80 max-h-24 lg:max-h-full w-full relative flex items-center justify-center">
+                  <Skeleton type="image" />
+                </div>
+              )}
               <img
                 src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${prevProject.thumbnail}`}
                 alt={`${t(prevProject.title)} ${t("海报")}`}
-                className="relative h-80 transition-all opacity-40 blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover"
+                className={`relative h-80 transition-all ${isLeftLoaded ? "opacity-40" : "opacity-0"} blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover`}
+                onLoad={() => setIsLeftLoaded(true)}
               />
             </Link>
           </TransitionComponent>
@@ -164,12 +184,18 @@ const ProjectPage = () => {
         {/* mid */}
         <div className="w-full flex flex-col col-span-2 lg:col-span-5 h-full">
           <div className="w-full flex flex-col md:flex-row justify-center h-full">
-            <div className="border-2 mb-5 md:mr-5 flex-shrink-0 overflow-hidden">
+            <div className="border-2 h-80 w-full md:w-80 flex items-center mb-5 md:mr-5 flex-shrink-0 overflow-hidden">
               <TransitionComponent>
+                {!isCenterLoaded && (
+                  <div className="top-0 w-80 h-full relative flex items-center justify-center">
+                    <Skeleton type="image" />
+                  </div>
+                )}
                 <img
                   src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${project.thumbnail}`}
                   alt={`${t(project.title)} ${t("缩略图")}`}
-                  className="h-80 w-full object-cover"
+                  className={`w-full object-cover ${isCenterLoaded ? "opacity-100" : "opacity-0"}`}
+                  onLoad={() => setIsCenterLoaded(true)}
                 />
               </TransitionComponent>
             </div>
@@ -244,14 +270,20 @@ const ProjectPage = () => {
         <div className="hover:flex-shrink-0 transition-all text-right row-start-1 col-start-2 lg:col-start-7 overflow-hidden">
           <TransitionComponent>
             <Link
-              to={`/${language}/projects/${t(nextProject.title)}`}
+              to={`/${language}/projects/${t(nextProject.code)}`}
               className="group flex items-start justify-end"
               onClick={() => toggleDirection(-1)}
             >
+              {!isRightLoaded && (
+                <div className="top-0 h-80 max-h-24 lg:max-h-full w-full relative flex items-center justify-center">
+                  <Skeleton type="image" />
+                </div>
+              )}
               <img
                 src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${nextProject.thumbnail}`}
                 alt={`${t(nextProject.title)} ${t("海报")}`}
-                className="h-80 transition-all opacity-40 blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover"
+                onLoad={() => setIsRightLoaded(true)}
+                className={`h-80 transition-all ${isLeftLoaded ? "opacity-40" : "opacity-0"} blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover`}
               />
               <div className="transition-opacity z-10 absolute m-4 group-hover:opacity-0 border-b-2 lg:max-w-24">
                 <p className="text-xs">{t("下一个")}:</p>

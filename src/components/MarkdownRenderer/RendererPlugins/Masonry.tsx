@@ -45,12 +45,12 @@ const MasonryPlugin: React.FC<MasonryPluginProps> = ({
                 {!isImageLoaded && <Skeleton type="image" />}
                 <img
                   src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${image.src}`}
-                  alt={image.alt}
+                  alt={t(image.alt)}
                   className={`opacity-90 w-full h-full object-cover transition-opacity duration-500 ${isImageLoaded ? "opacity-100" : "opacity-0"}`}
                   onLoad={() => setIsImageLoaded(true)}
                 />
               </Suspense>
-              <h4 className="text-sm m-0 mt-2">{image.alt}</h4>
+              <h4 className="text-sm m-0 mt-2">{t(image.alt)}</h4>
             </button>
           );
         })}

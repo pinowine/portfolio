@@ -44,7 +44,7 @@ const App = () => {
         <Routes>
           <Route path="/:lang/" index element={<HomePage />} />
           <Route
-            path="/:lang/projects/:projectName"
+            path={`/:lang/projects/:projectId`}
             element={<ProjectPage />}
           />
           <Route path="/:lang/projects/filter" element={<FilterPage />} />

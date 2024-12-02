@@ -112,13 +112,13 @@ const PdfViewerPlugin: React.FC<PdfViewerProps> = ({ pdfLinks }) => {
 
   return (
     <div className="pdf-list my-4">
-      <h3 className="text-lg font-bold mb-2">项目文档</h3>
+      <h3 className="text-lg font-bold mb-2">{t("项目文档")}</h3>
       {pdfLinks.map((pdf, index) => (
         <div
           key={index}
           className={`pdf-item mb-8 rpv-core__viewer rpv-core__viewer--${theme}`}
         >
-          <p className="text-sm text-nowrap">{pdf.description}</p>
+          <p className="text-sm text-nowrap">{t(pdf.description)}</p>
           <LocalizationContext.Provider value={localizationContext}>
             <div className="h-[600px]">
               <Worker
@@ -135,7 +135,7 @@ const PdfViewerPlugin: React.FC<PdfViewerProps> = ({ pdfLinks }) => {
                       <div className="flex items-center justify-center gap-2">
                         <div className="flex items-center justify-center border-r pr-2 border-neutral-300 dark:border-neutral-700">
                           <Tooltip
-                            position={Position.BottomCenter}
+                            position={Position.BottomLeft}
                             target={
                               <MinimalButton onClick={toggleThumbnails}>
                                 <LuLayoutGrid />

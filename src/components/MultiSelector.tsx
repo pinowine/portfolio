@@ -115,7 +115,7 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
         className={`h-full flex justify-between transition-all duration-300 ease-in-out transform
                 ${isOpen ? "delay-100 max-h-screen opacity-100 translate-y-0" : "max-h-0 opacity-0 -translate-y-4 pointer-events-none"}`}
       >
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 h-full w-full gap-2 md:mr-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 h-full w-full gap-2 md:mr-4">
           {data.map((item, index) => {
             if (item.children) {
               const childParameters = item.children.map(

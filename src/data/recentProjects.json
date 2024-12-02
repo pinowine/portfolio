@@ -7,19 +7,8 @@
     "year": 2024,
     "month": 10,
     "type": "full",
-    "tags": [
-      "concept",
-      "narrative",
-      "prototype",
-      "installation"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "blender",
-      "arduino",
-      "cad"
-    ],
+    "tags": ["concept", "narrative", "prototype", "installation"],
+    "tech": ["ps", "ai", "blender", "arduino", "cad"],
     "link": "/",
     "route": "/markdown/027.md",
     "poster": "/projects/027/poster.webp",
@@ -45,20 +34,8 @@
     "year": 2024,
     "month": 8,
     "type": "full",
-    "tags": [
-      "game",
-      "procedure",
-      "illustration",
-      "concept",
-      "ar",
-      "painting"
-    ],
-    "tech": [
-      "ai",
-      "ps",
-      "unity",
-      "arduino"
-    ],
+    "tags": ["game", "procedure", "illustration", "concept", "ar", "painting"],
+    "tech": ["ai", "ps", "unity", "arduino"],
     "link": "/",
     "route": "/markdown/026.md",
     "poster": "/projects/026/poster.webp",
@@ -81,17 +58,8 @@
     "year": 2024,
     "month": 5,
     "type": "personal",
-    "tags": [
-      "web",
-      "frontend"
-    ],
-    "tech": [
-      "react",
-      "figma",
-      "nodejs",
-      "vite",
-      "webpack"
-    ],
+    "tags": ["web", "frontend"],
+    "tech": ["react", "figma", "nodejs", "vite", "webpack"],
     "link": "https://pinowine.github.io/moc-design-docs/",
     "route": "/markdown/025.md",
     "poster": "/projects/025/poster.webp",
@@ -113,16 +81,8 @@
     "year": 2024,
     "month": 4,
     "type": "personal",
-    "tags": [
-      "poster",
-      "flyer",
-      "stickers",
-      "fan"
-    ],
-    "tech": [
-      "ps",
-      "ai"
-    ],
+    "tags": ["poster", "flyer", "stickers", "fan"],
+    "tech": ["ps", "ai"],
     "link": "/",
     "route": "/markdown/020.md",
     "poster": "/projects/020/poster.webp",
@@ -142,12 +102,7 @@
     "year": 2024,
     "month": 3,
     "type": "personal",
-    "tags": [
-      "wearables",
-      "card",
-      "vi",
-      "procedure"
-    ],
+    "tags": ["wearables", "card", "vi", "procedure"],
     "tech": [
       "arduino",
       "ps",
@@ -180,13 +135,8 @@
     "year": 2023,
     "month": 1,
     "type": "personal",
-    "tags": [
-      "poster",
-      "fan"
-    ],
-    "tech": [
-      "ps"
-    ],
+    "tags": ["poster", "fan"],
+    "tech": ["ps"],
     "link": "/",
     "route": "/markdown/019.md",
     "poster": "/projects/019/poster.webp",
@@ -209,20 +159,8 @@
     "year": 2023,
     "month": 11,
     "type": "full",
-    "tags": [
-      "web",
-      "frontend",
-      "innovation",
-      "vi"
-    ],
-    "tech": [
-      "vue",
-      "ps",
-      "ai",
-      "figma",
-      "gis",
-      "python"
-    ],
+    "tags": ["web", "frontend", "innovation", "vi"],
+    "tech": ["vue", "ps", "ai", "figma", "gis", "python"],
     "link": "https://pinowine.github.io/Cavia-Porcellus-Culture/#/",
     "route": "/markdown/003.md",
     "poster": "/projects/003/poster.webp",
@@ -246,27 +184,13 @@
     "year": 2023,
     "month": 11,
     "type": "major",
-    "tags": [
-      "landscape",
-      "concept",
-      "board"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "figma",
-      "cad",
-      "su",
-      "lumion"
-    ],
+    "tags": ["landscape", "concept", "board"],
+    "tech": ["ps", "ai", "figma", "cad", "su", "lumion"],
     "link": "/",
     "route": "/markdown/013.md",
     "poster": "/projects/013/poster.webp",
     "thumbnail": "/projects/013/thumbnail.webp",
     "banner": "/projects/013/banner.webp",
-    "details": [
-      "/projects/013/details/1.webp",
-      "/projects/013/details/2.webp"
-    ]
+    "details": ["/projects/013/details/1.webp", "/projects/013/details/2.webp"]
   }
 ]

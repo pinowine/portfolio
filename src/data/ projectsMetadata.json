@@ -5,17 +5,8 @@
     "description": "一套为阿卡贝拉音乐会设计的宣传物料。",
     "date": "2023-4",
     "type": "full",
-    "tags": [
-      "concept",
-      "vi",
-      "poster",
-      "flyer",
-      "print"
-    ],
-    "tech": [
-      "ps",
-      "ai"
-    ],
+    "tags": ["concept", "vi", "poster", "flyer", "print"],
+    "tech": ["ps", "ai"],
     "link": "https://mp.weixin.qq.com/s/3opokKMy2IaiOHYq1-jfdA",
     "route": "/projects/1",
     "poster": "/assets/projects/001/poster.jpg",
@@ -29,15 +20,8 @@
     "description": "一套音乐节的微信推文。",
     "date": "2022-4",
     "type": "full",
-    "tags": [
-      "concept",
-      "vi",
-      "wechat"
-    ],
-    "tech": [
-      "ps",
-      "ai"
-    ],
+    "tags": ["concept", "vi", "wechat"],
+    "tech": ["ps", "ai"],
     "link": "https://mp.weixin.qq.com/s/e6CHC2DyF5V_ihylZX966g",
     "route": "/projects/2",
     "poster": "/assets/projects/002/poster.jpg",
@@ -51,20 +35,8 @@
     "description": "一个对城市中人迹罕至的兴趣点的可能的解决方案。",
     "date": "2023-11",
     "type": "full",
-    "tags": [
-      "web",
-      "frontend",
-      "innovation",
-      "vi"
-    ],
-    "tech": [
-      "vue",
-      "ps",
-      "ai",
-      "figma",
-      "gis",
-      "python"
-    ],
+    "tags": ["web", "frontend", "innovation", "vi"],
+    "tech": ["vue", "ps", "ai", "figma", "gis", "python"],
     "link": "https://pinowine.github.io/Cavia-Porcellus-Culture/#/",
     "route": "/projects/3",
     "poster": "/assets/projects/003/poster.jpg",
@@ -78,18 +50,8 @@
     "description": "一本COVID-19主题的小册子设计。",
     "date": "2022-12",
     "type": "full",
-    "tags": [
-      "concept",
-      "book",
-      "vi",
-      "cover",
-      "narrative"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "id"
-    ],
+    "tags": ["concept", "book", "vi", "cover", "narrative"],
+    "tech": ["ps", "ai", "id"],
     "link": "/",
     "route": "/projects/4",
     "poster": "/assets/projects/004/poster.jpg",
@@ -103,18 +65,8 @@
     "description": "一套用于社团招募的宣传材料。",
     "date": "2022-9",
     "type": "full",
-    "tags": [
-      "concept",
-      "illustration",
-      "poster",
-      "flyer",
-      "print",
-      "vi"
-    ],
-    "tech": [
-      "ps",
-      "ai"
-    ],
+    "tags": ["concept", "illustration", "poster", "flyer", "print", "vi"],
+    "tech": ["ps", "ai"],
     "link": "/",
     "route": "/projects/5",
     "poster": "/assets/projects/005/poster.jpg",
@@ -128,23 +80,8 @@
     "description": "一部逐帧描绘空洞循环的短动画。",
     "date": "2023-1",
     "type": "coop",
-    "tags": [
-      "animation",
-      "music",
-      "narrative",
-      "illustration",
-      "vi"
-    ],
-    "tech": [
-      "ae",
-      "blender",
-      "ps",
-      "ai",
-      "an",
-      "davinci",
-      "au",
-      "td"
-    ],
+    "tags": ["animation", "music", "narrative", "illustration", "vi"],
+    "tech": ["ae", "blender", "ps", "ai", "an", "davinci", "au", "td"],
     "link": "https://www.bilibili.com/video/BV1U3411m7Lv",
     "route": "/projects/6",
     "poster": "/assets/projects/006/poster.jpg",
@@ -158,16 +95,8 @@
     "description": "一个娱乐游戏项目的UI设计。",
     "date": "2022-2",
     "type": "coop",
-    "tags": [
-      "ui",
-      "game",
-      "card"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "unity"
-    ],
+    "tags": ["ui", "game", "card"],
+    "tech": ["ps", "ai", "unity"],
     "link": "/",
     "route": "/projects/7",
     "poster": "/assets/projects/007/poster.jpg",
@@ -181,16 +110,8 @@
     "description": "一个加油站营销系统的原型。",
     "date": "2023-10",
     "type": "coop",
-    "tags": [
-      "service",
-      "ui",
-      "ux",
-      "design_text"
-    ],
-    "tech": [
-      "figma",
-      "ai"
-    ],
+    "tags": ["service", "ui", "ux", "design_text"],
+    "tech": ["figma", "ai"],
     "link": "/",
     "route": "/projects/8",
     "poster": "/assets/projects/008/poster.jpg",
@@ -204,18 +125,8 @@
     "description": "重新设计一个提供呼吸机会的城市广场空间。",
     "date": "2023-4",
     "type": "major",
-    "tags": [
-      "landscape",
-      "concept",
-      "board"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "cad",
-      "su",
-      "lumion"
-    ],
+    "tags": ["landscape", "concept", "board"],
+    "tech": ["ps", "ai", "cad", "su", "lumion"],
     "link": "/",
     "route": "/projects/9",
     "poster": "/assets/projects/009/poster.jpg",
@@ -229,18 +140,8 @@
     "description": "围绕旅行主题的滨水区重建设计。",
     "date": "2023-6",
     "type": "major",
-    "tags": [
-      "landscape",
-      "concept",
-      "board"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "cad",
-      "su",
-      "lumion"
-    ],
+    "tags": ["landscape", "concept", "board"],
+    "tech": ["ps", "ai", "cad", "su", "lumion"],
     "link": "/",
     "route": "/projects/10",
     "poster": "/assets/projects/010/poster.jpg",
@@ -254,18 +155,8 @@
     "description": "基于形态学的全龄混合社区重新设计。",
     "date": "2023-6",
     "type": "major",
-    "tags": [
-      "urban",
-      "concept",
-      "design_text"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "cad",
-      "su",
-      "blender"
-    ],
+    "tags": ["urban", "concept", "design_text"],
+    "tech": ["ps", "ai", "cad", "su", "blender"],
     "link": "/",
     "route": "/projects/11",
     "poster": "/assets/projects/011/poster.jpg",
@@ -279,14 +170,8 @@
     "description": "一个更好、更整洁的360网站的原型。",
     "date": "2022-5",
     "type": "coop",
-    "tags": [
-      "web",
-      "prototype"
-    ],
-    "tech": [
-      "figma",
-      "ai"
-    ],
+    "tags": ["web", "prototype"],
+    "tech": ["figma", "ai"],
     "link": "/",
     "route": "/projects/12",
     "poster": "/assets/projects/012/poster.jpg",
@@ -300,19 +185,8 @@
     "description": "基于生态保护的湖泊周边概念设计。",
     "date": "2023-11",
     "type": "major",
-    "tags": [
-      "landscape",
-      "concept",
-      "board"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "figma",
-      "cad",
-      "su",
-      "lumion"
-    ],
+    "tags": ["landscape", "concept", "board"],
+    "tech": ["ps", "ai", "figma", "cad", "su", "lumion"],
     "link": "/",
     "route": "/projects/13",
     "poster": "/assets/projects/013/poster.jpg",
@@ -326,17 +200,8 @@
     "description": "基于碳中和概念的食堂组团区块生态改造。",
     "date": "2022-5",
     "type": "major",
-    "tags": [
-      "landscape",
-      "concept",
-      "design_text"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "su",
-      "vray"
-    ],
+    "tags": ["landscape", "concept", "design_text"],
+    "tech": ["ps", "ai", "su", "vray"],
     "link": "/",
     "route": "/projects/14",
     "poster": "/assets/projects/014/poster.jpg",
@@ -350,18 +215,8 @@
     "description": "儿童友好的城市核心区重新设计。",
     "date": "2022-7",
     "type": "major",
-    "tags": [
-      "landscape",
-      "concept",
-      "board"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "blender",
-      "su",
-      "cad"
-    ],
+    "tags": ["landscape", "concept", "board"],
+    "tech": ["ps", "ai", "blender", "su", "cad"],
     "link": "/",
     "route": "/projects/15",
     "poster": "/assets/projects/015/poster.jpg",
@@ -375,16 +230,8 @@
     "description": "一个简单的网站，显示游戏《雨世界》中的文本，用于叙事研究和参考。",
     "date": "2023-3",
     "type": "personal",
-    "tags": [
-      "web",
-      "prototype"
-    ],
-    "tech": [
-      "figma",
-      "html",
-      "css",
-      "js"
-    ],
+    "tags": ["web", "prototype"],
+    "tech": ["figma", "html", "css", "js"],
     "link": "https://pinowine.github.io/iterator-comments.github.io/",
     "route": "/projects/16",
     "poster": "/assets/projects/016/poster.jpg",
@@ -398,15 +245,8 @@
     "description": "为《明日方舟》危机合约活动的专辑设计的一套封面。",
     "date": "2022-12",
     "type": "personal",
-    "tags": [
-      "cover",
-      "vi",
-      "illustration"
-    ],
-    "tech": [
-      "ps",
-      "ai"
-    ],
+    "tags": ["cover", "vi", "illustration"],
+    "tech": ["ps", "ai"],
     "link": "/",
     "route": "/projects/17",
     "poster": "/assets/projects/017/poster.jpg",
@@ -420,16 +260,8 @@
     "description": "组织纳新的微信推文布局。",
     "date": "2022-9",
     "type": "full",
-    "tags": [
-      "wechat",
-      "concept"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "e2",
-      "blender"
-    ],
+    "tags": ["wechat", "concept"],
+    "tech": ["ps", "ai", "e2", "blender"],
     "link": "https://mp.weixin.qq.com/s/qu-zJODjXPjtsfIr_0pwpg",
     "route": "/projects/18",
     "poster": "/assets/projects/018/poster.jpg",
@@ -443,13 +275,8 @@
     "description": "一套戏仿电影海报的娱乐性图像。",
     "date": "2024-1",
     "type": "personal",
-    "tags": [
-      "poster",
-      "fan"
-    ],
-    "tech": [
-      "ps"
-    ],
+    "tags": ["poster", "fan"],
+    "tech": ["ps"],
     "link": "/",
     "route": "/projects/19",
     "poster": "/assets/projects/019/poster.jpg",
@@ -463,16 +290,8 @@
     "description": "一套基于《明日方舟》设定的同人物料。",
     "date": "2024-4",
     "type": "personal",
-    "tags": [
-      "poster",
-      "flyer",
-      "stickers",
-      "fan"
-    ],
-    "tech": [
-      "ps",
-      "ai"
-    ],
+    "tags": ["poster", "flyer", "stickers", "fan"],
+    "tech": ["ps", "ai"],
     "link": "/",
     "route": "/projects/20",
     "poster": "/assets/projects/020/poster.jpg",
@@ -486,14 +305,8 @@
     "description": "一套为国际反恐同、双性恋和跨性别恐惧症日制作的插画。",
     "date": "2022-5",
     "type": "personal",
-    "tags": [
-      "illustration",
-      "poster",
-      "concept"
-    ],
-    "tech": [
-      "ai"
-    ],
+    "tags": ["illustration", "poster", "concept"],
+    "tech": ["ai"],
     "link": "/",
     "route": "/projects/21",
     "poster": "/assets/projects/021/poster.jpg",
@@ -507,12 +320,7 @@
     "description": "一套翻牌游戏的卡片，主题是常见的中国互联网梗图或流行语。",
     "date": "2024-3",
     "type": "personal",
-    "tags": [
-      "wearables",
-      "card",
-      "vi",
-      "procedure"
-    ],
+    "tags": ["wearables", "card", "vi", "procedure"],
     "tech": [
       "arduino",
       "ps",
@@ -536,16 +344,8 @@
     "description": "为各种项目设计的标识和字体。",
     "date": "2021至今",
     "type": "long",
-    "tags": [
-      "logo",
-      "font",
-      "vi"
-    ],
-    "tech": [
-      "ai",
-      "figma",
-      "ps"
-    ],
+    "tags": ["logo", "font", "vi"],
+    "tech": ["ai", "figma", "ps"],
     "link": "/",
     "route": "/projects/23",
     "poster": "/assets/projects/023/poster.jpg",
@@ -559,19 +359,8 @@
     "description": "为各种项目制作的海报。",
     "date": "2021至今",
     "type": "long",
-    "tags": [
-      "poster",
-      "illustration",
-      "animation"
-    ],
-    "tech": [
-      "pr",
-      "ae",
-      "id",
-      "ai",
-      "ps",
-      "davinci"
-    ],
+    "tags": ["poster", "illustration", "animation"],
+    "tech": ["pr", "ae", "id", "ai", "ps", "davinci"],
     "link": "/",
     "route": "/projects/24",
     "poster": "/assets/projects/024/poster.jpg",
@@ -585,17 +374,8 @@
     "description": "为MOC清唱团搭建的设计指南（建设中）。",
     "date": "2024-5",
     "type": "personal",
-    "tags": [
-      "web",
-      "frontend"
-    ],
-    "tech": [
-      "react",
-      "figma",
-      "nodejs",
-      "vite",
-      "webpack"
-    ],
+    "tags": ["web", "frontend"],
+    "tech": ["react", "figma", "nodejs", "vite", "webpack"],
     "link": "https://pinowine.github.io/moc-design-docs/",
     "route": "/projects/25",
     "poster": "/assets/projects/025/poster.jpg",
@@ -609,20 +389,8 @@
     "description": "效仿炼金术的增强现实（AR）生成式图像。",
     "date": "2024-8",
     "type": "full",
-    "tags": [
-      "game",
-      "procedure",
-      "illustration",
-      "concept",
-      "ar",
-      "painting"
-    ],
-    "tech": [
-      "ai",
-      "ps",
-      "unity",
-      "arduino"
-    ],
+    "tags": ["game", "procedure", "illustration", "concept", "ar", "painting"],
+    "tech": ["ai", "ps", "unity", "arduino"],
     "link": "/",
     "route": "/projects/26",
     "poster": "/assets/projects/026/poster.jpg",
@@ -636,19 +404,8 @@
     "description": "一个有关创作冲动的交互装置。",
     "date": "2024-10",
     "type": "full",
-    "tags": [
-      "concept",
-      "narrative",
-      "prototype",
-      "installation"
-    ],
-    "tech": [
-      "ps",
-      "ai",
-      "blender",
-      "arduino",
-      "cad"
-    ],
+    "tags": ["concept", "narrative", "prototype", "installation"],
+    "tech": ["ps", "ai", "blender", "arduino", "cad"],
     "link": "/",
     "route": "/projects/27",
     "poster": "/assets/projects/027/poster.jpg",

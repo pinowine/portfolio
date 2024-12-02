@@ -324,7 +324,9 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
                       : "text-neutral-400 dark:text-neutral-500"
                   }`}
                 >
-                  {t(project.title)}
+                  <p className="text-sm line-clamp-1 ... text-left max-w-52">
+                    {t(project.title)}
+                  </p>
                 </button>
               </div>
             ))}
@@ -332,7 +334,7 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
         </div>
         {/* Preview Image */}
         <div className="preview-img w-full relative overflow-hidden right-0 h-[calc(50vh-2em)] lg:h-fit opacity-90 self-end flex justify-end items-center md:items-end">
-          <Link to={`/${language}/projects/${t(projects[activeIndex].title)}`}>
+          <Link to={`/${language}/projects/${t(projects[activeIndex].code)}`}>
             <ResponsiveImage src={previewSrc} alt="Preview" />
           </Link>
         </div>
