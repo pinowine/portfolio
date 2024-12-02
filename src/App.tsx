@@ -10,7 +10,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import { TransitionProvider } from "./contexts/TransitionProvider";
-import TransitionComponent from "./components/Transition";
 
 import { useApplyTheme } from "./hooks/useApplyTheme";
 import { useApplyLanguage } from "./hooks/useApplyLanguage";

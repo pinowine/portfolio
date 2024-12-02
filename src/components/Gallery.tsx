@@ -1,4 +1,4 @@
-﻿import React, { MutableRefObject, useRef, useState } from "react";
+﻿import React, { MutableRefObject, Suspense, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -10,6 +10,7 @@ import ResponsiveImage from "./ImgFigure";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTranslation } from "react-i18next";
 import { useGSAP } from "@gsap/react";
+import Skeleton from "./Skeleton";
 
 interface ScrollerProps {
   lenis: MutableRefObject<Lenis | null>;
@@ -197,7 +198,7 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
 
       ScrollTrigger.create({
         trigger: panelRef.current,
-        start: "top 5%",
+        start: "top 15%",
         end: "+=1500% 80%",
         // markers: true, // Uncomment for debugging
         pin: true,
@@ -245,42 +246,51 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
                       if (el) digitWrapperRefs.current[index] = el;
                     }}
                   >
-                    {String(
-                      `${project.year.toString().slice(2)}/${project.month.toString().padStart(2, "0")}`
-                    )
-                      .split("")
-                      .map((digit, idx) => (
-                        <span
-                          key={idx}
-                          className={`digit-${idx}`}
-                          ref={(el) => {
-                            if (!digitSpanRefs.current[index]) {
-                              digitSpanRefs.current[index] = [];
-                            }
-                            if (el) digitSpanRefs.current[index][idx] = el;
-                          }}
-                        >
-                          {digit}
-                        </span>
-                      ))}
+                    <Suspense fallback={<Skeleton type="text" />}>
+                      {String(
+                        `${project.year.toString().slice(2)}/${project.month.toString().padStart(2, "0")}`
+                      )
+                        .split("")
+                        .map((digit, idx) => (
+                          <span
+                            key={idx}
+                            className={`digit-${idx}`}
+                            ref={(el) => {
+                              if (!digitSpanRefs.current[index]) {
+                                digitSpanRefs.current[index] = [];
+                              }
+                              if (el) digitSpanRefs.current[index][idx] = el;
+                            }}
+                          >
+                            {digit}
+                          </span>
+                        ))}
+                    </Suspense>
                   </div>
                 </h1>
               </div>
             </div>
             {/* Images */}
             <div className="flex flex-col gap-4 md:pl-36 lg:pl-40 sm:pl-28 w-fit overflow-hidden">
-              {project.details.slice(0, 6).map((imageSrc, imgIndex) => (
-                <div
-                  key={imgIndex}
-                  className="img flex-1 flex-shrink max-h-48 w-[20%] sm:w-[150px] md:w-[180px] overflow-hidden"
-                >
-                  <img
-                    src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${imageSrc}`}
-                    alt={`${t("项目图片")} ${imgIndex + 1}`}
-                    className="opacity-90 w-full h-full object-cover"
-                  />
-                </div>
-              ))}
+              {project.details.slice(0, 6).map((imageSrc, imgIndex) => {
+                const [isImageLoaded, setIsImageLoaded] = useState(false);
+                return (
+                  <div
+                    key={imgIndex}
+                    className="img flex-1 flex-shrink max-h-48 w-[20%] sm:w-[150px] md:w-[180px] overflow-hidden"
+                  >
+                    {!isImageLoaded && <Skeleton type="image" />}
+                    <Suspense fallback={<Skeleton type="image" />}>
+                      <img
+                        src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${imageSrc}`}
+                        alt={`${t("项目图片")} ${imgIndex + 1}`}
+                        className={`opacity-90 w-full h-full object-cover transition-opacity duration-500 ${isImageLoaded ? "opacity-100" : "opacity-0"}`}
+                        onLoad={() => setIsImageLoaded(true)}
+                      />
+                    </Suspense>
+                  </div>
+                );
+              })}
             </div>
           </div>
         ))}

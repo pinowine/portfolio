@@ -26,8 +26,11 @@ dist-ssr
 *.png
 *.mp4
 *.jpg
+*.webp
+*.gif
 
 public/assets
+
 configs
 admin
 .github

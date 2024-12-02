@@ -9,6 +9,7 @@ import PdfViewerPlugin from "./RendererPlugins/PdfViewer";
 import VideoPlugin from "./RendererPlugins/Video";
 import AudioPlugin from "./RendererPlugins/Audio";
 import IframePlugin from "./RendererPlugins/Frame";
+import Skeleton from "../Skeleton";
 
 interface MarkdownRendererProps {
   filePath: string;
@@ -46,6 +47,7 @@ interface IframeData {
 
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
   const [markdownContent, setMarkdownContent] = useState<string>("");
+  const [mdOnLoad, setMdOnLoad] = useState<boolean>(false);
   const { t } = useTranslation();
   const [images, setImages] = useState<ImageData[]>([]);
   const [open, setOpen] = useState(false);
@@ -57,9 +59,10 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
 
   useEffect(() => {
     const fetchMarkdown = async () => {
+      setMdOnLoad(false);
       try {
-        // const rawFilePath = `https://raw.githubusercontent.com/pinowine/portfolio/main/public${filePath}`;
-        const rawFilePath = filePath;
+        const rawFilePath = `https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${filePath}`;
+        // const rawFilePath = filePath;
         const response = await fetch(rawFilePath);
         if (!response.ok) {
           throw new Error(`${t("无法加载Markdown文件")}: ${rawFilePath}`);
@@ -83,9 +86,11 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
         // website
         const extractedWebsites = extractWebsiteLinks(content);
         setWebsiteLinks(extractedWebsites);
-      } catch (error) {
+        setMdOnLoad(true);
+      } catch (error: any) {
         console.error(error);
-        setMarkdownContent(`${t("加载失败，请稍后重试")}`);
+        setMarkdownContent(`${t("加载失败，请稍后重试")}: ${error.message}`);
+        setMdOnLoad(true);
       }
     };
 
@@ -178,6 +183,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
 
   return (
     <div className="markdown-body prose prose-neutral dark:prose-invert max-w-none default-theme">
+      {!mdOnLoad && <Skeleton type="paragraph" />}
       {/* text */}
       <MarkdownPlugin markdownContent={markdownContent} />
       {/* pdf */}

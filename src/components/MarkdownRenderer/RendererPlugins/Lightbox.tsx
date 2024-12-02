@@ -40,7 +40,7 @@ const LightboxPlugin: React.FC<LightboxPluginProps> = ({
   const thumbnailsRef = useRef<ThumbnailsRef>(null);
 
   const slides = images.map((image) => ({
-    src: `https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${image.src}`,
+    src: `https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${image.src}`,
     title: image.alt,
     description: image.desc,
   }));

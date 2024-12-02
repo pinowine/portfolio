@@ -1,4 +1,6 @@
 ﻿import { useRive } from "@rive-app/react-canvas";
+import Skeleton from "./Skeleton";
+import { Suspense } from "react";
 
 interface FloatingSVGProps {
   suffix: string;
@@ -6,14 +8,16 @@ interface FloatingSVGProps {
 
 const FloatingSVG: React.FC<FloatingSVGProps> = ({ suffix }) => {
   const { RiveComponent } = useRive({
-    src: `src/assets/rive/portfolio-${suffix}.riv`,
+    src: `${process.env.NODE_ENV === "production" ? "/portfolio/" : "/"}assets/rive/portfolio-${suffix}.riv`,
     stateMachines: ["State Machine 1"],
     autoplay: true,
   });
 
   return (
     <div className="w-full h-full z-0" id={`rive-home-${suffix}`}>
-      <RiveComponent />
+      <Suspense fallback={<Skeleton type="image" />}>
+        <RiveComponent />
+      </Suspense>
     </div>
   );
 };

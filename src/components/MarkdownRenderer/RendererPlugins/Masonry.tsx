@@ -1,5 +1,7 @@
 ﻿import Masonry from "react-masonry-css";
 import { useTranslation } from "react-i18next";
+import { Suspense, useState } from "react";
+import Skeleton from "../../Skeleton";
 
 interface ImageData {
   src: string;
@@ -28,23 +30,30 @@ const MasonryPlugin: React.FC<MasonryPluginProps> = ({
       <h4>{t("项目图集")}</h4>
       <Masonry
         breakpointCols={{ default: 4, 768: 3, 480: 2 }}
-        className="flex mt-12 gap-6"
+        className="flex mt-6 gap-6"
         columnClassName="flex flex-col gap-6"
       >
-        {images.map((image, index) => (
-          <button
-            onClick={() => onClickEvent(index)}
-            key={index}
-            className="flex flex-col items-center group overflow-visible"
-          >
-            <img
-              src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${image.src}`}
-              alt={image.alt}
-              className="shadow-md m-0 w-full object-cover group-hover:-translate-y-2 transition-transform"
-            />
-            <h4 className="text-sm m-0 mt-2">{image.alt}</h4>
-          </button>
-        ))}
+        {images.map((image, index) => {
+          const [isImageLoaded, setIsImageLoaded] = useState(false);
+          return (
+            <button
+              onClick={() => onClickEvent(index)}
+              key={index}
+              className="flex flex-col items-center group overflow-visible"
+            >
+              <Suspense fallback={<Skeleton type="image" />}>
+                {!isImageLoaded && <Skeleton type="image" />}
+                <img
+                  src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${image.src}`}
+                  alt={image.alt}
+                  className={`opacity-90 w-full h-full object-cover transition-opacity duration-500 ${isImageLoaded ? "opacity-100" : "opacity-0"}`}
+                  onLoad={() => setIsImageLoaded(true)}
+                />
+              </Suspense>
+              <h4 className="text-sm m-0 mt-2">{image.alt}</h4>
+            </button>
+          );
+        })}
       </Masonry>
     </div>
   );

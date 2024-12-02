@@ -384,7 +384,7 @@ const PdfViewerPlugin: React.FC<PdfViewerProps> = ({ pdfLinks }) => {
                       {/* content */}
                       <div className="h-full">
                         <Viewer
-                          fileUrl={`https://raw.githubusercontent.com/pinowine/portfolio/main/public/assets${pdf.src}`}
+                          fileUrl={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${pdf.src}`}
                           scrollMode={ScrollMode.Page}
                           defaultScale={SpecialZoomLevel.PageFit}
                           plugins={[

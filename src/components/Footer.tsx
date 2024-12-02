@@ -29,6 +29,8 @@ import { RiLayoutMasonryFill } from "react-icons/ri";
 import { AiFillFilePdf } from "react-icons/ai";
 import { BsSoundwave } from "react-icons/bs";
 import { IoLogoYoutube } from "react-icons/io";
+import { FaCloudflare } from "react-icons/fa6";
+import { SiJsdelivr } from "react-icons/si";
 
 const Footer = () => {
   // const { theme } = useTheme();
@@ -72,10 +74,10 @@ const Footer = () => {
       name: "主页",
       href: "/",
     },
-    {
-      name: "简介",
-      href: "/description",
-    },
+    // {
+    //   name: "简介",
+    //   href: "/description",
+    // },
     {
       name: "作品",
       href: "/projects/filter",
@@ -258,6 +260,26 @@ const Footer = () => {
         },
       ],
     },
+    {
+      title: "服务",
+      children: [
+        {
+          name: "Cloudflare",
+          icon: <FaCloudflare />,
+          href: "https://www.cloudflare.com/",
+        },
+        {
+          name: "jsDelivr",
+          icon: <SiJsdelivr />,
+          href: "https://www.jsdelivr.com/",
+        },
+        {
+          name: "Chinajsdelivr",
+          icon: <SiJsdelivr />,
+          href: "https://github.com/54ayao/JSDMirror",
+        },
+      ],
+    },
   ];
   const developerImages = [
     { title: "C&Y", src: "/dev-dua-1.webp" },
@@ -277,7 +299,7 @@ const Footer = () => {
             {developerImages.map((img, index) => (
               <div key={`${img.title}-${index}`}>
                 <img
-                  src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${img.src}`}
+                  src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${img.src}`}
                   alt={t("开发者") + t("双色") + t("图片") + (index + 1)}
                   className="opacity-90"
                 />

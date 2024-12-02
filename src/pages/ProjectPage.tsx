@@ -154,7 +154,7 @@ const ProjectPage = () => {
                 </h3>
               </div>
               <img
-                src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${prevProject.thumbnail}`}
+                src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${prevProject.thumbnail}`}
                 alt={`${t(prevProject.title)} ${t("海报")}`}
                 className="relative h-80 transition-all opacity-40 blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover"
               />
@@ -167,7 +167,7 @@ const ProjectPage = () => {
             <div className="border-2 mb-5 md:mr-5 flex-shrink-0 overflow-hidden">
               <TransitionComponent>
                 <img
-                  src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${project.thumbnail}`}
+                  src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${project.thumbnail}`}
                   alt={`${t(project.title)} ${t("缩略图")}`}
                   className="h-80 w-full object-cover"
                 />
@@ -249,7 +249,7 @@ const ProjectPage = () => {
               onClick={() => toggleDirection(-1)}
             >
               <img
-                src={`https://cdn.jsdelivr.net/gh/pinowine/portfolio-images@main${nextProject.thumbnail}`}
+                src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${nextProject.thumbnail}`}
                 alt={`${t(nextProject.title)} ${t("海报")}`}
                 className="h-80 transition-all opacity-40 blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover"
               />

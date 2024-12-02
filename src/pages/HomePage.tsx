@@ -1,12 +1,9 @@
-﻿import { useEffect, useRef, useState } from "react";
-// import { Link } from "react-router-dom";
+﻿import { Suspense, useEffect, useRef, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 
 import { useTheme } from "../hooks/useTheme";
-// import { useTransition } from "../hooks/useTransition";
-// import { useLanguage } from "../hooks/useLanguage";
 
-// import { useTranslation } from "react-i18next";
+import Skeleton from "../components/Skeleton";
 
 import FloatingSVG from "../components/FloatingSVG";
 import Gallery from "../components/Gallery";
@@ -19,9 +16,6 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, Observer);
 
 const HomePage: React.FC = () => {
   const { theme } = useTheme();
-  // const { language } = useLanguage();
-  // const { completed } = useTransition();
-  // const { t } = useTranslation();
 
   const mainRef = useRef<HTMLElement | null>(null);
 
@@ -86,10 +80,14 @@ const HomePage: React.FC = () => {
     >
       <div>
         <section className="section top-16 fixed z-0 w-full h-[calc(100vh-4rem)] default-theme overflow-hidden home-svg-container">
-          <FloatingSVG suffix={theme} key={theme} />
+          <Suspense fallback={<Skeleton type="page" />}>
+            <FloatingSVG suffix={theme} key={theme} />
+          </Suspense>
         </section>
         <section className="section sticky top-[calc(100vh)] w-full default-theme">
-          <Gallery lenis={lenisRef} />
+          <Suspense fallback={<Skeleton type="page" />}>
+            <Gallery lenis={lenisRef} />
+          </Suspense>
         </section>
         <Scrollbar lenis={lenisInstance} />
       </div>

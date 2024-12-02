@@ -180,9 +180,9 @@ const NavBar: React.FC = () => {
             <li className="">
               <Link to={`/${language}`}>{t("主页")}</Link>
             </li>
-            <li className="">
+            {/* <li className="">
               <Link to={`/${language}/description`}>{t("简介")}</Link>
-            </li>
+            </li> */}
             <li className="">
               <Link to={`/${language}/projects/filter`}>{t("作品")}</Link>
             </li>
@@ -237,9 +237,9 @@ const NavBar: React.FC = () => {
           <li className="before:content-['#'] before:mr-1">
             <Link to={`/${language}`}>{t("主页")}</Link>
           </li>
-          <li className="before:content-['#'] before:mr-1">
+          {/* <li className="before:content-['#'] before:mr-1">
             <Link to={`/${language}/description`}>{t("简介")}</Link>
-          </li>
+          </li> */}
           <li className="before:content-['#'] before:mr-1">
             <Link to={`/${language}/projects/filter`}>{t("作品")}</Link>
           </li>

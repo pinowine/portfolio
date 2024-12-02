@@ -16,7 +16,7 @@ const MarkdownPlugin: React.FC<MarkdownPluginProps> = ({ markdownContent }) => {
         img: () => null, // 忽略 img 标签的渲染
         // 忽略 PDF 自定义标记
         a: ({ href, children }) => {
-          if (href?.startsWith("/assets/") || href?.startsWith("https")) {
+          if (href?.startsWith("/projects") || href?.startsWith("https")) {
             return null;
           }
           return <a href={href}>{children}</a>;

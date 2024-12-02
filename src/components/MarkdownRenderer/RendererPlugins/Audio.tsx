@@ -29,9 +29,9 @@ const AudioPlugin: React.FC<AudioPluginProps> = ({ audioLinks }) => {
   const playList = audioLinks.map((audio, index) => ({
     name: t(audio.name),
     id: index + 1,
-    src: `https://cdn.jsdelivr.net/gh/pinowine/portfolio@main/public${audio.src}`,
+    src: `https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${audio.src}`,
     description: t(audio.description),
-    img: audio.img,
+    img: `https://cdn.ibuprofennist.com//gh/pinowine/portfolio-images@main${audio.img}`,
     writer: "布洛芬",
   }));
 
