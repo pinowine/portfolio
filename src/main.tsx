@@ -15,14 +15,14 @@ import "./styles/index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <LanguageProvider>
-        <ThemeProvider>
-          <TransitionDirectionProvider>
+    <LanguageProvider>
+      <ThemeProvider>
+        <TransitionDirectionProvider>
+          <BrowserRouter>
             <App />
-          </TransitionDirectionProvider>
-        </ThemeProvider>
-      </LanguageProvider>
-    </BrowserRouter>
+          </BrowserRouter>
+        </TransitionDirectionProvider>
+      </ThemeProvider>
+    </LanguageProvider>
   </StrictMode>
 );

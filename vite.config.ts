@@ -52,5 +52,6 @@ export default defineConfig({
       },
     }),
   ],
+  base: '',
   assetsInclude: ['**/*.md'],
 })
