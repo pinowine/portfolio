@@ -8,3 +8,31 @@
   from = "/*"
   to = "/404.html"
   status = 404
+  force = true
+
+[[redirects]]
+  from = "/:lang/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/en-US/*"
+  status = 301
+  conditions = {Language = ["en"]}
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/zh-CN/*"
+  status = 301
+  conditions = {Language = ["zh"], Country = ["CN"]}
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/zh-TW/*"
+  status = 301
+  conditions = {Language = ["zh"], Country = ["TW"]}
+  force = true
