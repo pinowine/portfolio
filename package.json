@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "trans": "npx i18next-scanner --config configs/i18next-scanner.config.cjs",
-    "build": "tsc -b && vite build && copy index.html 404.html",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
