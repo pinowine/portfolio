@@ -6,19 +6,19 @@
 @layer base {
   @font-face {
     font-family: "Felixti";
-    src: url("./fonts/FELIXTI.TTF");
+    src: url("https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main/fonts/FELIXTI.TTF");
   }
   @font-face {
     font-family: "FZBook";
-    src: url("./fonts/FZSSK.OTF");
+    src: url("https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main/fonts/FZSSK.OTF");
   }
   @font-face {
     font-family: "BasicRV";
-    src: url("./fonts/RVSBasicDemo-Regular-v1.001.otf");
+    src: url("https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main/fonts/RVSBasicDemo-Regular-v1.001.otf");
   }
   @font-face {
     font-family: "circular";
-    src: url("./fonts/circular-std-medium-500.ttf");
+    src: url("https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main/fonts/circular-std-medium-500.ttf");
   }
 }
 

@@ -106,7 +106,7 @@ const Footer = () => {
     },
     {
       name: "作品集（旧）",
-      href: "http://ibuprofennist.com/",
+      href: "https://pinowine.github.io/Portfolio-OUTDATED/",
       icon: <GoDiscussionOutdated />,
     },
   ];
