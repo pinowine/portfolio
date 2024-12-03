@@ -7,8 +7,17 @@
     "year": 2023,
     "month": 4,
     "type": "full",
-    "tags": ["concept", "vi", "poster", "flyer", "print"],
-    "tech": ["ps", "ai"],
+    "tags": [
+      "concept",
+      "vi",
+      "poster",
+      "flyer",
+      "print"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
     "link": "https://mp.weixin.qq.com/s/3opokKMy2IaiOHYq1-jfdA",
     "route": "/markdown/001.md",
     "poster": "/projects/001/poster.webp",
@@ -36,8 +45,15 @@
     "year": 2022,
     "month": 4,
     "type": "full",
-    "tags": ["concept", "vi", "wechat"],
-    "tech": ["ps", "ai"],
+    "tags": [
+      "concept",
+      "vi",
+      "wechat"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
     "link": "https://mp.weixin.qq.com/s/e6CHC2DyF5V_ihylZX966g",
     "route": "/markdown/002.md",
     "poster": "/projects/002/poster.webp",
@@ -63,8 +79,20 @@
     "year": 2023,
     "month": 11,
     "type": "full",
-    "tags": ["web", "frontend", "innovation", "vi"],
-    "tech": ["vue", "ps", "ai", "figma", "gis", "python"],
+    "tags": [
+      "web",
+      "frontend",
+      "innovation",
+      "vi"
+    ],
+    "tech": [
+      "vue",
+      "ps",
+      "ai",
+      "figma",
+      "gis",
+      "python"
+    ],
     "link": "https://pinowine.github.io/Cavia-Porcellus-Culture/#/",
     "route": "/markdown/003.md",
     "poster": "/projects/003/poster.webp",
@@ -88,8 +116,18 @@
     "year": 2022,
     "month": 12,
     "type": "full",
-    "tags": ["concept", "book", "vi", "cover", "narrative"],
-    "tech": ["ps", "ai", "id"],
+    "tags": [
+      "concept",
+      "book",
+      "vi",
+      "cover",
+      "narrative"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "id"
+    ],
     "link": "/",
     "route": "/markdown/004.md",
     "poster": "/projects/004/poster.webp",
@@ -116,8 +154,18 @@
     "year": 2022,
     "month": 9,
     "type": "full",
-    "tags": ["concept", "illustration", "poster", "flyer", "print", "vi"],
-    "tech": ["ps", "ai"],
+    "tags": [
+      "concept",
+      "illustration",
+      "poster",
+      "flyer",
+      "print",
+      "vi"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
     "link": "/",
     "route": "/markdown/005.md",
     "poster": "/projects/005/poster.webp",
@@ -137,8 +185,23 @@
     "year": 2022,
     "month": 1,
     "type": "coop",
-    "tags": ["animation", "music", "narrative", "illustration", "vi"],
-    "tech": ["ae", "blender", "ps", "ai", "an", "davinci", "au", "cubase"],
+    "tags": [
+      "animation",
+      "music",
+      "narrative",
+      "illustration",
+      "vi"
+    ],
+    "tech": [
+      "ae",
+      "blender",
+      "ps",
+      "ai",
+      "an",
+      "davinci",
+      "au",
+      "cubase"
+    ],
     "link": "https://www.bilibili.com/video/BV1U3411m7Lv",
     "route": "/markdown/006.md",
     "poster": "/projects/006/poster.webp",
@@ -158,8 +221,16 @@
     "year": 2022,
     "month": 2,
     "type": "coop",
-    "tags": ["ui", "game", "card"],
-    "tech": ["ps", "ai", "unity"],
+    "tags": [
+      "ui",
+      "game",
+      "card"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "unity"
+    ],
     "link": "/",
     "route": "/markdown/007.md",
     "poster": "/projects/007/poster.webp",
@@ -189,8 +260,16 @@
     "year": 2023,
     "month": 10,
     "type": "coop",
-    "tags": ["service", "ui", "ux", "design_text"],
-    "tech": ["figma", "ai"],
+    "tags": [
+      "service",
+      "ui",
+      "ux",
+      "design_text"
+    ],
+    "tech": [
+      "figma",
+      "ai"
+    ],
     "link": "/",
     "route": "/markdown/008.md",
     "poster": "/projects/008/poster.webp",
@@ -206,8 +285,18 @@
     "year": 2023,
     "month": 4,
     "type": "major",
-    "tags": ["landscape", "concept", "board"],
-    "tech": ["ps", "ai", "cad", "su", "lumion"],
+    "tags": [
+      "landscape",
+      "concept",
+      "board"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "cad",
+      "su",
+      "lumion"
+    ],
     "link": "/",
     "route": "/markdown/009.md",
     "poster": "/projects/009/poster.webp",
@@ -230,8 +319,18 @@
     "year": 2023,
     "month": 6,
     "type": "major",
-    "tags": ["landscape", "concept", "board"],
-    "tech": ["ps", "ai", "cad", "su", "lumion"],
+    "tags": [
+      "landscape",
+      "concept",
+      "board"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "cad",
+      "su",
+      "lumion"
+    ],
     "link": "/",
     "route": "/markdown/010.md",
     "poster": "/projects/010/poster.webp",
@@ -254,8 +353,18 @@
     "year": 2023,
     "month": 6,
     "type": "major",
-    "tags": ["urban", "concept", "design_text"],
-    "tech": ["ps", "ai", "cad", "su", "blender"],
+    "tags": [
+      "urban",
+      "concept",
+      "design_text"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "cad",
+      "su",
+      "blender"
+    ],
     "link": "/",
     "route": "/markdown/011.md",
     "poster": "/projects/011/poster.webp",
@@ -271,14 +380,23 @@
     "year": 2022,
     "month": 5,
     "type": "coop",
-    "tags": ["web", "prototype"],
-    "tech": ["figma", "ai"],
+    "tags": [
+      "web",
+      "prototype"
+    ],
+    "tech": [
+      "figma",
+      "ai"
+    ],
     "link": "/",
     "route": "/markdown/012.md",
     "poster": "/projects/012/poster.webp",
     "thumbnail": "/projects/012/thumbnail.webp",
     "banner": "/projects/012/banner.webp",
-    "details": ["/projects/012/details/1.webp", "/projects/012/details/2.webp"]
+    "details": [
+      "/projects/012/details/1.webp",
+      "/projects/012/details/2.webp"
+    ]
   },
   {
     "code": "013",
@@ -288,14 +406,28 @@
     "year": 2023,
     "month": 11,
     "type": "major",
-    "tags": ["landscape", "concept", "board"],
-    "tech": ["ps", "ai", "figma", "cad", "su", "lumion"],
+    "tags": [
+      "landscape",
+      "concept",
+      "board"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "figma",
+      "cad",
+      "su",
+      "lumion"
+    ],
     "link": "/",
     "route": "/markdown/013.md",
     "poster": "/projects/013/poster.webp",
     "thumbnail": "/projects/013/thumbnail.webp",
     "banner": "/projects/013/banner.webp",
-    "details": ["/projects/013/details/1.webp", "/projects/013/details/2.webp"]
+    "details": [
+      "/projects/013/details/1.webp",
+      "/projects/013/details/2.webp"
+    ]
   },
   {
     "code": "014",
@@ -305,8 +437,17 @@
     "year": 2022,
     "month": 5,
     "type": "major",
-    "tags": ["landscape", "concept", "design_text"],
-    "tech": ["ps", "ai", "su", "vray"],
+    "tags": [
+      "landscape",
+      "concept",
+      "design_text"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "su",
+      "vray"
+    ],
     "link": "/",
     "route": "/markdown/014.md",
     "poster": "/projects/014/poster.webp",
@@ -322,14 +463,27 @@
     "year": 2022,
     "month": 7,
     "type": "major",
-    "tags": ["landscape", "concept", "board"],
-    "tech": ["ps", "ai", "blender", "su", "cad"],
+    "tags": [
+      "landscape",
+      "concept",
+      "board"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "blender",
+      "su",
+      "cad"
+    ],
     "link": "/",
     "route": "/markdown/015.md",
     "poster": "/projects/015/poster.webp",
     "thumbnail": "/projects/015/thumbnail.webp",
     "banner": "/projects/015/banner.webp",
-    "details": ["/projects/015/details/1.webp", "/projects/015/details/2.webp"]
+    "details": [
+      "/projects/015/details/1.webp",
+      "/projects/015/details/2.webp"
+    ]
   },
   {
     "code": "016",
@@ -339,8 +493,16 @@
     "year": 2023,
     "month": 3,
     "type": "personal",
-    "tags": ["web", "prototype"],
-    "tech": ["figma", "html", "css", "js"],
+    "tags": [
+      "web",
+      "prototype"
+    ],
+    "tech": [
+      "figma",
+      "html",
+      "css",
+      "js"
+    ],
     "link": "https://pinowine.github.io/iterator-comments.github.io/",
     "route": "/markdown/016.md",
     "poster": "/projects/016/poster.webp",
@@ -362,8 +524,15 @@
     "year": 2022,
     "month": 12,
     "type": "personal",
-    "tags": ["cover", "vi", "illustration"],
-    "tech": ["ps", "ai"],
+    "tags": [
+      "cover",
+      "vi",
+      "illustration"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
     "link": "/",
     "route": "/markdown/017.md",
     "poster": "/projects/017/poster.webp",
@@ -390,8 +559,16 @@
     "year": 2022,
     "month": 9,
     "type": "full",
-    "tags": ["wechat", "concept"],
-    "tech": ["ps", "ai", "e2", "blender"],
+    "tags": [
+      "wechat",
+      "concept"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "e2",
+      "blender"
+    ],
     "link": "https://mp.weixin.qq.com/s/qu-zJODjXPjtsfIr_0pwpg",
     "route": "/markdown/018.md",
     "poster": "/projects/018/poster.webp",
@@ -419,8 +596,13 @@
     "year": 2023,
     "month": 1,
     "type": "personal",
-    "tags": ["poster", "fan"],
-    "tech": ["ps"],
+    "tags": [
+      "poster",
+      "fan"
+    ],
+    "tech": [
+      "ps"
+    ],
     "link": "/",
     "route": "/markdown/019.md",
     "poster": "/projects/019/poster.webp",
@@ -443,8 +625,16 @@
     "year": 2024,
     "month": 4,
     "type": "personal",
-    "tags": ["poster", "flyer", "stickers", "fan"],
-    "tech": ["ps", "ai"],
+    "tags": [
+      "poster",
+      "flyer",
+      "stickers",
+      "fan"
+    ],
+    "tech": [
+      "ps",
+      "ai"
+    ],
     "link": "/",
     "route": "/markdown/020.md",
     "poster": "/projects/020/poster.webp",
@@ -459,13 +649,19 @@
   {
     "code": "021",
     "title": "你是同性恋！",
-    "description": "一套为国际反恐同、双性恋和跨性别恐惧症日制作的插画。",
+    "description": "一套为国际不再恐惧同性恋、跨性别与双性恋日制作的插画。",
     "date": "2022-5",
     "year": 2022,
     "month": 5,
     "type": "personal",
-    "tags": ["illustration", "poster", "concept"],
-    "tech": ["ai"],
+    "tags": [
+      "illustration",
+      "poster",
+      "concept"
+    ],
+    "tech": [
+      "ai"
+    ],
     "link": "/",
     "route": "/markdown/021.md",
     "poster": "/projects/021/poster.webp",
@@ -489,7 +685,12 @@
     "year": 2024,
     "month": 3,
     "type": "personal",
-    "tags": ["wearables", "card", "vi", "procedure"],
+    "tags": [
+      "wearables",
+      "card",
+      "vi",
+      "procedure"
+    ],
     "tech": [
       "arduino",
       "ps",
@@ -522,8 +723,16 @@
     "year": "长期",
     "month": "长期",
     "type": "long",
-    "tags": ["logo", "font", "vi"],
-    "tech": ["ai", "figma", "ps"],
+    "tags": [
+      "logo",
+      "font",
+      "vi"
+    ],
+    "tech": [
+      "ai",
+      "figma",
+      "ps"
+    ],
     "link": "/",
     "route": "/markdown/023.md",
     "poster": "/projects/023/poster.webp",
@@ -546,8 +755,19 @@
     "year": "长期",
     "month": "长期",
     "type": "long",
-    "tags": ["poster", "illustration", "animation"],
-    "tech": ["pr", "ae", "id", "ai", "ps", "davinci"],
+    "tags": [
+      "poster",
+      "illustration",
+      "animation"
+    ],
+    "tech": [
+      "pr",
+      "ae",
+      "id",
+      "ai",
+      "ps",
+      "davinci"
+    ],
     "link": "/",
     "route": "/markdown/024.md",
     "poster": "/projects/024/poster.webp",
@@ -577,8 +797,17 @@
     "year": 2024,
     "month": 5,
     "type": "personal",
-    "tags": ["web", "frontend"],
-    "tech": ["react", "figma", "nodejs", "vite", "webpack"],
+    "tags": [
+      "web",
+      "frontend"
+    ],
+    "tech": [
+      "react",
+      "figma",
+      "nodejs",
+      "vite",
+      "webpack"
+    ],
     "link": "https://pinowine.github.io/moc-design-docs/",
     "route": "/markdown/025.md",
     "poster": "/projects/025/poster.webp",
@@ -600,8 +829,20 @@
     "year": 2024,
     "month": 8,
     "type": "full",
-    "tags": ["game", "procedure", "illustration", "concept", "ar", "painting"],
-    "tech": ["ai", "ps", "unity", "arduino"],
+    "tags": [
+      "game",
+      "procedure",
+      "illustration",
+      "concept",
+      "ar",
+      "painting"
+    ],
+    "tech": [
+      "ai",
+      "ps",
+      "unity",
+      "arduino"
+    ],
     "link": "/",
     "route": "/markdown/026.md",
     "poster": "/projects/026/poster.webp",
@@ -624,8 +865,19 @@
     "year": 2024,
     "month": 10,
     "type": "full",
-    "tags": ["concept", "narrative", "prototype", "installation"],
-    "tech": ["ps", "ai", "blender", "arduino", "cad"],
+    "tags": [
+      "concept",
+      "narrative",
+      "prototype",
+      "installation"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "blender",
+      "arduino",
+      "cad"
+    ],
     "link": "/",
     "route": "/markdown/027.md",
     "poster": "/projects/027/poster.webp",

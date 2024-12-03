@@ -31,6 +31,7 @@ import { BsSoundwave } from "react-icons/bs";
 import { IoLogoYoutube } from "react-icons/io";
 import { FaCloudflare } from "react-icons/fa6";
 import { SiJsdelivr } from "react-icons/si";
+import { SiTraefikproxy } from "react-icons/si";
 
 import projects from "../data/projectsMetadata.json";
 
@@ -268,7 +269,7 @@ const Footer = () => {
         },
         {
           name: "Chinajsdelivr",
-          icon: <SiJsdelivr />,
+          icon: <SiTraefikproxy />,
           href: "https://github.com/54ayao/JSDMirror",
         },
       ],
