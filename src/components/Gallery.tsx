@@ -199,7 +199,7 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
       ScrollTrigger.create({
         trigger: panelRef.current,
         start: "top 15%",
-        end: "+=1500% 80%",
+        end: "+=1600% 80%",
         // markers: true, // Uncomment for debugging
         pin: true,
       });

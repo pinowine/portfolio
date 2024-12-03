@@ -169,7 +169,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
         website: match[3],
       });
     }
-    console.log(mediaRegex.exec(content));
+    // console.log(mediaRegex.exec(content));
     return matches;
   };
 
