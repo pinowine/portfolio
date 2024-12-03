@@ -44,7 +44,6 @@
     "fs-extra": "^11.2.0",
     "fuse.js": "^7.0.0",
     "generator-code": "^1.11.3",
-    "glob": "^11.0.0",
     "gray-matter": "^4.0.3",
     "gsap": "^3.12.5",
     "gsap-trial": "^3.12.5",
