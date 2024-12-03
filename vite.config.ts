@@ -1,7 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import svgr from 'vite-plugin-svgr';
-import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { plugin as mdPlugin, Mode } from 'vite-plugin-markdown'
 import viteImagemin from 'vite-plugin-imagemin';
 
@@ -52,6 +51,5 @@ export default defineConfig({
       },
     }),
   ],
-  base: '',
-  assetsInclude: ['**/*.md'],
+  base: './',
 })
