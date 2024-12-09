@@ -43,6 +43,19 @@ const FilterPage = () => {
     return matchesYears && matchesTypes && matchesTechs && matchesTags;
   });
 
+  // Manage image loaded states for all projects
+  const [imageLoadStates, setImageLoadStates] = useState(() =>
+    new Array(filteredProjects.length).fill(false)
+  );
+
+  const handleImageLoad = (index: number) => {
+    setImageLoadStates((prevStates) => {
+      const updatedStates = [...prevStates];
+      updatedStates[index] = true;
+      return updatedStates;
+    });
+  };
+
   // lenis
 
   const lenisRef = useRef<Lenis | null>(null);
@@ -103,39 +116,33 @@ const FilterPage = () => {
       <Filter />
       <div className="pl-4 pr-4 grid grid-flow-row grid-cols-2 sm:grid-cols-3 md:grid-cols-5 lg:grid-cols-6 gap-3">
         {filteredProjects.length > 0 ? (
-          filteredProjects.map((project) => {
-            const [isImageLoaded, setIsImageLoaded] = useState(false);
-            return (
-              <div key={project.code} className="pb-6 text-balance group">
-                <Link
-                  id={project.title}
-                  to={`/${language}/projects/${t(project.code)}`}
-                  className="h-full overflow-hidden hover:no-underline"
-                >
-                  <div className="border-second mb-2 group-hover:-translate-y-2 transition-transform">
-                    {!isImageLoaded && <Skeleton type="image" />}
-                    <Suspense fallback={<Skeleton type="image" />}>
-                      <img
-                        src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${project.thumbnail}`}
-                        alt={t(project.title)}
-                        onLoad={() => setIsImageLoaded(true)}
-                        className={`transition-all ease-in-out object-cover grayscale group-hover:grayscale-0 group-hover:transition-all group-hover:shadow-2xl ${isImageLoaded ? "opacity-100" : "opacity-0"}`}
-                      />
-                    </Suspense>
-                  </div>
-                  <label
-                    htmlFor={project.title}
-                    className="hover:cursor-pointer"
-                  >
-                    <p className="pl-2 pr-2 mb-1 group-hover:underline contrast-theme w-fit font-semibold">
-                      {t(project.title)}
-                    </p>
-                    <p className="text-sm">{t(project.description)}</p>
-                  </label>
-                </Link>
-              </div>
-            );
-          })
+          filteredProjects.map((project, index) => (
+            <div key={project.code} className="pb-6 text-balance group">
+              <Link
+                id={project.title}
+                to={`/${language}/projects/${t(project.code)}`}
+                className="h-full overflow-hidden hover:no-underline"
+              >
+                <div className="border-second mb-2 group-hover:-translate-y-2 transition-transform">
+                  {!imageLoadStates[index] && <Skeleton type="image" />}
+                  <Suspense fallback={<Skeleton type="image" />}>
+                    <img
+                      src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${project.thumbnail}`}
+                      alt={t(project.title)}
+                      onLoad={() => handleImageLoad(index)}
+                      className={`transition-all ease-in-out object-cover grayscale group-hover:grayscale-0 group-hover:transition-all group-hover:shadow-2xl ${imageLoadStates[index] ? "opacity-100" : "opacity-0"}`}
+                    />
+                  </Suspense>
+                </div>
+                <label htmlFor={project.title} className="hover:cursor-pointer">
+                  <p className="pl-2 pr-2 mb-1 group-hover:underline contrast-theme w-fit font-semibold">
+                    {t(project.title)}
+                  </p>
+                  <p className="text-sm">{t(project.description)}</p>
+                </label>
+              </Link>
+            </div>
+          ))
         ) : (
           <p>{t("没有匹配的项目")}</p>
         )}

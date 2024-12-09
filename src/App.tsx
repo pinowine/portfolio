@@ -31,7 +31,7 @@ const App = () => {
 
   React.useEffect(() => {
     const currentPath = location.pathname;
-    console.log(currentPath);
+    // console.log(currentPath);
     // 如果路径没有以当前语言前缀开头，则替换为语言前缀的路径
     if (!currentPath.startsWith(`/${language}`)) {
       navigate(`/${language}`, { replace: true });

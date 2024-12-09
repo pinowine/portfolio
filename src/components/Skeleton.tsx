@@ -14,7 +14,7 @@ const Skeleton: React.FC<SkeletonProps> = ({ type }) => {
   switch (type) {
     case "image":
       return (
-        <div className="grid w-full h-full place-items-center rounded-sm bg-transparent">
+        <div className="w-full h-full place-items-center flex items-center justify-center rounded-sm bg-transparent">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

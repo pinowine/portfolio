@@ -138,7 +138,9 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
                       disabled={disabled}
                       title={allSelected ? t("清空") : t("全选")}
                     >
-                      <span className="mr-2">{t(item.name)}</span>
+                      <span className="mr-2 text-balance text-left w-fit">
+                        {t(item.name)}
+                      </span>
                       <div className="mr-2 flex justify-center items-center transition-all duration-300 ease-in-out transform">
                         <MdClear
                           className={`absolute transition-all duration-300 ease-in-out ${
@@ -179,7 +181,7 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
                         />
                         <label
                           htmlFor={child.parameter}
-                          className="text-sm text-balance font-thin"
+                          className="text-sm text-balance font-thin text-left"
                         >
                           {t(child.name)}
                         </label>
@@ -192,7 +194,7 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
               return (
                 <div
                   key={index}
-                  className="flex items-center justify-center gap-1 w-full"
+                  className="flex items-center justify-start gap-1 w-full"
                 >
                   <input
                     type="checkbox"
@@ -207,7 +209,7 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
                   />
                   <label
                     htmlFor={item.parameter}
-                    className="text-sm text-center text-balance font-thin"
+                    className="text-sm font-thin text-left text-wrap overflow-clip hyphens-auto truncate ..."
                   >
                     {t(item.name)}
                   </label>
@@ -217,7 +219,7 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
           })}
         </div>
         <div
-          className={`md:flex text-sm flex-wrap max-w-56 justify-end dark:text-neutral-400 text-neutral-600 h-fit text-nowrap hidden`}
+          className={`md:hidden text-sm flex-wrap max-w-56 justify-end dark:text-neutral-400 text-neutral-600 h-fit text-nowrap hidden`}
         >
           <span className="text-nowrap">{t("已选择：")}</span>
           <ul className="flex flex-wrap justify-end max-w-prose text-right">

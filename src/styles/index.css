@@ -92,6 +92,7 @@
     appearance: none;
     width: 1rem;
     height: 1rem;
+    flex-shrink: 0;
     background-color: var(--color-main);
     border: 1px solid var(--color-line);
     align-self: center;
