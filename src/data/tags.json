@@ -146,6 +146,10 @@
       {
         "parameter": "board",
         "name": "展板"
+      },
+      {
+        "parameter": "text",
+        "name": "设计文本"
       }
     ]
   },
