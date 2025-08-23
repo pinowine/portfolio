@@ -894,5 +894,81 @@
       "/projects/027/details/8.webp",
       "/projects/027/details/9.webp"
     ]
+  },
+  {
+    "code": "028",
+    "title": "非典型塔罗牌",
+    "description": "《明日方舟》同人创作系列又一部分。",
+    "date": "2025-8",
+    "year": 2025,
+    "month": 8,
+    "type": "full",
+    "tags": [
+      "concept",
+      "poster",
+      "vi",
+      "illustration"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "blender",
+      "td"
+    ],
+    "link": "/",
+    "route": "/markdown/028.md",
+    "poster": "/projects/028/poster.webp",
+    "thumbnail": "/projects/028/thumbnail.webp",
+    "banner": "/projects/028/banner.webp",
+    "details": [
+      "/projects/028/details/1.webp",
+      "/projects/028/details/2.webp",
+      "/projects/028/details/3.webp",
+      "/projects/028/details/4.webp",
+      "/projects/028/details/5.webp",
+      "/projects/028/details/6.webp",
+      "/projects/028/details/7.webp",
+      "/projects/028/details/8.webp",
+      "/projects/028/details/9.webp",
+      "/projects/028/details/10.webp",
+      "/projects/028/details/11.webp",
+      "/projects/028/details/12.webp",
+      "/projects/028/details/13.webp",
+      "/projects/028/details/14.webp",
+      "/projects/028/details/15.webp",
+      "/projects/028/details/16.webp",
+      "/projects/028/details/17.webp",
+      "/projects/028/details/18.webp",
+      "/projects/028/details/19.webp",
+      "/projects/028/details/20.webp",
+      "/projects/028/details/21.webp",
+      "/projects/028/details/23.webp"
+    ]
+  },
+  {
+    "code": "029",
+    "title": "Steam Tier List Maker",
+    "description": "轻量化的Steam游戏榜单制作工具。",
+    "date": "2025-8",
+    "year": 2025,
+    "month": 8,
+    "type": "personal",
+    "tags": [
+      "web",
+      "frontend"
+    ],
+    "tech": [
+      "react",
+      "figma",
+      "nodejs",
+      "vite",
+      "webpack"
+    ],
+    "link": "https://steamtierlist.ibuprofennist.com/",
+    "route": "/markdown/029.md",
+    "poster": "/projects/029/poster.webp",
+    "thumbnail": "/projects/029/thumbnail.webp",
+    "banner": "/projects/029/banner.webp",
+    "details": []
   }
 ]
