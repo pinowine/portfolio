@@ -1,4 +1,4 @@
-﻿import React, { Suspense, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import Skeleton from "./Skeleton";
 
@@ -11,6 +11,11 @@ const ResponsiveImage: React.FC<Props> = ({ src, alt }) => {
   const { t } = useTranslation();
   const [isLandscape, setIsLandscape] = useState<boolean | null>(null);
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsLandscape(null);
+    setIsLoaded(false);
+  }, [src]);
 
   const handleImageLoad = (e: React.SyntheticEvent<HTMLImageElement>) => {
     const img = e.currentTarget;
@@ -36,7 +41,9 @@ const ResponsiveImage: React.FC<Props> = ({ src, alt }) => {
           src={src}
           alt={t(alt)}
           onLoad={handleImageLoad}
-          loading="lazy"
+          onError={() => setIsLoaded(true)}
+          loading="eager"
+          decoding="async"
         />
       </Suspense>
     </picture>

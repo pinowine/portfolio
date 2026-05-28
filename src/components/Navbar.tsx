@@ -96,6 +96,7 @@ const NavBar: React.FC = () => {
         duration: 0.6,
         ease: "power2.out",
         delay: 0.2,
+        overwrite: "auto",
       });
       isNavHidden.current = true;
     } else if (currentScrollY < lastScrollY.current && isNavHidden.current) {
@@ -105,6 +106,7 @@ const NavBar: React.FC = () => {
         duration: 0.6,
         ease: "power2.out",
         delay: 0.2,
+        overwrite: "auto",
       });
       isNavHidden.current = false;
     }
@@ -113,7 +115,7 @@ const NavBar: React.FC = () => {
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

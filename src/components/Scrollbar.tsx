@@ -1,4 +1,4 @@
-﻿import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Lenis from "@studio-freight/lenis";
 import { gsap } from "gsap";
 
@@ -7,30 +7,35 @@ interface ScrollbarProps {
 }
 
 const Scrollbar: React.FC<ScrollbarProps> = ({ lenis }) => {
+  const progressBarRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    if (!lenis) return;
+    const progressBar = progressBarRef.current;
+    if (!lenis || !progressBar) return;
+
+    const setProgress = gsap.quickSetter(progressBar, "scaleY");
 
     const updateProgressBar = () => {
-      const scroll = lenis.scroll;
-      const limit = lenis.limit;
-      const progress = scroll / limit;
+      const limit = lenis.limit || 1;
+      const progress = Math.min(Math.max(lenis.scroll / limit, 0), 1);
 
-      gsap.to(".progress-bar", {
-        scaleY: progress,
-        overwrite: "auto",
-      });
+      setProgress(progress);
     };
 
+    updateProgressBar();
     lenis.on("scroll", updateProgressBar);
 
-    // Cleanup
     return () => {
       lenis.off("scroll", updateProgressBar);
     };
   }, [lenis]);
 
   return (
-    <div className="progress-bar fixed top-0 z-40 right-0 w-1 h-screen contrast-theme origin-top scale-y-0"></div>
+    <div
+      ref={progressBarRef}
+      aria-hidden="true"
+      className="progress-bar fixed top-0 z-40 right-0 w-1 h-screen contrast-theme origin-top scale-y-0 transform-gpu"
+    ></div>
   );
 };
 
