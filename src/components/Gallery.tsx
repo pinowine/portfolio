@@ -1,6 +1,5 @@
-import React, {
+import {
   MutableRefObject,
-  memo,
   startTransition,
   useCallback,
   useEffect,
@@ -11,175 +10,83 @@ import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "@studio-freight/lenis";
-import projects from "../data/recentProjects.json";
-import ResponsiveImage from "./ImgFigure";
-
 import { useLanguage } from "../hooks/useLanguage";
 import { useTranslation } from "react-i18next";
 import { useGSAP } from "@gsap/react";
 import Skeleton from "./Skeleton";
+import ResponsiveImage from "./ImgFigure";
+import DateTicker from "./home/DateTicker";
+import ProjectRow from "./home/ProjectRow";
+import {
+  formatProjectDate,
+  getHomeGalleryProjects,
+  getProjectPreviewPath,
+  HomeGalleryProject,
+  toImageUrl,
+} from "../utils/projectData";
 
 interface ScrollerProps {
   lenis: MutableRefObject<Lenis | null>;
 }
 
-type ProjectSummary = (typeof projects)[number];
+const projects = getHomeGalleryProjects();
 
-const IMAGE_CDN_BASE =
-  "https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main";
-
-const toImageUrl = (src?: string) => {
-  if (!src) return "";
-  return src.startsWith("http") ? src : `${IMAGE_CDN_BASE}${src}`;
-};
-
-const getProjectPreviewPath = (project: ProjectSummary) => {
-  return project.details[0] || project.thumbnail || project.poster || "";
-};
-
-const formatProjectDate = (project: ProjectSummary) => {
-  return `${project.year.toString().slice(2)}/${project.month
-    .toString()
-    .padStart(2, "0")}`;
-};
-
-const SplitDate = memo(({ value }: { value: string }) => (
-  <>
-    {value.split("").map((digit, idx) => (
-      <span key={`${digit}-${idx}`} className="inline-block transform-gpu">
-        {digit}
-      </span>
-    ))}
-  </>
-));
-
-SplitDate.displayName = "SplitDate";
-
-interface GalleryThumbProps {
-  alt: string;
-  eager?: boolean;
-  imageSrc: string;
-}
-
-const GalleryThumb = memo(
-  ({ alt, eager = false, imageSrc }: GalleryThumbProps) => {
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
-    const src = toImageUrl(imageSrc);
-
-    useEffect(() => {
-      setIsImageLoaded(false);
-    }, [src]);
-
-    return (
-      <div className="img gallery-thumb flex-1 flex-shrink max-h-48 w-[20%] sm:w-[150px] md:w-[180px] aspect-[4/3] overflow-hidden">
-        {!isImageLoaded && <Skeleton type="image" />}
-        <img
-          src={src}
-          data-preview-src={src}
-          alt={alt}
-          className={`gallery-preview-source w-full h-full object-cover transition-opacity duration-500 ${
-            isImageLoaded ? "opacity-90" : "opacity-0"
-          }`}
-          onLoad={() => setIsImageLoaded(true)}
-          onError={() => setIsImageLoaded(true)}
-          loading={eager ? "eager" : "lazy"}
-          decoding="async"
-        />
-      </div>
-    );
-  }
-);
-
-GalleryThumb.displayName = "GalleryThumb";
-
-interface ProjectRowProps {
-  digitWrapperRefs: MutableRefObject<HTMLDivElement[]>;
-  index: number;
-  maskRefs: MutableRefObject<HTMLDivElement[]>;
-  project: ProjectSummary;
-  projectRefs: MutableRefObject<HTMLDivElement[]>;
-}
-
-const ProjectRow = memo(
-  ({
-    digitWrapperRefs,
-    index,
-    maskRefs,
-    project,
-    projectRefs,
-  }: ProjectRowProps) => {
-    const { t } = useTranslation();
-    const dateValue = formatProjectDate(project);
-
-    return (
-      <div
-        className="relative flex flex-col lg:flex-row pb-72 gap-10"
-        ref={(el) => {
-          if (el) projectRefs.current[index] = el;
-        }}
-      >
-        <div className="mask-container absolute top-0 w-[130px] overflow-hidden z-10 text-neutral-400 dark:text-neutral-200 mix-blend-difference pointer-events-none">
-          <div
-            className="overflow-hidden will-change-transform flex flex-col h-[4rem] w-fit"
-            ref={(el) => {
-              if (el) maskRefs.current[index] = el;
-            }}
-          >
-            <h1
-              className="circular-font relative will-change-transform font-medium mb-0 text-3xl md:text-4xl lg:text-5xl"
-              aria-label={dateValue}
-            >
-              <div
-                className="digit-wrapper transform-gpu"
-                aria-hidden="true"
-                ref={(el) => {
-                  if (el) digitWrapperRefs.current[index] = el;
-                }}
-              >
-                <SplitDate value={dateValue} />
-              </div>
-            </h1>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4 md:pl-36 lg:pl-40 sm:pl-28 w-fit overflow-hidden">
-          {project.details.slice(0, 6).map((imageSrc, imgIndex) => (
-            <GalleryThumb
-              key={`${project.code}-${imgIndex}`}
-              imageSrc={imageSrc}
-              alt={`${t("项目图片")} ${imgIndex + 1}`}
-              eager={index === 0 && imgIndex === 0}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
-);
-
-ProjectRow.displayName = "ProjectRow";
-
-const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
+const Gallery = ({ lenis }: ScrollerProps) => {
   const { language } = useLanguage();
   const { t } = useTranslation();
-  const initialPreviewSrc = toImageUrl(getProjectPreviewPath(projects[0]));
+  const firstProject = projects[0];
+  const initialPreviewSrc = firstProject
+    ? toImageUrl(getProjectPreviewPath(firstProject))
+    : "";
+  const initialDate = firstProject ? formatProjectDate(firstProject) : "";
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [previewSrc, setPreviewSrc] = useState<string>(initialPreviewSrc);
+  const [dateTicker, setDateTicker] = useState({
+    direction: 1,
+    value: initialDate,
+    visible: false,
+  });
   const projectRefs = useRef<HTMLDivElement[]>([]);
-  const maskRefs = useRef<HTMLDivElement[]>([]);
   const indicatorRef = useRef<HTMLDivElement>(null);
-  const digitWrapperRefs = useRef<HTMLDivElement[]>([]);
   const activeIndexRef = useRef(0);
+  const dateTickerProjectRef = useRef(-1);
   const previewSrcRef = useRef(initialPreviewSrc);
   const panelRef = useRef<HTMLDivElement>(null);
   const gallery = useRef<HTMLDivElement>(null);
 
   const setActiveProject = useCallback((index: number) => {
-    if (activeIndexRef.current === index) return;
+    const project = projects[index];
+    if (!project) return;
+
+    const previousIndex = activeIndexRef.current;
+    const direction = index >= previousIndex ? 1 : -1;
+    const nextValue = formatProjectDate(project);
+    const shouldUpdateActiveIndex = previousIndex !== index;
 
     activeIndexRef.current = index;
+    dateTickerProjectRef.current = index;
     startTransition(() => {
-      setActiveIndex(index);
+      if (shouldUpdateActiveIndex) {
+        setActiveIndex(index);
+      }
+      setDateTicker({
+        direction,
+        value: nextValue,
+        visible: true,
+      });
+    });
+  }, []);
+
+  const hideDateTicker = useCallback((index: number) => {
+    if (dateTickerProjectRef.current !== index) return;
+
+    dateTickerProjectRef.current = -1;
+    startTransition(() => {
+      setDateTicker((state) => ({
+        ...state,
+        visible: false,
+      }));
     });
   }, []);
 
@@ -245,11 +152,6 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
       if (!galleryElement) return;
 
       projectRefs.current = projectRefs.current.slice(0, projects.length);
-      maskRefs.current = maskRefs.current.slice(0, projects.length);
-      digitWrapperRefs.current = digitWrapperRefs.current.slice(
-        0,
-        projects.length
-      );
 
       const triggers: ReturnType<typeof ScrollTrigger.create>[] = [];
       const indicatorStep = 23;
@@ -264,74 +166,15 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
         gsap.set(indicatorRef.current, { y: 16, force3D: true });
       }
 
-      const showDate = (
-        project: ProjectSummary,
-        index: number,
-        mask: HTMLDivElement,
-        digitWrapper: HTMLDivElement,
-        fromY: number
-      ) => {
+      const showProject = (project: HomeGalleryProject, index: number) => {
         setActiveProject(index);
         setPreviewImage(getProjectPreviewPath(project));
-
-        gsap.set(mask, {
-          position: "fixed",
-          top: "40vh",
-        });
-
-        gsap.fromTo(
-          digitWrapper,
-          { autoAlpha: 0, y: fromY },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.42,
-            ease: "power3.out",
-            force3D: true,
-            overwrite: true,
-          }
-        );
-
         moveIndicator?.(16 + index * indicatorStep);
-      };
-
-      const hideDate = (
-        mask: HTMLDivElement,
-        digitWrapper: HTMLDivElement,
-        toY: number
-      ) => {
-        gsap.to(digitWrapper, {
-          autoAlpha: 0,
-          y: toY,
-          duration: 0.32,
-          ease: "power2.in",
-          force3D: true,
-          overwrite: true,
-          onComplete: () => {
-            gsap.set(mask, {
-              position: "absolute",
-              top: 0,
-            });
-          },
-        });
       };
 
       projects.forEach((project, index) => {
         const projectElement = projectRefs.current[index];
-        const mask = maskRefs.current[index];
-        const digitWrapper = digitWrapperRefs.current[index];
-
-        if (!projectElement || !mask || !digitWrapper) return;
-
-        gsap.set(mask, {
-          position: "absolute",
-          top: 0,
-        });
-        gsap.set(digitWrapper, {
-          autoAlpha: 0,
-          force3D: true,
-          y: 0,
-        });
+        if (!projectElement) return;
 
         triggers.push(
           ScrollTrigger.create({
@@ -340,16 +183,16 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
             end: "bottom center",
             invalidateOnRefresh: true,
             onEnter: () => {
-              showDate(project, index, mask, digitWrapper, 80);
+              showProject(project, index);
             },
             onLeave: () => {
-              hideDate(mask, digitWrapper, -80);
+              hideDateTicker(index);
             },
             onEnterBack: () => {
-              showDate(project, index, mask, digitWrapper, -80);
+              showProject(project, index);
             },
             onLeaveBack: () => {
-              hideDate(mask, digitWrapper, 80);
+              hideDateTicker(index);
             },
           })
         );
@@ -385,27 +228,43 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
         triggers.forEach((trigger) => trigger.kill());
       };
     },
-    { scope: gallery, dependencies: [setActiveProject, setPreviewImage] }
+    {
+      scope: gallery,
+      dependencies: [hideDateTicker, setActiveProject, setPreviewImage],
+    }
   );
 
   const handleNameClick = (index: number) => {
     const projectElement = projectRefs.current[index];
     const project = projects[index];
 
-    if (projectElement && lenis.current) {
+    if (projectElement && project && lenis.current) {
       setActiveProject(index);
       setPreviewImage(getProjectPreviewPath(project));
       lenis.current.scrollTo(projectElement, { offset: -280 });
     }
   };
 
-  const activeProject = projects[activeIndex] || projects[0];
+  const activeProject = projects[activeIndex] || firstProject;
+
+  if (!firstProject || !activeProject) {
+    return (
+      <div className="gallery p-8 mt-[100vh] pt-64 default-theme">
+        <p>{t("没有匹配的项目")}</p>
+      </div>
+    );
+  }
 
   return (
     <div
       className="gallery flex flex-row sm:flex-row w-full h-full justify-between p-8 mt-[100vh] pt-64 overflow-hidden default-theme"
       ref={gallery}
     >
+      <DateTicker
+        direction={dateTicker.direction}
+        value={dateTicker.value}
+        visible={dateTicker.visible}
+      />
       <div className="left-panel flex-shrink w-fit overflow-hidden">
         {projects.map((project, index) => (
           <ProjectRow
@@ -413,8 +272,6 @@ const Gallery: React.FC<ScrollerProps> = ({ lenis }) => {
             project={project}
             index={index}
             projectRefs={projectRefs}
-            maskRefs={maskRefs}
-            digitWrapperRefs={digitWrapperRefs}
           />
         ))}
       </div>

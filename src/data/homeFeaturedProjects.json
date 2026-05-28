@@ -1,0 +1,91 @@
+[
+  {
+    "code": "028",
+    "previewImage": "/projects/028/details/1.webp",
+    "images": [
+      "/projects/028/details/1.webp",
+      "/projects/028/details/3.webp",
+      "/projects/028/details/6.webp",
+      "/projects/028/details/10.webp",
+      "/projects/028/details/14.webp",
+      "/projects/028/details/20.webp"
+    ]
+  },
+  {
+    "code": "029",
+    "previewImage": "/projects/029/thumbnail.webp",
+    "images": [
+      "/projects/029/thumbnail.webp",
+      "/projects/029/poster.webp",
+      "/projects/029/banner.webp"
+    ]
+  },
+  {
+    "code": "027",
+    "previewImage": "/projects/027/details/1.webp",
+    "images": [
+      "/projects/027/details/1.webp",
+      "/projects/027/details/3.webp",
+      "/projects/027/details/5.webp",
+      "/projects/027/details/7.webp",
+      "/projects/027/details/8.webp",
+      "/projects/027/details/9.webp"
+    ]
+  },
+  {
+    "code": "026",
+    "previewImage": "/projects/026/details/1.webp",
+    "images": [
+      "/projects/026/details/1.webp",
+      "/projects/026/details/2.webp",
+      "/projects/026/details/3.webp",
+      "/projects/026/details/4.webp",
+      "/projects/026/details/5.webp",
+      "/projects/026/details/6.webp"
+    ]
+  },
+  {
+    "code": "025",
+    "previewImage": "/projects/025/details/1.webp",
+    "images": [
+      "/projects/025/details/1.webp",
+      "/projects/025/details/2.webp",
+      "/projects/025/details/3.webp",
+      "/projects/025/details/4.webp",
+      "/projects/025/details/5.webp"
+    ]
+  },
+  {
+    "code": "020",
+    "previewImage": "/projects/020/details/1.webp",
+    "images": [
+      "/projects/020/details/1.webp",
+      "/projects/020/details/2.webp",
+      "/projects/020/details/3.webp"
+    ]
+  },
+  {
+    "code": "022",
+    "previewImage": "/projects/022/details/1.webp",
+    "images": [
+      "/projects/022/details/1.webp",
+      "/projects/022/details/2.webp",
+      "/projects/022/details/3.webp",
+      "/projects/022/details/4.webp",
+      "/projects/022/details/5.webp",
+      "/projects/022/details/6.webp"
+    ]
+  },
+  {
+    "code": "019",
+    "previewImage": "/projects/019/details/1.webp",
+    "images": [
+      "/projects/019/details/1.webp",
+      "/projects/019/details/2.webp",
+      "/projects/019/details/3.webp",
+      "/projects/019/details/4.webp",
+      "/projects/019/details/5.webp",
+      "/projects/019/details/6.webp"
+    ]
+  }
+]
