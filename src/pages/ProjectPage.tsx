@@ -7,15 +7,17 @@ import { useTranslation } from "react-i18next";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTransitionDirection } from "../hooks/useTransitionDirection";
 
-import { SelectorData } from "../types/selector";
 import TransitionComponent from "../components/Transition";
 import MarkdownRenderer from "../components/MarkdownRenderer/MdRenderer";
 import Scrollbar from "../components/Scrollbar";
-
-import projectsData from "../data/projectsMetadata.json";
-import tags from "../data/tags.json";
-import techs from "../data/techs.json";
-import types from "../data/types.json";
+import {
+  getProjectDescriptionKey,
+  getProjectByCode,
+  getProjectTaxonomyTranslationKeys,
+  getProjectTitleKey,
+  getSiblingProject,
+  toImageUrl,
+} from "../utils/projectData";
 
 import { FaLink } from "react-icons/fa6";
 import { FaProjectDiagram } from "react-icons/fa";
@@ -33,66 +35,22 @@ const ProjectPage = () => {
   const [isRightLoaded, setIsRightLoaded] = useState(false);
 
   const { projectId } = useParams();
+  const project = getProjectByCode(projectId);
 
-  // if (!completed) {
-  //   return null; // Or display a loading spinner/placeholder
-  // }
-
-  const findProject = () => {
-    return (
-      projectId &&
-      projectsData.find((p) => {
-        return p.code === projectId;
-      })
-    );
-  };
-
-  const project = findProject();
   if (!project) {
-    return <div>{t("项目不存在")}</div>;
+    return <div>{t("ui.projects.notFound")}</div>;
   }
 
-  const projectsLength = projectsData.length;
-
-  // deal with code
-  const projectContext = (codeText: string, order: string) => {
-    const code = Number(codeText);
-    const offset = order === "prev" ? -1 : 1;
-    const newCode = ((code - 1 + offset + projectsLength) % projectsLength) + 1;
-    const paddedCode = String(newCode).padStart(3, "0");
-    return projectsData.find((p) => p.code === paddedCode);
-  };
-
-  const prevProject = projectContext(project.code, "prev");
+  const prevProject = getSiblingProject(project.code, "prev");
   if (!prevProject) {
-    return <div>{t("前面没有啦")}</div>;
+    return <div>{t("ui.projects.noPrevious")}</div>;
   }
-  const nextProject = projectContext(project.code, "next");
+  const nextProject = getSiblingProject(project.code, "next");
   if (!nextProject) {
-    return <div>{t("后面没有啦")}</div>;
+    return <div>{t("ui.projects.noNext")}</div>;
   }
 
-  const findMapping = (data: SelectorData[], parameter: string): string => {
-    let result = parameter; // fallback if not found
-
-    const search = (items: SelectorData[]): string | null => {
-      for (let item of items) {
-        if (item.parameter === parameter) return item.name;
-        if (item.children) {
-          const found = search(item.children);
-          if (found) return found;
-        }
-      }
-      return null;
-    };
-
-    const foundResult = search(data);
-    return foundResult || result;
-  };
-
-  const mappedTags = project.tags.map((tag) => findMapping(tags, tag));
-  const mappedTechs = project.tech.map((tech) => findMapping(techs, tech));
-  const mappedType = findMapping(types, project.type);
+  const projectTaxonomyKeys = getProjectTaxonomyTranslationKeys(project);
 
   // lenis
 
@@ -162,9 +120,13 @@ const ProjectPage = () => {
               onClick={() => toggleDirection(1)}
             >
               <div className="transition-opacity max-w-36 z-10 absolute m-4 group-hover:opacity-0 border-b-2 lg:max-w-24">
-                <p className="text-xs">{t("上一个")}:</p>
+                <p className="text-xs">{t("ui.projects.previous")}:</p>
                 <h3 className="text-base lg:text-sm truncate ...">
-                  <b>{t(prevProject.title)}</b>
+                  <b>
+                    {t(getProjectTitleKey(prevProject), {
+                      defaultValue: prevProject.title,
+                    })}
+                  </b>
                 </h3>
               </div>
               {!isLeftLoaded && (
@@ -173,8 +135,10 @@ const ProjectPage = () => {
                 </div>
               )}
               <img
-                src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${prevProject.thumbnail}`}
-                alt={`${t(prevProject.title)} ${t("海报")}`}
+                src={toImageUrl(prevProject.thumbnail)}
+                alt={`${t(getProjectTitleKey(prevProject), {
+                  defaultValue: prevProject.title,
+                })} ${t("ui.media.poster")}`}
                 className={`relative h-80 transition-all ${isLeftLoaded ? "opacity-40" : "opacity-0"} blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover`}
                 onLoad={() => setIsLeftLoaded(true)}
               />
@@ -192,8 +156,10 @@ const ProjectPage = () => {
                   </div>
                 )}
                 <img
-                  src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${project.thumbnail}`}
-                  alt={`${t(project.title)} ${t("缩略图")}`}
+                  src={toImageUrl(project.thumbnail)}
+                  alt={`${t(getProjectTitleKey(project), {
+                    defaultValue: project.title,
+                  })} ${t("ui.media.thumbnail")}`}
                   className={`w-full object-cover ${isCenterLoaded ? "opacity-100" : "opacity-0"}`}
                   onLoad={() => setIsCenterLoaded(true)}
                 />
@@ -204,7 +170,7 @@ const ProjectPage = () => {
                 <div className="border-b pb-3">
                   <div className="flex justify-between">
                     <h4>{project.date}</h4>
-                    {project.link != "/" && (
+                    {project.link && project.link !== "/" && (
                       <div className="pb-1 pt-1">
                         <a
                           href={project.link}
@@ -213,30 +179,37 @@ const ProjectPage = () => {
                           className="flex justify-center items-center"
                         >
                           <FaLink className="inline mr-1" />
-                          {t("项目链接")}
+                          {t("ui.projects.link")}
                         </a>
                       </div>
                     )}
                   </div>
-                  <h1 className="font-serif">{t(project.title)}</h1>
-                  <p>{t(project.description)}</p>
+                  <h1 className="font-serif">
+                    {t(getProjectTitleKey(project), {
+                      defaultValue: project.title,
+                    })}
+                  </h1>
+                  <p>
+                    {t(getProjectDescriptionKey(project), {
+                      defaultValue: project.description,
+                    })}
+                  </p>
                 </div>
                 <div className="border-b pb-1 pt-1">
                   <p className="flex items-center justify-start">
                     <FaProjectDiagram className="mr-1" />
-                    {t("类型")}
-                    {t("：")}
-                    {t(mappedType)}
-                    {t("项目")}
+                    {t("ui.projects.type")}：
+                    {t(projectTaxonomyKeys.type)}
+                    {t("ui.projects.suffix")}
                   </p>
                 </div>
                 <div className="border-b pb-1 pt-1">
                   <p className="flex items-center justify-start">
                     <FaTags className="inline-flex mr-1" />
-                    {t("标签")}:{" "}
+                    {t("ui.filters.tags")}:{" "}
                   </p>
                   <ul className="flex flex-wrap text-xs">
-                    {mappedTags.map((tag, index) => (
+                    {projectTaxonomyKeys.tags.map((tag, index) => (
                       <li key={index} className="mr-1">
                         #{t(tag)}
                       </li>
@@ -246,10 +219,10 @@ const ProjectPage = () => {
                 <div className="border-b pb-1 pt-1">
                   <p className="flex items-center justify-start">
                     <BsStack className="inline-flex mr-1" />
-                    {t("技术栈")}:
+                    {t("ui.filters.techs")}:
                   </p>
                   <ul className="flex flex-wrap text-xs">
-                    {mappedTechs.map((tech, index) => (
+                    {projectTaxonomyKeys.techs.map((tech, index) => (
                       <li key={index} className="mr-1">
                         #{t(tech)}
                       </li>
@@ -280,15 +253,21 @@ const ProjectPage = () => {
                 </div>
               )}
               <img
-                src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${nextProject.thumbnail}`}
-                alt={`${t(nextProject.title)} ${t("海报")}`}
+                src={toImageUrl(nextProject.thumbnail)}
+                alt={`${t(getProjectTitleKey(nextProject), {
+                  defaultValue: nextProject.title,
+                })} ${t("ui.media.poster")}`}
                 onLoad={() => setIsRightLoaded(true)}
-                className={`h-80 transition-all ${isLeftLoaded ? "opacity-40" : "opacity-0"} blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover`}
+                className={`h-80 transition-all ${isRightLoaded ? "opacity-40" : "opacity-0"} blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover`}
               />
               <div className="transition-opacity z-10 absolute m-4 group-hover:opacity-0 border-b-2 lg:max-w-24">
-                <p className="text-xs">{t("下一个")}:</p>
+                <p className="text-xs">{t("ui.projects.next")}:</p>
                 <h3 className="text-base lg:text-sm truncate ...">
-                  <b>{t(nextProject.title)}</b>
+                  <b>
+                    {t(getProjectTitleKey(nextProject), {
+                      defaultValue: nextProject.title,
+                    })}
+                  </b>
                 </h3>
               </div>
             </Link>

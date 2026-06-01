@@ -1,7 +1,8 @@
-﻿import Masonry from "react-masonry-css";
+import Masonry from "react-masonry-css";
 import { useTranslation } from "react-i18next";
-import { Suspense, useState } from "react";
+import { memo, useEffect, useRef, useState } from "react";
 import Skeleton from "../../Skeleton";
+import { toImageUrl } from "../../../utils/projectData";
 
 interface ImageData {
   src: string;
@@ -15,47 +16,113 @@ interface MasonryPluginProps {
   setInitialLightboxIndex: (index: number) => void;
 }
 
+interface MasonryImageButtonProps {
+  image: ImageData;
+  index: number;
+  onClick: (index: number) => void;
+}
+
+const MasonryImageButton = memo(
+  ({ image, index, onClick }: MasonryImageButtonProps) => {
+    const { t } = useTranslation();
+    const itemRef = useRef<HTMLButtonElement>(null);
+    const [isInView, setIsInView] = useState(false);
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
+    const src = toImageUrl(image.src);
+
+    useEffect(() => {
+      setIsImageLoaded(false);
+    }, [src]);
+
+    useEffect(() => {
+      const item = itemRef.current;
+      if (!item || typeof IntersectionObserver === "undefined") {
+        setIsInView(true);
+        return;
+      }
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) return;
+
+          setIsInView(true);
+          observer.disconnect();
+        },
+        {
+          root: null,
+          rootMargin: "0px 0px -8% 0px",
+          threshold: 0.12,
+        }
+      );
+
+      observer.observe(item);
+
+      return () => {
+        observer.disconnect();
+      };
+    }, []);
+
+    return (
+      <button
+        ref={itemRef}
+        onClick={() => onClick(index)}
+        className={`flex flex-col items-center group overflow-visible transition-all duration-700 ease-out ${
+          isInView
+            ? "translate-y-0 opacity-100"
+            : "translate-y-8 opacity-0 pointer-events-none"
+        }`}
+        type="button"
+      >
+        {!isImageLoaded && <Skeleton type="image" />}
+        <img
+          src={isInView ? src : undefined}
+          alt={t(image.alt)}
+          className={`w-full h-auto object-cover transition-opacity duration-500 ${
+            isImageLoaded ? "opacity-90" : "opacity-0"
+          }`}
+          onLoad={() => setIsImageLoaded(true)}
+          onError={() => setIsImageLoaded(true)}
+          loading="lazy"
+          decoding="async"
+        />
+        <h4 className="text-sm m-0 mt-2">{t(image.alt)}</h4>
+      </button>
+    );
+  }
+);
+
+MasonryImageButton.displayName = "MasonryImageButton";
+
 const MasonryPlugin: React.FC<MasonryPluginProps> = ({
   images,
   toggleLightbox,
   setInitialLightboxIndex,
 }) => {
   const { t } = useTranslation();
+
   const onClickEvent = (index: number) => {
-    toggleLightbox();
     setInitialLightboxIndex(index);
+    toggleLightbox();
   };
+
   return (
-    <div>
-      <h4>{t("项目图集")}</h4>
+    <section className="project-image-stream">
+      <h4>{t("ui.media.projectImage")}</h4>
       <Masonry
         breakpointCols={{ default: 4, 768: 3, 480: 2 }}
         className="flex mt-6 gap-6"
         columnClassName="flex flex-col gap-6"
       >
-        {images.map((image, index) => {
-          const [isImageLoaded, setIsImageLoaded] = useState(false);
-          return (
-            <button
-              onClick={() => onClickEvent(index)}
-              key={index}
-              className="flex flex-col items-center group overflow-visible"
-            >
-              <Suspense fallback={<Skeleton type="image" />}>
-                {!isImageLoaded && <Skeleton type="image" />}
-                <img
-                  src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${image.src}`}
-                  alt={t(image.alt)}
-                  className={`opacity-90 w-full h-full object-cover transition-opacity duration-500 ${isImageLoaded ? "opacity-100" : "opacity-0"}`}
-                  onLoad={() => setIsImageLoaded(true)}
-                />
-              </Suspense>
-              <h4 className="text-sm m-0 mt-2">{t(image.alt)}</h4>
-            </button>
-          );
-        })}
+        {images.map((image, index) => (
+          <MasonryImageButton
+            key={`${image.src}-${index}`}
+            image={image}
+            index={index}
+            onClick={onClickEvent}
+          />
+        ))}
       </Masonry>
-    </div>
+    </section>
   );
 };
 

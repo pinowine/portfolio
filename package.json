@@ -5,6 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "resize": "node scripts/resize-images.cjs",
+    "extract:content": "node scripts/extract-content.cjs",
+    "generate:projects": "node scripts/generateProjects.cjs",
+    "sync:i18n": "node scripts/syncTranslationKeys.cjs",
+    "check:i18n": "node scripts/extract-content.cjs --fail-on-missing",
+    "refresh:i18n": "npm run generate:projects && npm run sync:i18n && npm run extract:content",
     "trans": "npx i18next-scanner --config configs/i18next-scanner.config.cjs",
     "build": "tsc -b && vite build && cp dist/index.html dist/404.html",
     "lint": "eslint .",

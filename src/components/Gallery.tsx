@@ -21,6 +21,7 @@ import {
   formatProjectDate,
   getHomeGalleryProjects,
   getProjectPreviewPath,
+  getProjectTitleKey,
   HomeGalleryProject,
   toImageUrl,
 } from "../utils/projectData";
@@ -250,7 +251,7 @@ const Gallery = ({ lenis }: ScrollerProps) => {
   if (!firstProject || !activeProject) {
     return (
       <div className="gallery p-8 mt-[100vh] pt-64 default-theme">
-        <p>{t("没有匹配的项目")}</p>
+        <p>{t("ui.projects.noMatches")}</p>
       </div>
     );
   }
@@ -301,7 +302,9 @@ const Gallery = ({ lenis }: ScrollerProps) => {
                   }`}
                 >
                   <p className="text-sm line-clamp-1 ... text-left max-w-52">
-                    {t(project.title)}
+                    {t(getProjectTitleKey(project), {
+                      defaultValue: project.title,
+                    })}
                   </p>
                 </button>
               </div>

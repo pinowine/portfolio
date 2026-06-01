@@ -1,0 +1,336 @@
+{
+  "groups": {
+    "tags": {
+      "visualCommunication": "视觉传达",
+      "physicalProduct": "实体产品",
+      "interactionDesign": "交互设计",
+      "digitalMedia": "数字媒体",
+      "environmentDesign": "环境设计",
+      "conceptPlanning": "概念策划"
+    },
+    "techs": {
+      "graphicsTypography": "图形与排印",
+      "modelingRendering": "建模与渲染",
+      "integratedDevelopment": "综合开发",
+      "videoAudio": "视频与音频",
+      "frontend": "前端",
+      "dataProcessing": "数据处理"
+    }
+  },
+  "types": {
+    "personal": {
+      "label": "私人"
+    },
+    "coop": {
+      "label": "合作"
+    },
+    "full": {
+      "label": "完整"
+    },
+    "major": {
+      "label": "主修"
+    },
+    "long": {
+      "label": "长期"
+    },
+    "wip": {
+      "label": "未完成"
+    }
+  },
+  "tags": {
+    "concept": {
+      "label": "概念策划",
+      "group": "conceptPlanning"
+    },
+    "vi": {
+      "label": "视觉识别",
+      "group": "visualCommunication"
+    },
+    "poster": {
+      "label": "海报",
+      "group": "visualCommunication"
+    },
+    "flyer": {
+      "label": "传单设计",
+      "group": "visualCommunication"
+    },
+    "print": {
+      "label": "印刷设计",
+      "group": "physicalProduct"
+    },
+    "illustration": {
+      "label": "插图",
+      "group": "visualCommunication"
+    },
+    "wechat": {
+      "label": "推文设计",
+      "group": "visualCommunication"
+    },
+    "web": {
+      "label": "网页设计",
+      "group": "interactionDesign"
+    },
+    "extension": {
+      "label": "浏览器拓展",
+      "group": "interactionDesign"
+    },
+    "frontend": {
+      "label": "前端",
+      "group": "interactionDesign"
+    },
+    "innovation": {
+      "label": "创新设计",
+      "group": "interactionDesign"
+    },
+    "book": {
+      "label": "书籍设计",
+      "group": "physicalProduct"
+    },
+    "cover": {
+      "label": "封面艺术",
+      "group": "visualCommunication"
+    },
+    "narrative": {
+      "label": "叙事",
+      "group": "conceptPlanning"
+    },
+    "animation": {
+      "label": "动画",
+      "group": "digitalMedia"
+    },
+    "music": {
+      "label": "音乐",
+      "group": "digitalMedia"
+    },
+    "ui": {
+      "label": "用户界面",
+      "group": "interactionDesign"
+    },
+    "game": {
+      "label": "游戏",
+      "group": "digitalMedia"
+    },
+    "card": {
+      "label": "卡牌",
+      "group": "physicalProduct"
+    },
+    "service": {
+      "label": "服务设计",
+      "group": "interactionDesign"
+    },
+    "ux": {
+      "label": "用户体验",
+      "group": "interactionDesign"
+    },
+    "text": {
+      "label": "设计文本",
+      "group": "environmentDesign"
+    },
+    "landscape": {
+      "label": "景观设计",
+      "group": "environmentDesign"
+    },
+    "board": {
+      "label": "展板",
+      "group": "environmentDesign"
+    },
+    "urban": {
+      "label": "城市设计",
+      "group": "environmentDesign"
+    },
+    "prototype": {
+      "label": "原型",
+      "group": "interactionDesign"
+    },
+    "fan": {
+      "label": "同人作品",
+      "group": "conceptPlanning"
+    },
+    "stickers": {
+      "label": "贴纸",
+      "group": "physicalProduct"
+    },
+    "wearables": {
+      "label": "可穿戴设备",
+      "group": "physicalProduct"
+    },
+    "procedure": {
+      "label": "生成式图像",
+      "group": "digitalMedia"
+    },
+    "logo": {
+      "label": "Logo",
+      "group": "visualCommunication"
+    },
+    "font": {
+      "label": "字体设计",
+      "group": "visualCommunication"
+    },
+    "ar": {
+      "label": "增强现实",
+      "group": "digitalMedia"
+    },
+    "painting": {
+      "label": "手绘",
+      "group": "visualCommunication"
+    },
+    "installation": {
+      "label": "装置",
+      "group": "physicalProduct"
+    }
+  },
+  "techs": {
+    "react": {
+      "label": "React",
+      "group": "frontend"
+    },
+    "vue": {
+      "label": "Vue.js",
+      "group": "frontend"
+    },
+    "tailwind": {
+      "label": "Tailwind CSS",
+      "group": "frontend"
+    },
+    "figma": {
+      "label": "Figma",
+      "group": "graphicsTypography"
+    },
+    "ps": {
+      "label": "Adobe Photoshop",
+      "group": "graphicsTypography"
+    },
+    "ai": {
+      "label": "Adobe Illustrator",
+      "group": "graphicsTypography"
+    },
+    "id": {
+      "label": "Adobe InDesign",
+      "group": "graphicsTypography"
+    },
+    "ae": {
+      "label": "Adobe After Effects",
+      "group": "videoAudio"
+    },
+    "pr": {
+      "label": "Adobe Premiere",
+      "group": "videoAudio"
+    },
+    "blender": {
+      "label": "Blender",
+      "group": "modelingRendering"
+    },
+    "unity": {
+      "label": "Unity",
+      "group": "integratedDevelopment"
+    },
+    "unreal": {
+      "label": "Unreal Engine",
+      "group": "integratedDevelopment"
+    },
+    "arduino": {
+      "label": "Arduino",
+      "group": "integratedDevelopment"
+    },
+    "processing": {
+      "label": "Processing",
+      "group": "integratedDevelopment"
+    },
+    "gen": {
+      "label": "生成式AI",
+      "group": "integratedDevelopment"
+    },
+    "nodejs": {
+      "label": "Node.js",
+      "group": "frontend"
+    },
+    "webpack": {
+      "label": "Webpack",
+      "group": "frontend"
+    },
+    "vite": {
+      "label": "Vite",
+      "group": "frontend"
+    },
+    "su": {
+      "label": "SketchUp",
+      "group": "modelingRendering"
+    },
+    "rhino": {
+      "label": "Rhino",
+      "group": "modelingRendering"
+    },
+    "cad": {
+      "label": "AutoCAD",
+      "group": "graphicsTypography"
+    },
+    "lumion": {
+      "label": "Lumion",
+      "group": "modelingRendering"
+    },
+    "vray": {
+      "label": "V-Ray",
+      "group": "modelingRendering"
+    },
+    "gis": {
+      "label": "Geographic Information System (GIS)",
+      "group": "dataProcessing"
+    },
+    "kinect": {
+      "label": "Kinect",
+      "group": "dataProcessing"
+    },
+    "davinci": {
+      "label": "DaVinci Resolve",
+      "group": "videoAudio"
+    },
+    "fusion": {
+      "label": "Fusion 360",
+      "group": "modelingRendering"
+    },
+    "bamboo": {
+      "label": "Bamboo Studio",
+      "group": "modelingRendering"
+    },
+    "python": {
+      "label": "Python",
+      "group": "dataProcessing"
+    },
+    "html": {
+      "label": "HTML",
+      "group": "frontend"
+    },
+    "js": {
+      "label": "JavaScript",
+      "group": "frontend"
+    },
+    "p5": {
+      "label": "p5.js",
+      "group": "frontend"
+    },
+    "css": {
+      "label": "CSS",
+      "group": "frontend"
+    },
+    "an": {
+      "label": "Adobe Animate",
+      "group": "videoAudio"
+    },
+    "au": {
+      "label": "Adobe Audition",
+      "group": "videoAudio"
+    },
+    "cubase": {
+      "label": "Cubase",
+      "group": "videoAudio"
+    },
+    "td": {
+      "label": "Touch Designer",
+      "group": "integratedDevelopment"
+    },
+    "e2": {
+      "label": "e2.cool",
+      "group": "integratedDevelopment"
+    }
+  }
+}

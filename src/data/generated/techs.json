@@ -1,0 +1,174 @@
+[
+  {
+    "name": "taxonomy.groups.techs.graphicsTypography",
+    "parameter": "graphicsTypography",
+    "children": [
+      {
+        "parameter": "figma",
+        "name": "taxonomy.techs.figma"
+      },
+      {
+        "parameter": "ps",
+        "name": "taxonomy.techs.ps"
+      },
+      {
+        "parameter": "ai",
+        "name": "taxonomy.techs.ai"
+      },
+      {
+        "parameter": "id",
+        "name": "taxonomy.techs.id"
+      },
+      {
+        "parameter": "cad",
+        "name": "taxonomy.techs.cad"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.techs.modelingRendering",
+    "parameter": "modelingRendering",
+    "children": [
+      {
+        "parameter": "blender",
+        "name": "taxonomy.techs.blender"
+      },
+      {
+        "parameter": "su",
+        "name": "taxonomy.techs.su"
+      },
+      {
+        "parameter": "lumion",
+        "name": "taxonomy.techs.lumion"
+      },
+      {
+        "parameter": "vray",
+        "name": "taxonomy.techs.vray"
+      },
+      {
+        "parameter": "fusion",
+        "name": "taxonomy.techs.fusion"
+      },
+      {
+        "parameter": "bamboo",
+        "name": "taxonomy.techs.bamboo"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.techs.integratedDevelopment",
+    "parameter": "integratedDevelopment",
+    "children": [
+      {
+        "parameter": "unity",
+        "name": "taxonomy.techs.unity"
+      },
+      {
+        "parameter": "arduino",
+        "name": "taxonomy.techs.arduino"
+      },
+      {
+        "parameter": "gen",
+        "name": "taxonomy.techs.gen"
+      },
+      {
+        "parameter": "td",
+        "name": "taxonomy.techs.td"
+      },
+      {
+        "parameter": "e2",
+        "name": "taxonomy.techs.e2"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.techs.videoAudio",
+    "parameter": "videoAudio",
+    "children": [
+      {
+        "parameter": "ae",
+        "name": "taxonomy.techs.ae"
+      },
+      {
+        "parameter": "pr",
+        "name": "taxonomy.techs.pr"
+      },
+      {
+        "parameter": "davinci",
+        "name": "taxonomy.techs.davinci"
+      },
+      {
+        "parameter": "an",
+        "name": "taxonomy.techs.an"
+      },
+      {
+        "parameter": "au",
+        "name": "taxonomy.techs.au"
+      },
+      {
+        "parameter": "cubase",
+        "name": "taxonomy.techs.cubase"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.techs.frontend",
+    "parameter": "frontend",
+    "children": [
+      {
+        "parameter": "react",
+        "name": "taxonomy.techs.react"
+      },
+      {
+        "parameter": "vue",
+        "name": "taxonomy.techs.vue"
+      },
+      {
+        "parameter": "nodejs",
+        "name": "taxonomy.techs.nodejs"
+      },
+      {
+        "parameter": "webpack",
+        "name": "taxonomy.techs.webpack"
+      },
+      {
+        "parameter": "vite",
+        "name": "taxonomy.techs.vite"
+      },
+      {
+        "parameter": "html",
+        "name": "taxonomy.techs.html"
+      },
+      {
+        "parameter": "js",
+        "name": "taxonomy.techs.js"
+      },
+      {
+        "parameter": "p5",
+        "name": "taxonomy.techs.p5"
+      },
+      {
+        "parameter": "css",
+        "name": "taxonomy.techs.css"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.techs.dataProcessing",
+    "parameter": "dataProcessing",
+    "children": [
+      {
+        "parameter": "gis",
+        "name": "taxonomy.techs.gis"
+      },
+      {
+        "parameter": "kinect",
+        "name": "taxonomy.techs.kinect"
+      },
+      {
+        "parameter": "python",
+        "name": "taxonomy.techs.python"
+      }
+    ]
+  }
+]

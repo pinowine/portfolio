@@ -1,0 +1,22 @@
+[
+  {
+    "parameter": "full",
+    "name": "taxonomy.types.full"
+  },
+  {
+    "parameter": "coop",
+    "name": "taxonomy.types.coop"
+  },
+  {
+    "parameter": "major",
+    "name": "taxonomy.types.major"
+  },
+  {
+    "parameter": "personal",
+    "name": "taxonomy.types.personal"
+  },
+  {
+    "parameter": "long",
+    "name": "taxonomy.types.long"
+  }
+]

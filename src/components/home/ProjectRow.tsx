@@ -24,7 +24,7 @@ const ProjectRow = memo(({ index, project, projectRefs }: ProjectRowProps) => {
           <GalleryThumb
             key={`${project.code}-${imageSrc}`}
             imageSrc={imageSrc}
-            alt={`${t("项目图片")} ${imgIndex + 1}`}
+            alt={`${t("ui.media.projectImage")} ${imgIndex + 1}`}
             eager={index === 0 && imgIndex === 0}
           />
         ))}

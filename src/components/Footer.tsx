@@ -33,7 +33,12 @@ import { FaCloudflare } from "react-icons/fa6";
 import { SiJsdelivr } from "react-icons/si";
 import { SiTraefikproxy } from "react-icons/si";
 
-import projects from "../data/projectsMetadata.json";
+import {
+  getProjectByCode,
+  getProjectTitleKey,
+  getTaxonomyTranslationKey,
+  toImageUrl,
+} from "../utils/projectData";
 
 const Footer = () => {
   // const { theme } = useTheme();
@@ -42,26 +47,26 @@ const Footer = () => {
 
   const selectedWorks = [
     {
-      key: "完整",
+      type: "full",
       children: ["001", "022", "003", "004", "026", "027"],
     },
     {
-      key: "私人",
+      type: "personal",
       children: ["019", "016", "017", "020", "025"],
     },
     {
-      key: "合作",
+      type: "coop",
       children: ["006", "008", "007"],
     },
     {
-      key: "主修",
+      type: "major",
       children: ["009", "010", "011", "015"],
     },
   ];
 
   const pages = [
     {
-      name: "主页",
+      name: "ui.nav.home",
       href: "/",
     },
     // {
@@ -69,11 +74,11 @@ const Footer = () => {
     //   href: "/description",
     // },
     {
-      name: "作品",
+      name: "ui.nav.works",
       href: "/projects/filter",
     },
     {
-      name: "关于",
+      name: "ui.nav.about",
       href: "/about",
     },
   ];
@@ -117,7 +122,7 @@ const Footer = () => {
 
   const buildingTools = [
     {
-      title: "构建",
+      title: "ui.footer.groups.build",
       children: [
         { name: "Vite", icon: <SiVite />, href: "https://vite.dev/" },
         { name: "React", icon: <FaReact />, href: "https://react.dev/" },
@@ -129,7 +134,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "无障碍",
+      title: "ui.footer.groups.accessibility",
       children: [
         {
           name: "react-i18next",
@@ -144,7 +149,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "渲染",
+      title: "ui.footer.groups.rendering",
       children: [
         {
           name: "react-icons",
@@ -164,7 +169,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "交互",
+      title: "ui.footer.groups.interaction",
       children: [
         {
           name: "RIVE",
@@ -199,7 +204,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "设计",
+      title: "ui.footer.groups.design",
       children: [
         {
           name: "Figma",
@@ -219,7 +224,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "协助",
+      title: "ui.footer.groups.assistance",
       children: [
         {
           name: "ChatGPT",
@@ -235,7 +240,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "托管",
+      title: "ui.footer.groups.hosting",
       children: [
         {
           name: "GitHub",
@@ -255,7 +260,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "服务",
+      title: "ui.footer.groups.service",
       children: [
         {
           name: "Cloudflare",
@@ -303,8 +308,13 @@ const Footer = () => {
             {developerImages.map((img, index) => (
               <div key={`${img.title}-${index}`}>
                 <img
-                  src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${img.src}`}
-                  alt={t("开发者") + t("双色") + t("图片") + (index + 1)}
+                  src={toImageUrl(img.src)}
+                  alt={
+                    t("ui.footer.developer") +
+                    t("ui.footer.duotone") +
+                    t("ui.footer.image") +
+                    (index + 1)
+                  }
                   className="opacity-90"
                 />
               </div>
@@ -359,7 +369,7 @@ const Footer = () => {
             <div className="flex sm:gap-4 flex-wrap items-center justify-center">
               <h4 className="leading-none flex gap-1 items-center">
                 <IoLink />
-                <p className="text-sm">{t("相关链接") + t("：")}</p>
+                <p className="text-sm">{t("ui.footer.relatedLinks")}：</p>
               </h4>
               <address className="flex gap-4 flex-wrap">
                 {relevantLinks.map((link) => (
@@ -383,7 +393,8 @@ const Footer = () => {
                 className="flex flex-col w-full h-full items-center text-center md:items-start md:text-start"
               >
                 <h4 className="text-base whitespace-break-spaces">
-                  {t(work.key) + t("项目")}
+                  {t(getTaxonomyTranslationKey("types", work.type)) +
+                    t("ui.projects.suffix")}
                 </h4>
                 <address className="flex flex-col gap-1">
                   {work.children.map((name, nameIndex) => (
@@ -394,9 +405,14 @@ const Footer = () => {
                       aria-label={t(name)}
                     >
                       <p className="text-sm line-clamp-1">
-                        {t(
-                          projects.find((p) => p.code === name)?.title || "错误"
-                        )}
+                        {(() => {
+                          const project = getProjectByCode(name);
+                          return project
+                            ? t(getProjectTitleKey(project), {
+                                defaultValue: project.title,
+                              })
+                            : t("ui.projects.notFound");
+                        })()}
                       </p>
                     </Link>
                   ))}
@@ -417,7 +433,7 @@ const Footer = () => {
             <h4 className="text-sm">
               COPYRIGHT<sup>©</sup> Drug.Store, All Rights Reserved.
             </h4>
-            <p className="text-sm">{t("一个生活的容器，一个回答的回答。")}</p>
+            <p className="text-sm">{t("ui.footer.slogan")}</p>
           </div>
         </div>
         {/* special thanks */}

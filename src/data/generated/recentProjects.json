@@ -1,0 +1,270 @@
+[
+  {
+    "code": "031",
+    "title": "BadWriter",
+    "description": "基于RiTa文法的英文文本迷因化生成器。",
+    "date": "2026-3",
+    "year": 2026,
+    "month": 3,
+    "type": "major",
+    "tags": [
+      "web",
+      "frontend",
+      "extension"
+    ],
+    "tech": [
+      "js",
+      "html",
+      "vite",
+      "nodejs"
+    ],
+    "link": "https://github.com/pinowine/meming",
+    "route": "/markdown/031.md",
+    "poster": "/projects/031/poster.webp",
+    "thumbnail": "/projects/031/thumbnail.webp",
+    "banner": "",
+    "details": [
+      "/projects/031/details/1.gif",
+      "/projects/031/details/2.webp",
+      "/projects/031/details/3.webp"
+    ]
+  },
+  {
+    "code": "034",
+    "title": "AQUA",
+    "description": "使用TouchDesigner和Kinect构建的交互式海洋生态系统。",
+    "date": "2026-3",
+    "year": 2026,
+    "month": 3,
+    "type": "coop",
+    "tags": [
+      "game",
+      "procedure",
+      "installation"
+    ],
+    "tech": [
+      "td",
+      "kinect",
+      "python"
+    ],
+    "link": "/",
+    "route": "/markdown/034.md",
+    "poster": "/projects/034/poster.webp",
+    "thumbnail": "/projects/034/thumbnail.webp",
+    "banner": "",
+    "details": [
+      "/projects/034/details/1.webp",
+      "/projects/034/details/2.webp",
+      "/projects/034/details/3.webp",
+      "/projects/034/details/4.webp",
+      "/projects/034/details/5.webp"
+    ]
+  },
+  {
+    "code": "028",
+    "title": "非典型塔罗牌",
+    "description": "《明日方舟》同人创作系列又一部分。",
+    "date": "2026-1",
+    "year": 2026,
+    "month": 1,
+    "type": "full",
+    "tags": [
+      "concept",
+      "poster",
+      "vi",
+      "illustration"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "blender",
+      "td"
+    ],
+    "link": "/",
+    "route": "/markdown/028.md",
+    "poster": "/projects/028/poster.webp",
+    "thumbnail": "/projects/028/thumbnail.webp",
+    "banner": "",
+    "details": [
+      "/projects/028/details/1.webp",
+      "/projects/028/details/2.webp",
+      "/projects/028/details/3.webp",
+      "/projects/028/details/4.webp",
+      "/projects/028/details/5.webp",
+      "/projects/028/details/6.webp",
+      "/projects/028/details/7.webp",
+      "/projects/028/details/8.webp",
+      "/projects/028/details/9.webp",
+      "/projects/028/details/10.webp",
+      "/projects/028/details/11.webp",
+      "/projects/028/details/12.webp"
+    ]
+  },
+  {
+    "code": "030",
+    "title": "Everyeye Eeverywhere All at Once",
+    "description": "基于p5.js生成式动画的简易平台游戏原型。",
+    "date": "2025-12",
+    "year": 2025,
+    "month": 12,
+    "type": "major",
+    "tags": [
+      "web",
+      "frontend",
+      "game"
+    ],
+    "tech": [
+      "p5",
+      "js",
+      "gen"
+    ],
+    "link": "https://pseudoden.ibuprofennist.com/",
+    "route": "/markdown/030.md",
+    "poster": "/projects/030/poster.webp",
+    "thumbnail": "/projects/030/thumbnail.webp",
+    "banner": "",
+    "details": [
+      "/projects/030/details/1.webp",
+      "/projects/030/details/2.webp",
+      "/projects/030/details/3.webp",
+      "/projects/030/details/4.webp",
+      "/projects/030/details/5.webp",
+      "/projects/030/details/6.webp"
+    ]
+  },
+  {
+    "code": "033",
+    "title": "TripleTetris",
+    "description": "使用Arduino和Unity构建3D空间中的俄罗斯方块。",
+    "date": "2025-12",
+    "year": 2025,
+    "month": 12,
+    "type": "coop",
+    "tags": [
+      "game",
+      "concept",
+      "installation",
+      "ui"
+    ],
+    "tech": [
+      "unity",
+      "arduino",
+      "blender"
+    ],
+    "link": "/",
+    "route": "/markdown/033.md",
+    "poster": "/projects/033/poster.webp",
+    "thumbnail": "/projects/033/thumbnail.webp",
+    "banner": "",
+    "details": [
+      "/projects/033/details/1.webp",
+      "/projects/033/details/2.webp",
+      "/projects/033/details/3.webp",
+      "/projects/033/details/4.webp",
+      "/projects/033/details/5.webp",
+      "/projects/033/details/6.webp",
+      "/projects/033/details/7.webp",
+      "/projects/033/details/8.webp",
+      "/projects/033/details/9.webp",
+      "/projects/033/details/10.webp"
+    ]
+  },
+  {
+    "code": "032",
+    "title": "JavaScript组合包",
+    "description": "JS课程中的快速开发小项目合集。",
+    "date": "2025-10",
+    "year": 2025,
+    "month": 10,
+    "type": "major",
+    "tags": [
+      "web",
+      "frontend",
+      "game",
+      "procedure"
+    ],
+    "tech": [
+      "js",
+      "html",
+      "p5",
+      "nodejs"
+    ],
+    "link": "/",
+    "route": "/markdown/032.md",
+    "poster": "/projects/032/poster.webp",
+    "thumbnail": "/projects/032/thumbnail.webp",
+    "banner": "",
+    "details": [
+      "/projects/032/details/1.gif",
+      "/projects/032/details/2.gif",
+      "/projects/032/details/3.gif",
+      "/projects/032/details/4.gif",
+      "/projects/032/details/5.gif",
+      "/projects/032/details/6.gif"
+    ]
+  },
+  {
+    "code": "029",
+    "title": "Steam Tier List Maker",
+    "description": "轻量化的Steam游戏榜单制作工具。",
+    "date": "2025-8",
+    "year": 2025,
+    "month": 8,
+    "type": "personal",
+    "tags": [
+      "web",
+      "frontend"
+    ],
+    "tech": [
+      "react",
+      "figma",
+      "nodejs",
+      "vite",
+      "webpack"
+    ],
+    "link": "https://steamtierlist.ibuprofennist.com/",
+    "route": "/markdown/029.md",
+    "poster": "/projects/029/poster.webp",
+    "thumbnail": "/projects/029/thumbnail.webp",
+    "banner": "",
+    "details": []
+  },
+  {
+    "code": "027",
+    "title": "自我的静观",
+    "description": "一个有关创作冲动的交互装置。",
+    "date": "2024-10",
+    "year": 2024,
+    "month": 10,
+    "type": "full",
+    "tags": [
+      "concept",
+      "narrative",
+      "prototype",
+      "installation"
+    ],
+    "tech": [
+      "ps",
+      "ai",
+      "blender",
+      "arduino",
+      "cad"
+    ],
+    "link": "/",
+    "route": "/markdown/027.md",
+    "poster": "/projects/027/poster.webp",
+    "thumbnail": "/projects/027/thumbnail.webp",
+    "banner": "",
+    "details": [
+      "/projects/027/details/1.webp",
+      "/projects/027/details/2.webp",
+      "/projects/027/details/3.webp",
+      "/projects/027/details/4.webp",
+      "/projects/027/details/5.webp",
+      "/projects/027/details/6.webp",
+      "/projects/027/details/7.webp",
+      "/projects/027/details/8.webp",
+      "/projects/027/details/9.webp"
+    ]
+  }
+]

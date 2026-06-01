@@ -93,7 +93,11 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
           onClick={() => handleToggleSelectAll(allItemsParameters)}
           type="button"
           disabled={disabled}
-          title={allItemsSelected ? t("清空") : t("全选")}
+          title={
+            allItemsSelected
+              ? t("ui.actions.clear")
+              : t("ui.actions.selectAll")
+          }
         >
           <MdClear
             className={`absolute transition-all duration-300 ease-in-out ${
@@ -136,7 +140,11 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
                       onClick={() => handleToggleSelectAll(childParameters)}
                       className="text-sm flex items-center justify-between"
                       disabled={disabled}
-                      title={allSelected ? t("清空") : t("全选")}
+                      title={
+                        allSelected
+                          ? t("ui.actions.clear")
+                          : t("ui.actions.selectAll")
+                      }
                     >
                       <span className="mr-2 text-balance text-left w-fit">
                         {t(item.name)}
@@ -221,7 +229,9 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
         <div
           className={`md:hidden text-sm flex-wrap max-w-56 justify-end dark:text-neutral-400 text-neutral-600 h-fit text-nowrap hidden`}
         >
-          <span className="text-nowrap">{t("已选择：")}</span>
+          <span className="text-nowrap">
+            {t("ui.filters.selectedPrefix")}
+          </span>
           <ul className="flex flex-wrap justify-end max-w-prose text-right">
             {selected.map((item, index) => (
               <li
@@ -238,7 +248,7 @@ const MultiSelector: React.FC<MultiSelectorProps> = ({
         className={`flex text-sm w-full dark:text-neutral-400 text-neutral-600 transition-all duration-300 ease transform 
                 ${isOpen ? "max-h-0 opacity-0" : "delay-150 max-h-screen opacity-100"}`}
       >
-        <span className="text-nowrap">{t("已选择：")}</span>
+        <span className="text-nowrap">{t("ui.filters.selectedPrefix")}</span>
         <ul className="flex flex-wrap text-right">
           {selected.map((item, index) => (
             <li

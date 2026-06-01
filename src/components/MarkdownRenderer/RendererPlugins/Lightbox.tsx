@@ -12,6 +12,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import { toImageUrl } from "../../../utils/projectData";
 
 interface ImageData {
   src: string;
@@ -40,7 +41,7 @@ const LightboxPlugin: React.FC<LightboxPluginProps> = ({
   const thumbnailsRef = useRef<ThumbnailsRef>(null);
 
   const slides = images.map((image) => ({
-    src: `https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${image.src}`,
+    src: toImageUrl(image.src),
     title: t(image.alt),
     description: t(image.desc),
   }));

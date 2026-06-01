@@ -1,6 +1,5 @@
-﻿import { useState, useEffect, useRef, Suspense } from "react";
-import { useSearchParams } from "react-router-dom";
-import { Link } from "react-router-dom";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { ScrollTrigger } from "gsap/all";
 import Lenis from "@studio-freight/lenis";
 
@@ -9,44 +8,38 @@ import { useTranslation } from "react-i18next";
 
 import Filter from "../components/Filter";
 import Scrollbar from "../components/Scrollbar";
-import projects from "../data/projectsMetadata.json";
 import Skeleton from "../components/Skeleton";
+import {
+  filterProjects,
+  getProjectDescriptionKey,
+  getProjectFiltersFromSearchParams,
+  getProjectTitleKey,
+  toImageUrl,
+} from "../utils/projectData";
 
 const FilterPage = () => {
   const [searchParams] = useSearchParams();
 
   const { language } = useLanguage();
-
   const { t } = useTranslation();
 
-  // Get the filter values from the query string
-  const yearsFilter = searchParams.get("years")?.split(",") || [];
-  const typesFilter = searchParams.get("types")?.split(",") || [];
-  const techsFilter = searchParams.get("techs")?.split(",") || [];
-  const tagsFilter = searchParams.get("tags")?.split(",") || [];
+  const filters = useMemo(
+    () => getProjectFiltersFromSearchParams(searchParams),
+    [searchParams]
+  );
+  const filteredProjects = useMemo(() => filterProjects(filters), [filters]);
+  const filteredProjectKey = useMemo(
+    () => filteredProjects.map((project) => project.code).join("|"),
+    [filteredProjects]
+  );
 
-  // Filter projects using the extracted filter parameters
-  const filteredProjects = projects.filter((project) => {
-    const matchesYears = yearsFilter.length
-      ? yearsFilter.includes(String(project.year))
-      : true;
-    const matchesTypes = typesFilter.length
-      ? typesFilter.includes(String(project.type))
-      : true;
-    const matchesTechs = techsFilter.length
-      ? techsFilter.some((tech) => project.tech.includes(tech))
-      : true;
-    const matchesTags = tagsFilter.length
-      ? tagsFilter.some((tag) => project.tags.includes(tag))
-      : true;
-
-    return matchesYears && matchesTypes && matchesTechs && matchesTags;
-  });
-
-  // Manage image loaded states for all projects
   const [imageLoadStates, setImageLoadStates] = useState(() =>
     new Array(filteredProjects.length).fill(false)
   );
+
+  useEffect(() => {
+    setImageLoadStates(new Array(filteredProjects.length).fill(false));
+  }, [filteredProjectKey, filteredProjects.length]);
 
   const handleImageLoad = (index: number) => {
     setImageLoadStates((prevStates) => {
@@ -56,21 +49,17 @@ const FilterPage = () => {
     });
   };
 
-  // lenis
-
   const lenisRef = useRef<Lenis | null>(null);
   const [lenisInstance, setLenisInstance] = useState<Lenis | null>(null);
 
   useEffect(() => {
-    // Initialize Lenis
     const lenis = new Lenis({
-      lerp: 0.1, // Adjust for desired smoothness
+      lerp: 0.1,
       smoothWheel: true,
     });
     lenisRef.current = lenis;
     setLenisInstance(lenis);
 
-    // Integrate Lenis with ScrollTrigger
     ScrollTrigger.scrollerProxy(".filter", {
       scrollTop(value?: number) {
         if (lenis && typeof value === "number") {
@@ -86,24 +75,19 @@ const FilterPage = () => {
           height: window.innerHeight,
         };
       },
-      // Optionally, fix markers if you're using them
       fixedMarkers: true,
     });
 
-    // Update ScrollTrigger on Lenis scroll
     lenis.on("scroll", ScrollTrigger.update);
 
-    // Start the RAF loop
     function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
 
-    // Handle ScrollTrigger refresh events
     ScrollTrigger.addEventListener("refresh", () => lenis.raf(0));
 
-    // Clean up on unmount
     return () => {
       lenis.destroy();
       lenisRef.current = null;
@@ -127,8 +111,10 @@ const FilterPage = () => {
                   {!imageLoadStates[index] && <Skeleton type="image" />}
                   <Suspense fallback={<Skeleton type="image" />}>
                     <img
-                      src={`https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main${project.thumbnail}`}
-                      alt={t(project.title)}
+                      src={toImageUrl(project.thumbnail)}
+                      alt={t(getProjectTitleKey(project), {
+                        defaultValue: project.title,
+                      })}
                       onLoad={() => handleImageLoad(index)}
                       className={`transition-all ease-in-out object-cover grayscale group-hover:grayscale-0 group-hover:transition-all group-hover:shadow-2xl ${imageLoadStates[index] ? "opacity-100" : "opacity-0"}`}
                     />
@@ -136,15 +122,21 @@ const FilterPage = () => {
                 </div>
                 <label htmlFor={project.title} className="hover:cursor-pointer">
                   <p className="pl-2 pr-2 mb-1 group-hover:underline contrast-theme w-fit font-semibold">
-                    {t(project.title)}
+                    {t(getProjectTitleKey(project), {
+                      defaultValue: project.title,
+                    })}
                   </p>
-                  <p className="text-sm">{t(project.description)}</p>
+                  <p className="text-sm">
+                    {t(getProjectDescriptionKey(project), {
+                      defaultValue: project.description,
+                    })}
+                  </p>
                 </label>
               </Link>
             </div>
           ))
         ) : (
-          <p>{t("没有匹配的项目")}</p>
+          <p>{t("ui.projects.noMatches")}</p>
         )}
       </div>
       <Scrollbar lenis={lenisInstance} />

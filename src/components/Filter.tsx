@@ -9,10 +9,7 @@ import MultiSelector from "./MultiSelector";
 import { FaFilter } from "react-icons/fa";
 import { FaMousePointer } from "react-icons/fa";
 
-import tags from "../data/tags.json";
-import techs from "../data/techs.json";
-import years from "../data/years.json";
-import types from "../data/types.json";
+import { filterOptions } from "../utils/projectData";
 
 const Filter: React.FC = () => {
   const navigate = useNavigate();
@@ -79,7 +76,7 @@ const Filter: React.FC = () => {
             type="button"
           >
             <FaFilter />
-            <span className="mr-1 ml-1">{t("过滤器")}</span>
+            <span className="mr-1 ml-1">{t("ui.filters.title")}</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -99,30 +96,22 @@ const Filter: React.FC = () => {
             className="pt-1 pb-1 pl-3 pr-4 flex items-center"
             type="button"
             onClick={handleFilter}
-            title={t("应用")}
+            title={t("ui.actions.apply")}
           >
             <FaMousePointer className="mr-1" />
-            {t("应用")}
+            {t("ui.actions.apply")}
           </button>
         </div>
         <code className="text-sm hidden md:flex">
-          {t("（")}
-          {t("年份")}
-          {t("：")}
+          （{t("ui.filters.years")}：
           <code>{selectedYears.length}</code>
-          {t("，")}
-          {t("类型")}
-          {t("：")}
+          ，{t("ui.filters.types")}：
           <code>{selectedTypes.length}</code>
-          {t("，")}
-          {t("标签")}
-          {t("：")}
+          ，{t("ui.filters.tags")}：
           <code>{selectedTags.length}</code>
-          {t("，")}
-          {t("技术栈")}
-          {t("：")}
+          ，{t("ui.filters.techs")}：
           <code>{selectedTechs.length}</code>
-          {t("）")}
+          ）
         </code>
       </div>
       <div
@@ -132,30 +121,30 @@ const Filter: React.FC = () => {
         <div className="grid grid-cols-2 gap-2 mb-2 h-fit">
           <MultiSelector
             disabled={false}
-            title={t("年份")}
-            data={years}
+            title="ui.filters.years"
+            data={filterOptions.years}
             onChange={setSelectedYears}
             selected={selectedYears}
           />
           <MultiSelector
             disabled={false}
-            title={t("类型")}
-            data={types}
+            title="ui.filters.types"
+            data={filterOptions.types}
             onChange={setSelectedTypes}
             selected={selectedTypes}
           />
         </div>
         <MultiSelector
           disabled={false}
-          title={t("标签")}
-          data={tags}
+          title="ui.filters.tags"
+          data={filterOptions.tags}
           onChange={setSelectedTags}
           selected={selectedTags}
         />
         <MultiSelector
           disabled={false}
-          title={t("技术栈")}
-          data={techs}
+          title="ui.filters.techs"
+          data={filterOptions.techs}
           onChange={setSelectedTechs}
           selected={selectedTechs}
         />

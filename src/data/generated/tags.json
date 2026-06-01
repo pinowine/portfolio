@@ -1,0 +1,178 @@
+[
+  {
+    "name": "taxonomy.groups.tags.visualCommunication",
+    "parameter": "visualCommunication",
+    "children": [
+      {
+        "parameter": "vi",
+        "name": "taxonomy.tags.vi"
+      },
+      {
+        "parameter": "poster",
+        "name": "taxonomy.tags.poster"
+      },
+      {
+        "parameter": "flyer",
+        "name": "taxonomy.tags.flyer"
+      },
+      {
+        "parameter": "illustration",
+        "name": "taxonomy.tags.illustration"
+      },
+      {
+        "parameter": "wechat",
+        "name": "taxonomy.tags.wechat"
+      },
+      {
+        "parameter": "cover",
+        "name": "taxonomy.tags.cover"
+      },
+      {
+        "parameter": "logo",
+        "name": "taxonomy.tags.logo"
+      },
+      {
+        "parameter": "font",
+        "name": "taxonomy.tags.font"
+      },
+      {
+        "parameter": "painting",
+        "name": "taxonomy.tags.painting"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.tags.physicalProduct",
+    "parameter": "physicalProduct",
+    "children": [
+      {
+        "parameter": "print",
+        "name": "taxonomy.tags.print"
+      },
+      {
+        "parameter": "book",
+        "name": "taxonomy.tags.book"
+      },
+      {
+        "parameter": "card",
+        "name": "taxonomy.tags.card"
+      },
+      {
+        "parameter": "stickers",
+        "name": "taxonomy.tags.stickers"
+      },
+      {
+        "parameter": "wearables",
+        "name": "taxonomy.tags.wearables"
+      },
+      {
+        "parameter": "installation",
+        "name": "taxonomy.tags.installation"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.tags.interactionDesign",
+    "parameter": "interactionDesign",
+    "children": [
+      {
+        "parameter": "web",
+        "name": "taxonomy.tags.web"
+      },
+      {
+        "parameter": "extension",
+        "name": "taxonomy.tags.extension"
+      },
+      {
+        "parameter": "frontend",
+        "name": "taxonomy.tags.frontend"
+      },
+      {
+        "parameter": "innovation",
+        "name": "taxonomy.tags.innovation"
+      },
+      {
+        "parameter": "ui",
+        "name": "taxonomy.tags.ui"
+      },
+      {
+        "parameter": "service",
+        "name": "taxonomy.tags.service"
+      },
+      {
+        "parameter": "ux",
+        "name": "taxonomy.tags.ux"
+      },
+      {
+        "parameter": "prototype",
+        "name": "taxonomy.tags.prototype"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.tags.digitalMedia",
+    "parameter": "digitalMedia",
+    "children": [
+      {
+        "parameter": "animation",
+        "name": "taxonomy.tags.animation"
+      },
+      {
+        "parameter": "music",
+        "name": "taxonomy.tags.music"
+      },
+      {
+        "parameter": "game",
+        "name": "taxonomy.tags.game"
+      },
+      {
+        "parameter": "procedure",
+        "name": "taxonomy.tags.procedure"
+      },
+      {
+        "parameter": "ar",
+        "name": "taxonomy.tags.ar"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.tags.environmentDesign",
+    "parameter": "environmentDesign",
+    "children": [
+      {
+        "parameter": "text",
+        "name": "taxonomy.tags.text"
+      },
+      {
+        "parameter": "landscape",
+        "name": "taxonomy.tags.landscape"
+      },
+      {
+        "parameter": "board",
+        "name": "taxonomy.tags.board"
+      },
+      {
+        "parameter": "urban",
+        "name": "taxonomy.tags.urban"
+      }
+    ]
+  },
+  {
+    "name": "taxonomy.groups.tags.conceptPlanning",
+    "parameter": "conceptPlanning",
+    "children": [
+      {
+        "parameter": "concept",
+        "name": "taxonomy.tags.concept"
+      },
+      {
+        "parameter": "narrative",
+        "name": "taxonomy.tags.narrative"
+      },
+      {
+        "parameter": "fan",
+        "name": "taxonomy.tags.fan"
+      }
+    ]
+  }
+]

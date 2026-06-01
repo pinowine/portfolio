@@ -180,16 +180,16 @@ const NavBar: React.FC = () => {
         <div className="md:flex justify-between items-center text-sm w-full hidden">
           <ul className="flex justify-between items-center pr-4 pl-4 h-full w-1/3 gap-2">
             <li className="">
-              <Link to={`/${language}`}>{t("主页")}</Link>
+              <Link to={`/${language}`}>{t("ui.nav.home")}</Link>
             </li>
             {/* <li className="">
-              <Link to={`/${language}/description`}>{t("简介")}</Link>
+              <Link to={`/${language}/description`}>{t("ui.nav.description")}</Link>
             </li> */}
             <li className="">
-              <Link to={`/${language}/projects/filter`}>{t("作品")}</Link>
+              <Link to={`/${language}/projects/filter`}>{t("ui.nav.works")}</Link>
             </li>
             <li className="">
-              <Link to={`/${language}/about`}>{t("关于")}</Link>
+              <Link to={`/${language}/about`}>{t("ui.nav.about")}</Link>
             </li>
           </ul>
           <div className="flex text-nowrap">
@@ -197,7 +197,7 @@ const NavBar: React.FC = () => {
               <Selector
                 disabled={false}
                 data={languageData}
-                label={t("语言")}
+                label={t("ui.nav.language")}
                 buttonEvent={toggleLanguage}
                 defaultName={defaultLangName}
                 showPara={true}
@@ -237,16 +237,16 @@ const NavBar: React.FC = () => {
       >
         <ul className="flex flex-col justify-center text-center items-center pr-4 pl-4 h-full w-full p-4 gap-4">
           <li className="before:content-['#'] before:mr-1">
-            <Link to={`/${language}`}>{t("主页")}</Link>
+            <Link to={`/${language}`}>{t("ui.nav.home")}</Link>
           </li>
           {/* <li className="before:content-['#'] before:mr-1">
-            <Link to={`/${language}/description`}>{t("简介")}</Link>
+            <Link to={`/${language}/description`}>{t("ui.nav.description")}</Link>
           </li> */}
           <li className="before:content-['#'] before:mr-1">
-            <Link to={`/${language}/projects/filter`}>{t("作品")}</Link>
+            <Link to={`/${language}/projects/filter`}>{t("ui.nav.works")}</Link>
           </li>
           <li className="before:content-['#'] before:mr-1">
-            <Link to={`/${language}/about`}>{t("关于")}</Link>
+            <Link to={`/${language}/about`}>{t("ui.nav.about")}</Link>
           </li>
           <li className="pl-1 items-center text-center border-t border-neutral-400 dark:border-neutral-600 w-full pt-4">
             <Switcher
@@ -264,7 +264,7 @@ const NavBar: React.FC = () => {
             <Selector
               disabled={false}
               data={languageData}
-              label={t("语言")}
+              label={t("ui.nav.language")}
               buttonEvent={toggleLanguage}
               defaultName={defaultLangName}
               showPara={true}

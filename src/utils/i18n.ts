@@ -14,7 +14,7 @@ const resources: ResourceType = {};
 
 for (const path in translations) {
     // console.log(`Loading file: ${path}`);
-    const match = path.match(/\.\/locales\/(.*)\/.*\.json$/);
+    const match = path.match(/locales\/([^/]+)\/.*\.json$/);
     // console.log('Match:', match);
     if (match && match[1]) {
         const lang = match[1];
