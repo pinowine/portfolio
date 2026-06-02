@@ -1,6 +1,7 @@
 import homeFeaturedProjects from "../data/manual/homeFeaturedProjects.json";
 import originalImagePaths from "../data/generated/originalImagePaths.json";
 import projectsMetadata from "../data/generated/projectsMetadata.json";
+import recentProjects from "../data/generated/recentProjects.json";
 import tags from "../data/generated/tags.json";
 import techs from "../data/generated/techs.json";
 import types from "../data/generated/types.json";
@@ -106,6 +107,8 @@ const getDeclaredGalleryImages = (project: ProjectMetadata) => {
 };
 
 export const getAllProjects = () => allProjects;
+
+export const getRecentProjects = () => recentProjects as ProjectMetadata[];
 
 export const getProjectByCode = (code?: string | null) => {
   return code ? projectByCode.get(code) : undefined;

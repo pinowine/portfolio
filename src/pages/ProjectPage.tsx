@@ -24,6 +24,7 @@ import { FaProjectDiagram } from "react-icons/fa";
 import { FaTags } from "react-icons/fa";
 import { BsStack } from "react-icons/bs";
 import Skeleton from "../components/Skeleton";
+import ScrambleText from "../components/ScrambleText";
 
 const ProjectPage = () => {
   const { t } = useTranslation();
@@ -51,6 +52,20 @@ const ProjectPage = () => {
   }
 
   const projectTaxonomyKeys = getProjectTaxonomyTranslationKeys(project);
+  const prevProjectTitle = t(getProjectTitleKey(prevProject), {
+    defaultValue: prevProject.title,
+  });
+  const nextProjectTitle = t(getProjectTitleKey(nextProject), {
+    defaultValue: nextProject.title,
+  });
+  const projectTitle = t(getProjectTitleKey(project), {
+    defaultValue: project.title,
+  });
+  const projectDescription = t(getProjectDescriptionKey(project), {
+    defaultValue: project.description,
+  });
+  const projectType = t(projectTaxonomyKeys.type);
+  const projectSuffix = t("ui.projects.suffix");
 
   // lenis
 
@@ -120,12 +135,18 @@ const ProjectPage = () => {
               onClick={() => toggleDirection(1)}
             >
               <div className="transition-opacity max-w-36 z-10 absolute m-4 group-hover:opacity-0 border-b-2 lg:max-w-24">
-                <p className="text-xs">{t("ui.projects.previous")}:</p>
+                <p className="text-xs">
+                  <ScrambleText
+                    text={`${t("ui.projects.previous")}:`}
+                    replayKey={`${language}-${project.code}-previous-label`}
+                  />
+                </p>
                 <h3 className="text-base lg:text-sm truncate ...">
                   <b>
-                    {t(getProjectTitleKey(prevProject), {
-                      defaultValue: prevProject.title,
-                    })}
+                    <ScrambleText
+                      text={prevProjectTitle}
+                      replayKey={`${language}-${prevProject.code}-previous-title`}
+                    />
                   </b>
                 </h3>
               </div>
@@ -136,9 +157,7 @@ const ProjectPage = () => {
               )}
               <img
                 src={toImageUrl(prevProject.thumbnail)}
-                alt={`${t(getProjectTitleKey(prevProject), {
-                  defaultValue: prevProject.title,
-                })} ${t("ui.media.poster")}`}
+                alt={`${prevProjectTitle} ${t("ui.media.poster")}`}
                 className={`relative h-80 transition-all ${isLeftLoaded ? "opacity-40" : "opacity-0"} blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover`}
                 onLoad={() => setIsLeftLoaded(true)}
               />
@@ -157,9 +176,7 @@ const ProjectPage = () => {
                 )}
                 <img
                   src={toImageUrl(project.thumbnail)}
-                  alt={`${t(getProjectTitleKey(project), {
-                    defaultValue: project.title,
-                  })} ${t("ui.media.thumbnail")}`}
+                  alt={`${projectTitle} ${t("ui.media.thumbnail")}`}
                   className={`w-full object-cover ${isCenterLoaded ? "opacity-100" : "opacity-0"}`}
                   onLoad={() => setIsCenterLoaded(true)}
                 />
@@ -169,7 +186,12 @@ const ProjectPage = () => {
               <TransitionComponent>
                 <div className="border-b pb-3">
                   <div className="flex justify-between">
-                    <h4>{project.date}</h4>
+                    <h4>
+                      <ScrambleText
+                        text={project.date}
+                        replayKey={`${language}-${project.code}-date`}
+                      />
+                    </h4>
                     {project.link && project.link !== "/" && (
                       <div className="pb-1 pt-1">
                         <a
@@ -179,39 +201,59 @@ const ProjectPage = () => {
                           className="flex justify-center items-center"
                         >
                           <FaLink className="inline mr-1" />
-                          {t("ui.projects.link")}
+                          <ScrambleText
+                            text={t("ui.projects.link")}
+                            replayKey={`${language}-${project.code}-link-label`}
+                          />
                         </a>
                       </div>
                     )}
                   </div>
                   <h1 className="font-serif">
-                    {t(getProjectTitleKey(project), {
-                      defaultValue: project.title,
-                    })}
+                    <ScrambleText
+                      text={projectTitle}
+                      replayKey={`${language}-${project.code}-title`}
+                    />
                   </h1>
                   <p>
-                    {t(getProjectDescriptionKey(project), {
-                      defaultValue: project.description,
-                    })}
+                    <ScrambleText
+                      text={projectDescription}
+                      replayKey={`${language}-${project.code}-description`}
+                    />
                   </p>
                 </div>
                 <div className="border-b pb-1 pt-1">
                   <p className="flex items-center justify-start">
                     <FaProjectDiagram className="mr-1" />
-                    {t("ui.projects.type")}：
-                    {t(projectTaxonomyKeys.type)}
-                    {t("ui.projects.suffix")}
+                    <ScrambleText
+                      text={`${t("ui.projects.type")}: `}
+                      replayKey={`${language}-${project.code}-type-label`}
+                    />
+                    <ScrambleText
+                      text={projectType}
+                      replayKey={`${language}-${project.code}-type`}
+                    />
+                    <ScrambleText
+                      text={projectSuffix}
+                      replayKey={`${language}-${project.code}-suffix`}
+                    />
                   </p>
                 </div>
                 <div className="border-b pb-1 pt-1">
                   <p className="flex items-center justify-start">
                     <FaTags className="inline-flex mr-1" />
-                    {t("ui.filters.tags")}:{" "}
+                    <ScrambleText
+                      text={`${t("ui.filters.tags")}: `}
+                      replayKey={`${language}-${project.code}-tags-label`}
+                    />
                   </p>
                   <ul className="flex flex-wrap text-xs">
                     {projectTaxonomyKeys.tags.map((tag, index) => (
                       <li key={index} className="mr-1">
-                        #{t(tag)}
+                        <ScrambleText
+                          text={`#${t(tag)}`}
+                          replayKey={`${language}-${project.code}-${tag}`}
+                        />
                       </li>
                     ))}
                   </ul>
@@ -219,12 +261,18 @@ const ProjectPage = () => {
                 <div className="border-b pb-1 pt-1">
                   <p className="flex items-center justify-start">
                     <BsStack className="inline-flex mr-1" />
-                    {t("ui.filters.techs")}:
+                    <ScrambleText
+                      text={`${t("ui.filters.techs")}:`}
+                      replayKey={`${language}-${project.code}-techs-label`}
+                    />
                   </p>
                   <ul className="flex flex-wrap text-xs">
                     {projectTaxonomyKeys.techs.map((tech, index) => (
                       <li key={index} className="mr-1">
-                        #{t(tech)}
+                        <ScrambleText
+                          text={`#${t(tech)}`}
+                          replayKey={`${language}-${project.code}-${tech}`}
+                        />
                       </li>
                     ))}
                   </ul>
@@ -254,19 +302,23 @@ const ProjectPage = () => {
               )}
               <img
                 src={toImageUrl(nextProject.thumbnail)}
-                alt={`${t(getProjectTitleKey(nextProject), {
-                  defaultValue: nextProject.title,
-                })} ${t("ui.media.poster")}`}
+                alt={`${nextProjectTitle} ${t("ui.media.poster")}`}
                 onLoad={() => setIsRightLoaded(true)}
                 className={`h-80 transition-all ${isRightLoaded ? "opacity-40" : "opacity-0"} blur-sm grayscale group-hover:grayscale-0 group-hover:blur-0 group-hover:opacity-100 max-h-24 lg:max-h-full w-full object-cover`}
               />
               <div className="transition-opacity z-10 absolute m-4 group-hover:opacity-0 border-b-2 lg:max-w-24">
-                <p className="text-xs">{t("ui.projects.next")}:</p>
+                <p className="text-xs">
+                  <ScrambleText
+                    text={`${t("ui.projects.next")}:`}
+                    replayKey={`${language}-${project.code}-next-label`}
+                  />
+                </p>
                 <h3 className="text-base lg:text-sm truncate ...">
                   <b>
-                    {t(getProjectTitleKey(nextProject), {
-                      defaultValue: nextProject.title,
-                    })}
+                    <ScrambleText
+                      text={nextProjectTitle}
+                      replayKey={`${language}-${nextProject.code}-next-title`}
+                    />
                   </b>
                 </h3>
               </div>

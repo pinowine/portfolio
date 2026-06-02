@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import { SelectorProps } from "../types/selector";
 import classNames from "classnames";
+import ScrambleText from "./ScrambleText";
 
 const Selector: React.FC<SelectorProps> = ({
   disabled,
@@ -62,9 +63,14 @@ const Selector: React.FC<SelectorProps> = ({
         onClick={toggleMenuOpen}
         disabled={disabled}
       >
-        <strong>{label}</strong>
+        <strong>
+          <ScrambleText text={label} replayKey={label} />
+        </strong>
         <span> | </span>
-        <span>{t(currentSelection)}</span>
+        <ScrambleText
+          text={t(currentSelection)}
+          replayKey={`${currentSelection}-${t(currentSelection)}`}
+        />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
@@ -117,14 +123,20 @@ const Selector: React.FC<SelectorProps> = ({
                         className="inline-block mr-2 h-5"
                       />
                     )}
-                    {t(item.name)}
+                    <ScrambleText
+                      text={t(item.name)}
+                      replayKey={`${item.parameter}-${t(item.name)}`}
+                    />
                   </div>
                   <div
                     className={`font-normal text-nowrap text-neutral-600 dark:text-neutral-400 
                                     group-disabled:text-neutral-400 group-hover:no-underline dark:group-disabled:text-neutral-600
                                     ${showPara ? "" : "hidden"}`}
                   >
-                    {t(item.parameter)}
+                    <ScrambleText
+                      text={t(item.parameter)}
+                      replayKey={`${item.parameter}-${t(item.parameter)}`}
+                    />
                   </div>
                 </button>
               ))}
@@ -144,14 +156,20 @@ const Selector: React.FC<SelectorProps> = ({
                       className="inline-block mr-2 w-5 h-5"
                     />
                   )}
-                  {t(type.name)}
+                  <ScrambleText
+                    text={t(type.name)}
+                    replayKey={`${type.parameter}-${t(type.name)}`}
+                  />
                 </div>
                 <div
                   className={`font-normal text-nowrap text-neutral-600 dark:text-neutral-400 
                                     group-disabled:text-neutral-400 group-hover:no-underline dark:group-disabled:text-neutral-600
                                     ${showPara ? "" : "hidden"}`}
                 >
-                  {t(type.parameter)}
+                  <ScrambleText
+                    text={t(type.parameter)}
+                    replayKey={`${type.parameter}-${t(type.parameter)}`}
+                  />
                 </div>
               </button>
             )}

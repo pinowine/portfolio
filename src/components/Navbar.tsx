@@ -8,6 +8,7 @@ import gsap from "gsap";
 
 import Switcher from "./Switcher";
 import Selector from "./Selector";
+import ScrambleText from "./ScrambleText";
 
 import languageData from "../data/static/languageStructure.json";
 
@@ -180,16 +181,31 @@ const NavBar: React.FC = () => {
         <div className="md:flex justify-between items-center text-sm w-full hidden">
           <ul className="flex justify-between items-center pr-4 pl-4 h-full w-1/3 gap-2">
             <li className="">
-              <Link to={`/${language}`}>{t("ui.nav.home")}</Link>
+              <Link to={`/${language}`}>
+                <ScrambleText
+                  text={t("ui.nav.home")}
+                  replayKey={`${language}-home`}
+                />
+              </Link>
             </li>
             {/* <li className="">
               <Link to={`/${language}/description`}>{t("ui.nav.description")}</Link>
             </li> */}
             <li className="">
-              <Link to={`/${language}/projects/filter`}>{t("ui.nav.works")}</Link>
+              <Link to={`/${language}/projects/filter`}>
+                <ScrambleText
+                  text={t("ui.nav.works")}
+                  replayKey={`${language}-works`}
+                />
+              </Link>
             </li>
             <li className="">
-              <Link to={`/${language}/about`}>{t("ui.nav.about")}</Link>
+              <Link to={`/${language}/about`}>
+                <ScrambleText
+                  text={t("ui.nav.about")}
+                  replayKey={`${language}-about`}
+                />
+              </Link>
             </li>
           </ul>
           <div className="flex text-nowrap">
@@ -237,16 +253,31 @@ const NavBar: React.FC = () => {
       >
         <ul className="flex flex-col justify-center text-center items-center pr-4 pl-4 h-full w-full p-4 gap-4">
           <li className="before:content-['#'] before:mr-1">
-            <Link to={`/${language}`}>{t("ui.nav.home")}</Link>
+            <Link to={`/${language}`}>
+              <ScrambleText
+                text={t("ui.nav.home")}
+                replayKey={`${language}-mobile-home`}
+              />
+            </Link>
           </li>
           {/* <li className="before:content-['#'] before:mr-1">
             <Link to={`/${language}/description`}>{t("ui.nav.description")}</Link>
           </li> */}
           <li className="before:content-['#'] before:mr-1">
-            <Link to={`/${language}/projects/filter`}>{t("ui.nav.works")}</Link>
+            <Link to={`/${language}/projects/filter`}>
+              <ScrambleText
+                text={t("ui.nav.works")}
+                replayKey={`${language}-mobile-works`}
+              />
+            </Link>
           </li>
           <li className="before:content-['#'] before:mr-1">
-            <Link to={`/${language}/about`}>{t("ui.nav.about")}</Link>
+            <Link to={`/${language}/about`}>
+              <ScrambleText
+                text={t("ui.nav.about")}
+                replayKey={`${language}-mobile-about`}
+              />
+            </Link>
           </li>
           <li className="pl-1 items-center text-center border-t border-neutral-400 dark:border-neutral-600 w-full pt-4">
             <Switcher

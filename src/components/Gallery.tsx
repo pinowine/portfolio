@@ -17,6 +17,7 @@ import Skeleton from "./Skeleton";
 import ResponsiveImage from "./ImgFigure";
 import DateTicker from "./home/DateTicker";
 import ProjectRow from "./home/ProjectRow";
+import ScrambleText from "./ScrambleText";
 import {
   formatProjectDate,
   getHomeGalleryProjects,
@@ -199,26 +200,46 @@ const Gallery = ({ lenis }: ScrollerProps) => {
         );
       });
 
-      if (panelRef.current) {
-        triggers.push(
-          ScrollTrigger.create({
-            trigger: panelRef.current,
-            start: "top 15%",
-            end: () => {
-              const galleryHeight = galleryElement.scrollHeight;
-              const pinnedDistance = Math.max(
-                galleryHeight - window.innerHeight,
-                window.innerHeight
-              );
+      const media = gsap.matchMedia();
 
-              return `+=${pinnedDistance}px`;
-            },
-            pin: true,
-            anticipatePin: 1,
-            invalidateOnRefresh: true,
-          })
-        );
-      }
+      media.add("(min-width: 768px)", () => {
+        if (!panelRef.current) return undefined;
+
+        const pinTrigger = ScrollTrigger.create({
+          trigger: panelRef.current,
+          start: "top 15%",
+          end: () => {
+            const galleryHeight = galleryElement.scrollHeight;
+            const pinnedDistance = Math.max(
+              galleryHeight - window.innerHeight,
+              window.innerHeight
+            );
+
+            return `+=${pinnedDistance}px`;
+          },
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        });
+
+        return () => pinTrigger.kill();
+      });
+
+      media.add("(max-width: 767px)", () => {
+        if (!panelRef.current) return undefined;
+
+        const pinTrigger = ScrollTrigger.create({
+          trigger: panelRef.current,
+          start: "top top+=80",
+          end: "max",
+          pin: true,
+          pinSpacing: false,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        });
+
+        return () => pinTrigger.kill();
+      });
 
       const refreshFrame = requestAnimationFrame(() => {
         ScrollTrigger.refresh();
@@ -226,6 +247,7 @@ const Gallery = ({ lenis }: ScrollerProps) => {
 
       return () => {
         cancelAnimationFrame(refreshFrame);
+        media.revert();
         triggers.forEach((trigger) => trigger.kill());
       };
     },
@@ -258,7 +280,7 @@ const Gallery = ({ lenis }: ScrollerProps) => {
 
   return (
     <div
-      className="gallery flex flex-row sm:flex-row w-full h-full justify-between p-8 mt-[100vh] pt-64 overflow-hidden default-theme"
+      className="gallery relative flex flex-row sm:flex-row w-full h-full justify-between p-8 mt-[100vh] pt-64 overflow-visible md:overflow-hidden default-theme"
       ref={gallery}
     >
       <DateTicker
@@ -277,12 +299,12 @@ const Gallery = ({ lenis }: ScrollerProps) => {
         ))}
       </div>
       <div
-        className="right-panel absolute top-32 pr-8 gap-14 right-0 w-[65%] sm:w-[50%] md:w-[50%] lg:w-[60%] h-[calc(100vh-10rem)] flex flex-col-reverse md:flex-col lg:flex-row items-center justify-between overflow-hidden"
+        className="right-panel relative z-20 ml-auto pr-0 gap-8 right-0 w-[66%] sm:w-[50%] md:absolute md:top-32 md:ml-0 md:pr-8 md:gap-14 md:w-[50%] lg:w-[60%] h-[calc(100vh-5rem)] md:h-[calc(100vh-10rem)] flex flex-col-reverse md:flex-col lg:flex-row items-center justify-between overflow-hidden"
         ref={panelRef}
       >
-        <div className="names-container w-fit h-fit md:w-full lg:w-[350px] mb-1">
+        <div className="names-container w-full max-w-56 h-fit md:max-w-none md:w-full lg:w-[350px] mb-1">
           <div
-            className="indicator w-full relative top-0 right-0 left-48 lg:left-0 flex lg:justify-end items-center will-change-transform transform-gpu"
+            className="indicator w-full relative top-0 right-0 left-0 flex justify-end items-center will-change-transform transform-gpu"
             ref={indicatorRef}
           >
             <div
@@ -302,9 +324,14 @@ const Gallery = ({ lenis }: ScrollerProps) => {
                   }`}
                 >
                   <p className="text-sm line-clamp-1 ... text-left max-w-52">
-                    {t(getProjectTitleKey(project), {
-                      defaultValue: project.title,
-                    })}
+                    <ScrambleText
+                      text={t(getProjectTitleKey(project), {
+                        defaultValue: project.title,
+                      })}
+                      replayKey={`${language}-${project.code}-${
+                        index === activeIndex ? "active" : "idle"
+                      }`}
+                    />
                   </p>
                 </button>
               </div>

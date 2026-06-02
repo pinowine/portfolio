@@ -14,7 +14,7 @@ const HomePage: React.FC = () => {
   const { lenis, lenisRef } = useLenisScroll();
 
   return (
-    <main className="home transition-transform duration-1000 overflow-auto default-theme z-0">
+    <main className="home transition-transform duration-1000 overflow-visible default-theme z-0">
       <div>
         <section className="section top-16 fixed z-0 w-full h-[calc(100vh-4rem)] default-theme overflow-hidden home-svg-container">
           <Suspense fallback={<Skeleton type="page" />}>

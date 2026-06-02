@@ -34,9 +34,8 @@ import { SiJsdelivr } from "react-icons/si";
 import { SiTraefikproxy } from "react-icons/si";
 
 import {
-  getProjectByCode,
+  getRecentProjects,
   getProjectTitleKey,
-  getTaxonomyTranslationKey,
   toImageUrl,
 } from "../utils/projectData";
 
@@ -44,25 +43,7 @@ const Footer = () => {
   // const { theme } = useTheme();
   const { language } = useLanguage();
   const { t } = useTranslation();
-
-  const selectedWorks = [
-    {
-      type: "full",
-      children: ["001", "022", "003", "004", "026", "027"],
-    },
-    {
-      type: "personal",
-      children: ["019", "016", "017", "020", "025"],
-    },
-    {
-      type: "coop",
-      children: ["006", "008", "007"],
-    },
-    {
-      type: "major",
-      children: ["009", "010", "011", "015"],
-    },
-  ];
+  const latestProjects = getRecentProjects();
 
   const pages = [
     {
@@ -386,39 +367,39 @@ const Footer = () => {
               </address>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-4 col-span-5 p-2 pb-6 pt-4 md:pt-2 md:pb-2">
-            {selectedWorks.map((work, workIndex) => (
-              <div
-                key={`work-${workIndex}`}
-                className="flex flex-col w-full h-full items-center text-center md:items-start md:text-start"
-              >
-                <h4 className="text-base whitespace-break-spaces">
-                  {t(getTaxonomyTranslationKey("types", work.type)) +
-                    t("ui.projects.suffix")}
-                </h4>
-                <address className="flex flex-col gap-1">
-                  {work.children.map((name, nameIndex) => (
+          <div className="col-span-5 p-2 pb-6 pt-4 md:pb-2 md:pt-2">
+            <nav
+              className="flex h-full w-full flex-col items-center gap-2 text-center md:items-start md:text-start"
+              aria-label={t("ui.footer.latestProjects")}
+            >
+              <h4 className="text-base whitespace-break-spaces">
+                {t("ui.footer.latestProjects")}
+              </h4>
+              <div className="grid w-full grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-4">
+                {latestProjects.map((project) => {
+                  const title = t(getProjectTitleKey(project), {
+                    defaultValue: project.title,
+                  });
+
+                  return (
                     <Link
-                      key={`work-${workIndex}-child-${nameIndex}`}
-                      to={`/${language}/projects/${t(name)}`}
-                      title={t(name)}
-                      aria-label={t(name)}
+                      key={`latest-project-${project.code}`}
+                      to={`/${language}/projects/${project.code}`}
+                      title={title}
+                      aria-label={title}
+                      className="min-w-0"
                     >
-                      <p className="text-sm line-clamp-1">
-                        {(() => {
-                          const project = getProjectByCode(name);
-                          return project
-                            ? t(getProjectTitleKey(project), {
-                                defaultValue: project.title,
-                              })
-                            : t("ui.projects.notFound");
-                        })()}
-                      </p>
+                      <span className="block text-[10px] leading-none opacity-60">
+                        {project.date}
+                      </span>
+                      <span className="block text-sm line-clamp-1">
+                        {title}
+                      </span>
                     </Link>
-                  ))}
-                </address>
+                  );
+                })}
               </div>
-            ))}
+            </nav>
           </div>
         </div>
       </div>

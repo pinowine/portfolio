@@ -42,6 +42,7 @@ const uiKeySources = {
   "ui.footer.developer": "开发者",
   "ui.footer.duotone": "双色",
   "ui.footer.image": "图片",
+  "ui.footer.latestProjects": "最新项目",
   "ui.footer.relatedLinks": "相关链接",
   "ui.footer.slogan": "一个生活的容器，一个回答的回答。",
   "ui.footer.groups.build": "构建",
