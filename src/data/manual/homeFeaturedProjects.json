@@ -1,72 +1,75 @@
 [
   {
     "code": "028",
-    "previewImage": "/projects/028/details/1.webp",
+    "previewImage": "/projects/028/thumbnail.webp",
     "images": [
-      "/projects/028/details/1.webp",
+      "/projects/028/details/12.webp",
+      "/projects/028/details/4.webp",
       "/projects/028/details/3.webp",
-      "/projects/028/details/6.webp",
-      "/projects/028/details/10.webp",
-      "/projects/028/details/14.webp",
-      "/projects/028/details/20.webp"
-    ]
-  },
-  {
-    "code": "029",
-    "previewImage": "/projects/029/thumbnail.webp",
-    "images": [
-      "/projects/029/thumbnail.webp",
-      "/projects/029/poster.webp",
-      "/projects/029/banner.webp"
-    ]
-  },
-  {
-    "code": "027",
-    "previewImage": "/projects/027/details/1.webp",
-    "images": [
-      "/projects/027/details/1.webp",
-      "/projects/027/details/3.webp",
-      "/projects/027/details/5.webp",
-      "/projects/027/details/7.webp",
-      "/projects/027/details/8.webp",
-      "/projects/027/details/9.webp"
+      "/projects/028/details/5.webp",
+      "/projects/028/details/7.webp",
+      "/projects/028/details/11.webp",
+      "/projects/028/details/10.webp"
     ]
   },
   {
     "code": "026",
-    "previewImage": "/projects/026/details/1.webp",
+    "previewImage": "/projects/026/thumbnail.webp",
     "images": [
       "/projects/026/details/1.webp",
       "/projects/026/details/2.webp",
       "/projects/026/details/3.webp",
       "/projects/026/details/4.webp",
-      "/projects/026/details/5.webp",
-      "/projects/026/details/6.webp"
+      "/projects/026/details/5.webp"
     ]
   },
   {
-    "code": "025",
-    "previewImage": "/projects/025/details/1.webp",
+    "code": "032",
+    "previewImage": "/projects/032/thumbnail.webp",
     "images": [
-      "/projects/025/details/1.webp",
-      "/projects/025/details/2.webp",
-      "/projects/025/details/3.webp",
-      "/projects/025/details/4.webp",
-      "/projects/025/details/5.webp"
+      "/projects/032/details/1.gif",
+      "/projects/032/details/2.gif",
+      "/projects/032/details/3.gif",
+      "/projects/032/details/6.gif",
+      "/projects/032/details/4.gif"
     ]
   },
   {
-    "code": "020",
-    "previewImage": "/projects/020/details/1.webp",
+    "code": "033",
+    "previewImage": "/projects/033/thumbnail.webp",
     "images": [
-      "/projects/020/details/1.webp",
-      "/projects/020/details/2.webp",
-      "/projects/020/details/3.webp"
+      "/projects/033/details/1.webp",
+      "/projects/033/details/2.webp",
+      "/projects/033/details/3.webp",
+      "/projects/033/details/4.webp",
+      "/projects/033/details/5.webp",
+      "/projects/033/details/6.webp"
+    ]
+  },
+  {
+    "code": "034",
+    "previewImage": "/projects/034/thumbnail.webp",
+    "images": [
+      "/projects/034/details/1.webp",
+      "/projects/034/details/2.webp",
+      "/projects/034/details/3.webp",
+      "/projects/034/details/4.webp",
+      "/projects/034/details/5.webp"
+    ]
+  },
+  {
+    "code": "030",
+    "previewImage": "/projects/030/thumbnail.webp",
+    "images": [
+      "/projects/030/details/3.webp",
+      "/projects/030/details/4.webp",
+      "/projects/030/details/5.webp",
+      "/projects/030/details/6.webp"
     ]
   },
   {
     "code": "022",
-    "previewImage": "/projects/022/details/1.webp",
+    "previewImage": "/projects/022/thumbnail.webp",
     "images": [
       "/projects/022/details/1.webp",
       "/projects/022/details/2.webp",
@@ -74,18 +77,6 @@
       "/projects/022/details/4.webp",
       "/projects/022/details/5.webp",
       "/projects/022/details/6.webp"
-    ]
-  },
-  {
-    "code": "019",
-    "previewImage": "/projects/019/details/1.webp",
-    "images": [
-      "/projects/019/details/1.webp",
-      "/projects/019/details/2.webp",
-      "/projects/019/details/3.webp",
-      "/projects/019/details/4.webp",
-      "/projects/019/details/5.webp",
-      "/projects/019/details/6.webp"
     ]
   }
 ]

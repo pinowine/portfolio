@@ -12,7 +12,7 @@ import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import { toImageUrl } from "../../../utils/projectData";
+import { toImageUrl, toOriginalImageUrl } from "../../../utils/projectData";
 
 interface ImageData {
   src: string;
@@ -40,11 +40,16 @@ const LightboxPlugin: React.FC<LightboxPluginProps> = ({
   const zoomRef = useRef(null);
   const thumbnailsRef = useRef<ThumbnailsRef>(null);
 
-  const slides = images.map((image) => ({
-    src: toImageUrl(image.src),
-    title: t(image.alt),
-    description: t(image.desc),
-  }));
+  const slides = images.map((image) => {
+    const thumbnail = toImageUrl(image.src);
+
+    return {
+      src: toOriginalImageUrl(image.src),
+      thumbnail,
+      title: image.alt,
+      description: image.desc,
+    };
+  });
 
   return (
     <Lightbox

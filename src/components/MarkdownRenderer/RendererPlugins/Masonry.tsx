@@ -24,9 +24,9 @@ interface MasonryImageButtonProps {
 
 const MasonryImageButton = memo(
   ({ image, index, onClick }: MasonryImageButtonProps) => {
-    const { t } = useTranslation();
     const itemRef = useRef<HTMLButtonElement>(null);
-    const [isInView, setIsInView] = useState(false);
+    const [shouldLoad, setShouldLoad] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
     const [isImageLoaded, setIsImageLoaded] = useState(false);
     const src = toImageUrl(image.src);
 
@@ -37,28 +37,45 @@ const MasonryImageButton = memo(
     useEffect(() => {
       const item = itemRef.current;
       if (!item || typeof IntersectionObserver === "undefined") {
-        setIsInView(true);
+        setShouldLoad(true);
+        setIsVisible(true);
         return;
       }
 
-      const observer = new IntersectionObserver(
+      const preloadObserver = new IntersectionObserver(
         ([entry]) => {
           if (!entry.isIntersecting) return;
 
-          setIsInView(true);
-          observer.disconnect();
+          setShouldLoad(true);
+          preloadObserver.disconnect();
         },
         {
           root: null,
-          rootMargin: "0px 0px -8% 0px",
-          threshold: 0.12,
+          rootMargin: "900px 0px",
+          threshold: 0,
         }
       );
 
-      observer.observe(item);
+      const revealObserver = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) return;
+
+          setIsVisible(true);
+          revealObserver.disconnect();
+        },
+        {
+          root: null,
+          rootMargin: "0px 0px -35% 0px",
+          threshold: 0.18,
+        }
+      );
+
+      preloadObserver.observe(item);
+      revealObserver.observe(item);
 
       return () => {
-        observer.disconnect();
+        preloadObserver.disconnect();
+        revealObserver.disconnect();
       };
     }, []);
 
@@ -66,17 +83,17 @@ const MasonryImageButton = memo(
       <button
         ref={itemRef}
         onClick={() => onClick(index)}
-        className={`flex flex-col items-center group overflow-visible transition-all duration-700 ease-out ${
-          isInView
+        className={`flex flex-col items-center group overflow-visible transition-all duration-1000 ease-out ${
+          isVisible
             ? "translate-y-0 opacity-100"
-            : "translate-y-8 opacity-0 pointer-events-none"
+            : "translate-y-10 opacity-0 pointer-events-none"
         }`}
         type="button"
       >
         {!isImageLoaded && <Skeleton type="image" />}
         <img
-          src={isInView ? src : undefined}
-          alt={t(image.alt)}
+          src={shouldLoad ? src : undefined}
+          alt={image.alt}
           className={`w-full h-auto object-cover transition-opacity duration-500 ${
             isImageLoaded ? "opacity-90" : "opacity-0"
           }`}
@@ -85,7 +102,7 @@ const MasonryImageButton = memo(
           loading="lazy"
           decoding="async"
         />
-        <h4 className="text-sm m-0 mt-2">{t(image.alt)}</h4>
+        <h4 className="text-sm m-0 mt-2">{image.alt}</h4>
       </button>
     );
   }

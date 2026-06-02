@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from "react";
 import Skeleton from "../Skeleton";
-import { toImageUrl } from "../../utils/projectData";
+import { toImageUrl, toOriginalImageUrl } from "../../utils/projectData";
 
 interface GalleryThumbProps {
   alt: string;
@@ -12,6 +12,7 @@ const GalleryThumb = memo(
   ({ alt, eager = false, imageSrc }: GalleryThumbProps) => {
     const [isImageLoaded, setIsImageLoaded] = useState(false);
     const src = toImageUrl(imageSrc);
+    const previewSrc = toOriginalImageUrl(imageSrc);
 
     useEffect(() => {
       setIsImageLoaded(false);
@@ -22,7 +23,7 @@ const GalleryThumb = memo(
         {!isImageLoaded && <Skeleton type="image" />}
         <img
           src={src}
-          data-preview-src={src}
+          data-preview-src={previewSrc}
           alt={alt}
           className={`gallery-preview-source w-full h-full object-cover transition-opacity duration-500 ${
             isImageLoaded ? "opacity-90" : "opacity-0"

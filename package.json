@@ -3,9 +3,14 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22",
+    "yarn": ">=1.22.22"
+  },
   "scripts": {
     "dev": "vite",
     "resize": "node scripts/resize-images.cjs",
+    "limit:originals": "node scripts/limit-original-images.cjs",
     "extract:content": "node scripts/extract-content.cjs",
     "generate:projects": "node scripts/generateProjects.cjs",
     "sync:i18n": "node scripts/syncTranslationKeys.cjs",

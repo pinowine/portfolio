@@ -34,4 +34,5 @@ public/assets
 configs
 admin
 .github
-scripts
+scripts/*
+!scripts/*.cjs

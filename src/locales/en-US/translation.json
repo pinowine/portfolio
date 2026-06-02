@@ -321,5 +321,1055 @@
     "zh-TW": "Traditional Chinese",
     "en": "English",
     "en-US": "English (US)"
+  },
+  "markdown": {
+    "001": {
+      "001": {
+        "text": "这是一个耗时较长的大型项目。在这个项目中，我负责了完整的概念策划、主视觉设计、衍生设计，独立完成从最初的概念阶段到最终的打印。本次的目标是为了一个阿卡贝拉（纯人声合唱）专场音乐会设计一套完整的宣传和演出概念。"
+      },
+      "002": {
+        "alt": "主视觉",
+        "description": "项目的视觉基调：从多样的色彩中提取的概念，以不同歌曲组的情感色彩为出发点。"
+      },
+      "003": {
+        "alt": "门票",
+        "description": "附带了抽奖券功能"
+      },
+      "004": {
+        "alt": "工牌",
+        "description": "亚克力制品"
+      },
+      "005": {
+        "alt": "易拉宝",
+        "description": "基本上是主视觉的加长版"
+      },
+      "006": {
+        "alt": "“岩浆瀑布”",
+        "description": "传单系列Ⅰ：用Blender渲染了岩浆流动在方块上的效果，表现一种热情的红色。"
+      },
+      "007": {
+        "alt": "“午夜”",
+        "description": "传单系列Ⅱ：尝试了更倾向墨水的液体质感，模拟暗淡的午夜。"
+      },
+      "008": {
+        "alt": "“马蒂尼橄榄”",
+        "description": "传单系列Ⅲ：这一组歌曲充满生活的情调，采用了更古典的方案。"
+      },
+      "009": {
+        "alt": "“萨摩亚太阳”",
+        "description": "传单系列Ⅳ：更加绚烂和阳光的情绪，颜色来自于非洲国家的太阳。"
+      },
+      "010": {
+        "alt": "“焦糖咖啡店”",
+        "description": "传单系列Ⅴ：醇厚而浓郁的组曲，比较符合咖啡的色彩。"
+      },
+      "011": {
+        "alt": "“草甸紫罗兰”",
+        "description": "传单系列Ⅵ：逆反差字体和更多几何图形，表达这组歌曲的现代性。"
+      },
+      "012": {
+        "alt": "节目单",
+        "description": "捏他了blender的渲染节点，属于设计彩蛋。"
+      }
+    },
+    "002": {
+      "001": {
+        "text": "这个项目从“潮汐”一词的字面意义出发，将其与海洋生物联系起来，从而出现了“展览”的概念。展品被放置在橱窗中，象征着孕育和鱼类的迁徙活动。基于此，为微信公众号推文设计了一个视觉方案，用以展示将在音乐节上演出的乐队。"
+      },
+      "002": {
+        "alt": "主视觉",
+        "description": "推文的入口图，基本确定了项目风格：基金会、档案、危险管理。"
+      },
+      "003": {
+        "alt": "布局",
+        "description": "推文内页。"
+      },
+      "004": {
+        "alt": "封面",
+        "description": "推文封面。"
+      },
+      "005": {
+        "alt": "乐队宣传页 #1",
+        "description": "元素基本沿用主视觉，采用了“生态科研”的概念。"
+      },
+      "006": {
+        "alt": "乐队宣传页 #2",
+        "description": "元素基本沿用主视觉，采用了“生态科研”的概念。"
+      },
+      "007": {
+        "alt": "乐队宣传页 #3",
+        "description": "元素基本沿用主视觉，采用了“生态科研”的概念。"
+      },
+      "008": {
+        "alt": "乐队宣传页 #4",
+        "description": "元素基本沿用主视觉，采用了“生态科研”的概念。"
+      },
+      "009": {
+        "alt": "乐队宣传页 #5",
+        "description": "元素基本沿用主视觉，采用了“生态科研”的概念。"
+      },
+      "010": {
+        "alt": "乐队宣传页 #6",
+        "description": "元素基本沿用主视觉，采用了“生态科研”的概念。"
+      }
+    },
+    "003": {
+      "001": {
+        "text": "这是在一门课程中为城市中未开发的兴趣点设计的解决方案，涉及用户研究、迭代设计、流程设计、网页设计和前端开发。目标是为这些“城市洞穴”注入新的独特活力，使其与热门旅游景点区别开来。"
+      },
+      "002": {
+        "description": "项目排版"
+      },
+      "003": {
+        "alt": "主视觉",
+        "description": "作品封面。"
+      },
+      "004": {
+        "alt": "调研部分",
+        "description": "在这些洞穴之间旅行的感觉如何？"
+      },
+      "005": {
+        "alt": "流程设计",
+        "description": "解决方案的主要构造。"
+      },
+      "006": {
+        "alt": "网页样机",
+        "description": "网页界面如何工作。"
+      },
+      "007": {
+        "alt": "故事板 #1",
+        "description": "跳进兔子洞。"
+      },
+      "008": {
+        "alt": "故事板 #2",
+        "description": "找到通往神秘位置的路。"
+      },
+      "009": {
+        "alt": "故事板 #3",
+        "description": "从管理员那里获得一个全新的立方体。"
+      }
+    },
+    "004": {
+      "001": {
+        "text": "在这个项目中，我尝试探讨了新冠疫情以来人们之间的联系。在书籍装帧设计上，我采用三个开本的分册合订的方式，中间采用亚克力板分隔。他们分别讨论了疫情的视觉、疫情的文本、疫情的迷因，试图让读者感受到变化、不安定和戏谑的氛围。"
+      },
+      "002": {
+        "description": "书籍设计稿。"
+      },
+      "003": {
+        "alt": "装帧示意图",
+        "description": "亚克力板分隔，锁线胶装。"
+      },
+      "004": {
+        "alt": "封面设计稿",
+        "description": "横线为锁线位置的示意，与亚克力材质合作形成双层视觉效果。"
+      },
+      "005": {
+        "alt": "内插 #1",
+        "description": "扁桃体国旗。"
+      },
+      "006": {
+        "alt": "内插 #2",
+        "description": "胶囊杂志。"
+      },
+      "007": {
+        "alt": "内插 #3",
+        "description": "虚构摄影。"
+      },
+      "008": {
+        "alt": "内插 #4",
+        "description": "中国电影系列产品。"
+      },
+      "009": {
+        "alt": "内插 #5",
+        "description": "不要恐慌。"
+      },
+      "010": {
+        "alt": "内插 #6",
+        "description": "关于距离的故事之一。"
+      },
+      "011": {
+        "alt": "内插 #7",
+        "description": "关于距离的故事之二。"
+      },
+      "012": {
+        "alt": "内插 #8",
+        "description": "虚构摄影。"
+      }
+    },
+    "005": {
+      "001": {
+        "text": "这是一个社团纳新的宣传项目，采用了 Art Deco 风格的视觉艺术，试图还原黄金时代的西班牙大航海、以及传说中海妖塞壬的故事。"
+      },
+      "002": {
+        "alt": "标题设计",
+        "description": "选用装饰性字体，配合线条风格的纹样。"
+      },
+      "003": {
+        "alt": "三折页",
+        "description": "保留风格一致的情况下做了一些延伸。"
+      },
+      "004": {
+        "alt": "海报",
+        "description": "基本是深海和航船元素。"
+      }
+    },
+    "006": {
+      "001": {
+        "text": "该项目来自于我修读的课程《动画设计》，在该门课程中我们拟构了一名陷入空间循环的人在追逐几分钟前的自己，试图通过这个表现方式构造一个过于无聊的人，因此这部动画被称作“空虚综合征”。本项目为小组合作，在动画制作中，我负责了以下内容：剧本撰写，演出与部分分镜设计，美术监督，部分原画、动画以及上色，剪辑及摄影，音响监督，ED音乐制作，音效设计。"
+      },
+      "002": {
+        "description": "完整的动画，也可以从标题上的Bilibili链接访问。"
+      },
+      "003": {
+        "name": "《空虚综合征》ED",
+        "description": "动画的结尾音乐，由我作曲、编曲、制作、混音和母带处理。"
+      },
+      "004": {
+        "alt": "主视觉",
+        "description": "在我们开始制作动画之前的原始概念。"
+      },
+      "005": {
+        "alt": "封面",
+        "description": "视频的封面。"
+      },
+      "006": {
+        "alt": "草图",
+        "description": "相机位置的草图。"
+      }
+    },
+    "007": {
+      "001": {
+        "text": "这是一个娱乐性的项目，为了参加中国大学生游戏开发大赛（CUSGA）。该项目是一个以浙江大学为背景的类大富翁卡牌游戏，玩家将扮演一位浙江大学学生并试图达成普世意义上的胜利，例如学业成功等。该项目包含了戏谑和讽刺的成分。在项目中我作为美术组的成员担任了UI设计制作，为卡牌和界面做了组件设计。"
+      },
+      "002": {
+        "alt": "宣传海报",
+        "description": "这有点太二次元了。"
+      },
+      "003": {
+        "alt": "Logo #1",
+        "description": "娱乐的标志。"
+      },
+      "004": {
+        "alt": "Logo #2",
+        "description": "健康的标志。"
+      },
+      "005": {
+        "alt": "Logo #3",
+        "description": "学业的标志。"
+      },
+      "006": {
+        "alt": "Logo #4",
+        "description": "美食街的标志。"
+      },
+      "007": {
+        "alt": "Logo #5",
+        "description": "教学楼的标志。"
+      },
+      "008": {
+        "alt": "Logo #6",
+        "description": "命运的标志。"
+      },
+      "009": {
+        "alt": "Logo #7",
+        "description": "湖的标志。"
+      },
+      "010": {
+        "alt": "Logo #8",
+        "description": "宿舍的标志。"
+      },
+      "011": {
+        "alt": "卡片示例 #1",
+        "description": "跑步打卡。"
+      },
+      "012": {
+        "alt": "卡片示例 #2",
+        "description": "新数据库。"
+      },
+      "013": {
+        "alt": "卡片示例 #3",
+        "description": "此路不通。"
+      },
+      "014": {
+        "alt": "卡片示例 #4",
+        "description": "继续熬夜。"
+      }
+    },
+    "008": {
+      "001": {
+        "text": "这个项目来自于课程《设计心理学》，在该项目中我们调研并对一个加油站的服务流程进行改进设计。项目包含了设计调研、服务流程优化、线上平台视觉效果优化、营销策略优化。我在全流程均有参与，主要负责品牌视觉效果的优化提升。"
+      },
+      "002": {
+        "description": "项目的最终展示幻灯片。"
+      }
+    },
+    "009": {
+      "001": {
+        "text": "这个项目来源于课程《城市开放空间设计》，在该项目中，我们对西湖一侧的公共广场进行了调研与更新设计。项目基于全年龄段的不同特征设计了一套环线，用以让游客体验一个从青年到老年再回到幼年的循环观景体验，因此称为“回溯”。我参与了项目的全程，并主要负责视觉效果的展现与展板的排版。"
+      },
+      "002": {
+        "alt": "展板 #1",
+        "description": "主要关于设计调研。"
+      },
+      "003": {
+        "alt": "展板 #2",
+        "description": "调研的第2部分，包含一些分析。"
+      },
+      "004": {
+        "alt": "展板 #3",
+        "description": "设计的主要部分。"
+      },
+      "005": {
+        "alt": "展板 #4",
+        "description": "设计的不同区域。"
+      },
+      "006": {
+        "alt": "展板 #5",
+        "description": "植物部分。"
+      },
+      "007": {
+        "alt": "展板 #6",
+        "description": "灯光、夜景和总览。"
+      }
+    },
+    "010": {
+      "001": {
+        "text": "这个项目同样来源于《城市开放空间设计》，位于上一个项目的街对面，我们对这一片滨水的空间进行开放设计。概念上沿袭上一个项目，在青年阶段的人们离开舒适圈走向社会开始游历人间，因此取名为“远游”。形式语言上多采用了浮萍、流线、水纹的样式。我参与了项目的全程，并主要负责视觉效果的展现与展板的排版。"
+      },
+      "002": {
+        "alt": "展板 #1",
+        "description": "设计调研。"
+      },
+      "003": {
+        "alt": "展板 #2",
+        "description": "概念部分。"
+      },
+      "004": {
+        "alt": "展板 #3",
+        "description": "小区块设计。"
+      },
+      "005": {
+        "alt": "展板 #4",
+        "description": "铺装和概览。"
+      }
+    },
+    "011": {
+      "001": {
+        "text": "这个项目来自于课程《城市设计》，在这个项目中，我们对南湖北岸的社区进行了调研与更新设计。项目基于调研中展现的场地历史文脉与建筑特征，利用城市形态学的方法概括出基础的形式语言，并用该样式扩展到整个区块。同时兼顾了对全年龄住民的友好。我参与了项目的全程。"
+      },
+      "002": {
+        "description": "项目的设计文本。"
+      }
+    },
+    "012": {
+      "001": {
+        "text": "这个项目来自于课程《人类工效学》，在推进该项目时我刚刚接触UI和网页端的知识，因此仅仅为360设计了一个更加干净的原型。实际上该项目仅考虑了视觉上的需求，显得比较稚嫩。另外，也大量参考了苹果和谷歌的视觉美学。项目在figma上的部分由本人独立完成。"
+      },
+      "002": {
+        "description": "原型模拟。"
+      },
+      "003": {
+        "alt": "原型 #1",
+        "description": "主页原型。"
+      },
+      "004": {
+        "alt": "原型 #2",
+        "description": "第二主页原型。"
+      },
+      "005": {
+        "alt": "原型 #3",
+        "description": "适应化页面。"
+      }
+    },
+    "013": {
+      "001": {
+        "text": "这个项目来自于课程《城市公共艺术设计》，该项目参加浙江大学的环启真西湖概念设计方案征集竞赛。我们着眼于场地湿地的特征，提取了生态还原与鸟类友好作为主要的概念，因此取名为“留白”。我参与了项目的全程，在建模、渲染、视觉效果、排版方面做出主要贡献。"
+      },
+      "002": {
+        "alt": "展板 #1",
+        "description": "设计调研和概览。"
+      },
+      "003": {
+        "alt": "展板 #2",
+        "description": "植物、分区和构筑物。"
+      }
+    },
+    "014": {
+      "001": {
+        "text": "这个项目来自于课程《园林规划设计》。该项目以碳中和为核心理念，提取其原有的碎片化的形式语言，针对浙江大学西区食堂附近地块进行了更完整、更具现代性的改造。该项目由本人独立完成。"
+      },
+      "002": {
+        "description": "项目的设计文本。"
+      }
+    },
+    "015": {
+      "001": {
+        "text": "这个项目来自于课程《园林规划设计》，并参与筱祥杯和园冶杯设计竞赛。该项目以儿童友好型社区作为核心理念，对杭州城市阳台周边社区进行更新设计。项目除了基础的形式改造之外，将景观的后续管理，包括线路总体运营和活动规划等也纳入了设计考察。我全程参与了该项目，并主要负责视觉语言的部分。"
+      },
+      "002": {
+        "alt": "展板 #1",
+        "description": "设计调研与分析。"
+      },
+      "003": {
+        "alt": "展板 #2",
+        "description": "设计的主要部分。"
+      }
+    },
+    "016": {
+      "001": {
+        "text": "这个项目是我出于对前端和网页的兴趣编写的第一个网站，其内容为我当时沉迷的游戏《雨世界》中的重要角色“迭代器”们的语录，用以方便我在研究游戏内容时查阅。我在Figma中绘制了一部分原型图，但最终实现到网页上时仍然具有一定的差异性，这对我认知前端与设计对接的相关知识有显著帮助。"
+      },
+      "002": {
+        "title": "迭代器的评论",
+        "description": "这个网站用原生JS+CSS+HTML撰写，后来我开始使用框架，基本就没有再更新了。"
+      },
+      "003": {
+        "alt": "原型 #1",
+        "description": "主页原型。"
+      },
+      "004": {
+        "alt": "原型 #2",
+        "description": "导航页原型。"
+      },
+      "005": {
+        "alt": "原型 #3",
+        "description": "第二导航页原型。"
+      },
+      "006": {
+        "alt": "原型 #4",
+        "description": "内容页原型（最终内容并不如同预期）。"
+      },
+      "007": {
+        "alt": "背景",
+        "description": "我为背景图绘制的图像。"
+      }
+    },
+    "017": {
+      "001": {
+        "text": "这是为我长期玩的一个手机游戏《明日方舟》的一个活动“危机合约”中产出的音乐设计的一套专辑封面，我提取了这些音乐中特征性的文化成分并尝试视觉化它们（当然其上的Logo来自于《明日方舟》官方设计）。"
+      },
+      "002": {
+        "alt": "尘环行动",
+        "description": "阿凡达，指环王，沙丘。"
+      },
+      "003": {
+        "alt": "利刃行动",
+        "description": "攻击性，傲慢，杀死比尔。"
+      },
+      "004": {
+        "alt": "燃灰行动",
+        "description": "青色怒火，燃烧，扬尘。"
+      },
+      "005": {
+        "alt": "寻昼行动",
+        "description": "城市夜晚，烛光，现代。"
+      },
+      "006": {
+        "alt": "渊默行动",
+        "description": "克苏鲁，深海恐惧症，洛夫克拉夫特。"
+      },
+      "007": {
+        "alt": "铅封行动",
+        "description": "坚硬，装甲，涂装。"
+      },
+      "008": {
+        "alt": "松烟行动",
+        "description": "新中式，纤维，水墨画。"
+      },
+      "009": {
+        "alt": "黄铁行动",
+        "description": "化学元素，黑嗓，摇滚。"
+      },
+      "010": {
+        "alt": "光谱行动",
+        "description": "赛博朋克，霓虹灯，电子竞技。"
+      },
+      "011": {
+        "alt": "蛮鳞行动",
+        "description": "鳄鱼，南非，部落风格。"
+      }
+    },
+    "018": {
+      "001": {
+        "text": "这是一个为社团招新设计的项目，项目主体是一篇推文，以家装品牌为概念，尝试吸引更多加入者。项目的主体流式布局参考了宜家的视觉风格。"
+      },
+      "002": {
+        "alt": "布局 #1",
+        "description": "微信推文布局。"
+      },
+      "003": {
+        "alt": "布局 #2",
+        "description": "微信推文布局。"
+      },
+      "004": {
+        "alt": "布局 #3",
+        "description": "微信推文布局。"
+      },
+      "005": {
+        "alt": "布局 #4",
+        "description": "微信推文布局。"
+      },
+      "006": {
+        "alt": "布局 #5",
+        "description": "微信推文布局。"
+      },
+      "007": {
+        "alt": "布局 #6",
+        "description": "微信推文布局。"
+      },
+      "008": {
+        "alt": "布局 #7",
+        "description": "微信推文布局。"
+      },
+      "009": {
+        "alt": "布局 #8",
+        "description": "微信推文布局。"
+      },
+      "010": {
+        "alt": "布局 #9",
+        "description": "微信推文布局。"
+      },
+      "011": {
+        "alt": "布局 #10",
+        "description": "微信推文布局。"
+      },
+      "012": {
+        "alt": "布局 #11",
+        "description": "微信推文布局。"
+      }
+    },
+    "019": {
+      "001": {
+        "text": "在一次出游偶遇了一个非常有趣的地方，因此拍了很多照片。回程后我利用将这些照片依据各自匹配的电影做了二次创作，这是一次有趣而快乐的创作经历。"
+      },
+      "002": {
+        "alt": "《坠楼死亡的剖析》",
+        "description": "很好的电影。"
+      },
+      "003": {
+        "alt": "《涉过愤怒的海》",
+        "description": "褒贬不一。"
+      },
+      "004": {
+        "alt": "《圣山》",
+        "description": "宗教与精神世界。"
+      },
+      "005": {
+        "alt": "《双峰》",
+        "description": "神秘主义。"
+      },
+      "006": {
+        "alt": "《小时代#4》",
+        "description": "豆瓣不敢评价。"
+      },
+      "007": {
+        "alt": "关于一幅名画的梗。",
+        "description": "解构中……"
+      }
+    },
+    "020": {
+      "001": {
+        "text": "这是一些游戏《明日方舟》中产出的同人制品，我称它们为“泰拉旅游指南”，因为其概念是你作为一个游客能在游戏的虚构世界观下获得什么。我预计对游戏中的不同地区做一些特色制品，凸显地区风格，同时也尝试模仿这些地区的设计风格作为练习。"
+      },
+      "002": {
+        "alt": "《孤星》电影海报",
+        "description": "哥伦比亚，灵感来自美国的黄金时代，核心视觉风格为原子朋克。"
+      },
+      "003": {
+        "alt": "谢拉格旅游宣传册",
+        "description": "一个以旅游业为核心的地区，试图模仿川藏和中亚高原地区的纺织风格。"
+      },
+      "004": {
+        "alt": "散落的贴纸",
+        "description": "为不同地区设计了一套贴纸。"
+      }
+    },
+    "021": {
+      "001": {
+        "text": "这是一套为国际不再恐同恐双恐跨日绘制的系列插图，使用Adobe Illustrator，尝试用多样的方式解构性少数群体的困境。其中有受到邱妙津《鳄鱼手记》的影响。"
+      },
+      "002": {
+        "alt": "模拟传单",
+        "description": "将在倒悬彩虹博物馆展出。"
+      },
+      "003": {
+        "alt": "插画 #1",
+        "description": "一个性别自由的吻。"
+      },
+      "004": {
+        "alt": "插画 #2",
+        "description": "Mx.Cro的洗澡时间。"
+      },
+      "005": {
+        "alt": "插画 #3",
+        "description": "遇见彩虹，吃定彩虹！"
+      },
+      "006": {
+        "alt": "插画 #4",
+        "description": "第二次拥抱。"
+      },
+      "007": {
+        "alt": "插画 #5",
+        "description": "穿过街道。"
+      },
+      "008": {
+        "alt": "插画 #6",
+        "description": "冲入黑墙。"
+      }
+    },
+    "022": {
+      "001": {
+        "text": "在这个项目中，我广泛收集了中文互联网中常见的迷因（梗图），并为此创建了一个notion文档（见标题链接）。我为这些迷因设计了一个翻牌游戏，玩家可以通过观看卡牌的正面猜测这个迷因的含义，随后可以翻到背面进行验证，也可以自由地对卡牌进行分组、排序。我希望通过这个游戏更加了解不同圈层、性别等属性的人对不同的梗的看法。"
+      },
+      "002": {
+        "text": "在游戏式的调研后，我设计了一个可穿戴设备的外观，并结合Touch Designer创建了一个可交互的“口罩”般的设备。穿戴者可以自由地通过键盘和旋钮的输入调整屏幕上显示的文本样式，以及它们被迷因“影响”后的效果。"
+      },
+      "003": {
+        "description": "项目的设计文本。"
+      },
+      "004": {
+        "alt": "项目封面",
+        "description": "模仿了《低俗小说》。"
+      },
+      "005": {
+        "alt": "口罩原型设计",
+        "description": "模仿了颈挂式耳机的外观。"
+      },
+      "006": {
+        "alt": "卡片设计套组",
+        "description": "正面为提示和相关图片，反面为释义。"
+      },
+      "007": {
+        "alt": "设备连接示意",
+        "description": "使用电脑外接键盘，配合Arduino连接旋钮与Touch Designer通信。"
+      },
+      "008": {
+        "alt": "实体测试例",
+        "description": "组装完成后进行了运行测试。"
+      },
+      "009": {
+        "alt": "应用场景例",
+        "description": "最好在镜面反射下进行“自我观察”。"
+      }
+    },
+    "023": {
+      "001": {
+        "text": "这是一个小型项目的集合，包含了我做的一切杂项的Logo设计、字体设计、视觉识别系统设计、图标设计。"
+      },
+      "002": {
+        "description": "为一个运动和健身品牌设计的视觉识别系统。"
+      },
+      "003": {
+        "alt": "P&P Logo",
+        "description": "推广策划中心的Logo，设计灵感来自灯泡。"
+      },
+      "004": {
+        "alt": "MOC清唱团Logo",
+        "description": "MOC清唱团的Logo，基于三个字母和一只猫。"
+      },
+      "005": {
+        "alt": "P&P 贴纸",
+        "description": "商品贴纸上的图标，扩展了原有的视觉方案。"
+      },
+      "006": {
+        "alt": "字体设计 #1",
+        "description": "为潮汐音乐节宣传视频中的部分文字创建的字体。"
+      },
+      "007": {
+        "alt": "字体设计 #2",
+        "description": "为潮汐音乐节宣传推文中的部分文字创建的字体。"
+      },
+      "008": {
+        "alt": "公众号标志",
+        "description": "为我自己的公众号设计的Logo原型。"
+      }
+    },
+    "024": {
+      "001": {
+        "text": "这是一个小型项目的集合，包含了难以归类的一系列海报、传单、宣传图、推文图、卡牌、专辑封面、舞台视觉、刊物、实体周边物料、头像、插图等。"
+      },
+      "002": {
+        "description": "为阿卡贝拉歌曲《Seasons of Love》的现场演出设计的背景视频。"
+      },
+      "003": {
+        "alt": "惊喜盒子 #1",
+        "description": "微信文章顶部的动态头图。"
+      },
+      "004": {
+        "alt": "惊喜盒子 #2",
+        "description": "为阿卡贝拉音乐会中的每首歌设计的一套小卡。"
+      },
+      "005": {
+        "alt": "电影",
+        "description": "为一篇介绍电影的推文设计的封面。"
+      },
+      "006": {
+        "alt": "生日快乐",
+        "description": "为社团成员设计的生日贺图，模仿《明日方舟》的宣传艺术风格。"
+      },
+      "007": {
+        "alt": "脑叶切片",
+        "description": "尝试表达偏头痛感觉的颜色实验。"
+      },
+      "008": {
+        "alt": "回声森林",
+        "description": "为阿卡贝拉社团纳新设计的主视觉海报。"
+      },
+      "009": {
+        "alt": "同人宇宙",
+        "description": "为ACGN社团的同人制品展设计的宣传海报。"
+      },
+      "010": {
+        "alt": "散步到家宴",
+        "description": "为内容导向杂志的编辑部设计的纳新海报。"
+      },
+      "011": {
+        "alt": "黑夜女神",
+        "description": "为网络小说《诡秘之主》制作的同人作品，一张描绘了黑夜女神的塔罗牌。"
+      },
+      "012": {
+        "alt": "西西弗高速",
+        "description": "为阿卡贝拉社团的专辑设计的专辑封面，描绘了全年工作中的遗憾与希望并存的状态。"
+      },
+      "013": {
+        "alt": "毕业证书",
+        "description": "为完成组织内训任务的新人设计的证书。"
+      },
+      "014": {
+        "alt": "德洛莉丝的肺",
+        "description": "基于游戏《极乐迪斯科》的头像插画，象征着德洛莉丝的肺，她是最著名的无罪者，也是德洛莉丝主义的代表。"
+      },
+      "015": {
+        "alt": "五块卵石的梦",
+        "description": "基于游戏《雨世界》的同人插画，描绘了一位迭代器的梦。"
+      },
+      "016": {
+        "description": "为浙江大学国际合作与交流处设计的月刊。"
+      }
+    },
+    "025": {
+      "001": {
+        "text": "A design guide built for the MOC A Cappella Club. Compared with the other projects, this one leans more toward pure front-end development. Through it, I became familiar with GitHub automated deployment and the shift from Vue to React. The site's layout and styling refer to the well-known MDN documentation style in the developer world."
+      },
+      "002": {
+        "title": "MOC-Design-DOCS",
+        "description": "While building this project, I became familiar with responsive layouts across different screen widths, as well as the role of Markdown front matter in data storage."
+      }
+    },
+    "026": {
+      "001": {
+        "text": "A project influenced by Cultist Simulator, True Detective (Season 1), and the style of Arknights' Integrated Strategies: Sarkaz's Furnaceside Fables. Players arrange hand-painted stone slabs themselves, then a program generates customized imagery and projects it onto a custom tablecloth. It simulates a process of creating and deconstructing worlds."
+      },
+      "002": {
+        "description": "Project design document."
+      },
+      "003": {
+        "alt": "Project cover",
+        "description": "A person taking in energy amid vivid colors."
+      },
+      "004": {
+        "alt": "Pseudo-Kabbalistic Tree of Life",
+        "description": "Influenced by the Kabbalistic Tree of Life in Judaism, the elements are organized in a similar way."
+      },
+      "005": {
+        "alt": "Visualized prototype",
+        "description": "An attempt to define a visual tendency for each element."
+      },
+      "006": {
+        "alt": "Stone-slab painting and graphic design",
+        "description": "The slab designs were painted with model paints. I considered UV printing, but could not find a local vendor able to do it."
+      },
+      "007": {
+        "alt": "Custom tablecloth",
+        "description": "An ice-velvet tablecloth with a pattern designed by me."
+      },
+      "008": {
+        "alt": "Test scene",
+        "description": "After assembly, the work was connected to a television for AR runtime testing."
+      }
+    },
+    "027": {
+      "001": {
+        "text": "In the summer 2016 issue of ARTFORUM, the theme of \"Art and Identity\" explored migration, collective consciousness, feminism, Black subjects, and more, topics that remain overabundant and clamorous even in portfolios today."
+      },
+      "002": {
+        "text": "Although some of the articles were quite interesting, they also drew criticism. Jerry Saltz, for instance, wrote a sharp comment: \"Bravo - even to the over 425 pages in ads, the jargon-filled gobbley-gook, and the many great pieces.\""
+      },
+      "003": {
+        "text": "The point here is that we can see the relationship between art and politics, but it is often too far removed from the self. For example, a man discussing feminism, pregnancy, and menstruation; a cisgender person discussing sexual minorities; or someone from an affluent class discussing poverty and discrimination. This is not to say these topics cannot be discussed, but that such discussions often become shallow, self-assured, and label-driven. Artist K8 Hardy expressed a similar idea: \"I feel that my work is minimized by simple references to identity politics, so I'm hesitant to discuss!\""
+      },
+      "004": {
+        "text": "Embodied, or \"first-person,\" artistic narrative deserves more attention, instead of reading and reproducing a designer's detached observations as spectacle. So I wanted to create an open-ended process of observation, experience, and reflection, one directed toward the self."
+      },
+      "005": {
+        "description": "Project design document."
+      },
+      "006": {
+        "alt": "Project cover",
+        "description": "An attempt to imitate Constructivist characteristics."
+      },
+      "007": {
+        "alt": "Emotional thinking",
+        "description": "Kitsch and hypocrisy transmitted through the brain."
+      },
+      "008": {
+        "alt": "Installation #1",
+        "description": "The pipes connecting each part use glass material."
+      },
+      "009": {
+        "alt": "Installation #2",
+        "description": "The overall project consists of four cubes."
+      },
+      "010": {
+        "alt": "Installation #3",
+        "description": "The surface contains rich details, aiming to create an atmosphere of industrial worship."
+      },
+      "011": {
+        "alt": "Installation #4",
+        "description": "Three colors of liquid and oil are output from the top and mixed together."
+      },
+      "012": {
+        "alt": "Three-view and section of the installation",
+        "description": "The interior is hollow, used to house pumps and hold liquid."
+      },
+      "013": {
+        "alt": "Prototype test #1",
+        "description": "Six water pumps are powered together through a breadboard."
+      },
+      "014": {
+        "alt": "Prototype test #2",
+        "description": "The three-way tube had a slight aperture issue, causing some liquid to flow back."
+      }
+    },
+    "028": {
+      "001": {
+        "text": "A project influenced by the visual design language of Arknights. Starting from a redefined tarot system, I designed a tarot set that fits the same style."
+      },
+      "002": {
+        "alt": "Consciousness-I | Embryo-II",
+        "description": "Expeditioner's Silverfrost End | Mizuki & Caerula Arbor"
+      },
+      "003": {
+        "alt": "Language-III | Feast-IV",
+        "description": "Dissociative Compound | Joy of Reunion"
+      },
+      "004": {
+        "alt": "Dance-V | Stars-VI",
+        "description": "The Openers | Lone Trail"
+      },
+      "005": {
+        "alt": "Blessing-VII | Senses-VIII",
+        "description": "Elegy Burned to Ash | Dossoles Holiday"
+      },
+      "006": {
+        "alt": "Dominion-IX | Machine-X",
+        "description": "Near Light | Guide Ahead"
+      },
+      "007": {
+        "alt": "Pulse-XI | Debate-XII",
+        "description": "Il Siracusano | Tracing West of the Sunset"
+      },
+      "008": {
+        "alt": "Calamity-XIII | Labyrinth-XIV",
+        "description": "Stultifera Navis | Sarkaz's Furnaceside Fables"
+      },
+      "009": {
+        "alt": "Paradox-XV | Theatre-XVI",
+        "description": "From the Pale Sea | Phantom & Crimson Solitaire"
+      },
+      "010": {
+        "alt": "Construction-XVII | Rhetoric-XVIII",
+        "description": "Records of All Beings | Volcanic Dream Journey"
+      },
+      "011": {
+        "alt": "Tribe-XIX | Religion-XX",
+        "description": "Here a People Sows | The Train to Silverheart Lake"
+      },
+      "012": {
+        "alt": "Judgement-XXI | World-XXII",
+        "description": "Illicit Wealth | Strange Tales from Sui's Garden"
+      },
+      "013": {
+        "alt": "Atypical Tarot",
+        "description": "Atypical Tarot"
+      }
+    },
+    "029": {
+      "001": {
+        "text": "A quickly built utility website created to satisfy my personal need for ranking Steam games."
+      },
+      "002": {
+        "title": "Steam Tier List Maker",
+        "description": "While building this project, I became familiar with using the Steam API and with several data-processing methods."
+      }
+    },
+    "030": {
+      "001": {
+        "text": "A browser-based mini game derived from explorations in generative animation, created as the midterm project for my *Critical Coding* course. I used the then much-discussed Gemini Nano to generate part of the tile graphics."
+      },
+      "002": {
+        "text": "A detailed development write-up and process notes are available in the [GitHub repo](https://github.com/pinowine/PseudoDen)."
+      },
+      "003": {
+        "title": "Everyeye Eeverywhere All at Once",
+        "description": "A study on pathfinding algorithms."
+      },
+      "004": {
+        "alt": "Early sketch",
+        "description": "A quick draft for game development."
+      },
+      "005": {
+        "alt": "Tile map",
+        "description": "Tile map."
+      },
+      "006": {
+        "alt": "Map development",
+        "description": "A rapidly iterated development tool for numbering tile blocks."
+      },
+      "007": {
+        "alt": "Development view",
+        "description": "Showing several development guide lines."
+      },
+      "008": {
+        "alt": "Development view 2",
+        "description": "Showing some early iterations."
+      },
+      "009": {
+        "alt": "Opening screen",
+        "description": "Opening screen."
+      }
+    },
+    "031": {
+      "001": {
+        "text": "A typewriter extension based on English internet slang. Installed in Chrome, it can overwrite any DOM text and supports user customization. It was the final project for my *Critical Coding* course."
+      },
+      "002": {
+        "text": "A detailed development write-up is available in the [GitHub repo](https://github.com/pinowine/meming)."
+      },
+      "003": {
+        "title": "BadWriter",
+        "description": "Released as a standalone website during early development, using The Guardian API to crawl and rewrite text."
+      },
+      "004": {
+        "alt": "Web page",
+        "description": "Web rewrite view."
+      },
+      "005": {
+        "alt": "Development view 1",
+        "description": "Editor."
+      },
+      "006": {
+        "alt": "Development view 2",
+        "description": "API check."
+      },
+      "007": {
+        "description": "Usage introduction."
+      }
+    },
+    "032": {
+      "001": {
+        "text": "All projects came from weekly rapid-development mini projects in my *Critical Coding* course."
+      },
+      "002": {
+        "alt": "Darkwood",
+        "description": "Bitmap-processing exercise: reflecting on the urban forest of modernity."
+      },
+      "003": {
+        "alt": "ExplosiveMaze",
+        "description": "Recursion and fractal exercise: constructing an explosion diagram."
+      },
+      "004": {
+        "alt": "Drag&Move",
+        "description": "Grid exercise: an interactive grid that clusters and disperses."
+      },
+      "005": {
+        "alt": "Rat&Worm",
+        "description": "Random pathfinding exercise: controlling procedural hunting behavior with personality parameters."
+      },
+      "006": {
+        "alt": "Dune",
+        "description": "Generative landscape exercise: ruins fading in a sandstorm."
+      },
+      "007": {
+        "alt": "GeneralRelativityBrush",
+        "description": "Custom brush exercise: physics simulation and trajectory tracing."
+      }
+    },
+    "033": {
+      "001": {
+        "text": "This project belongs to Sprint 1 of my *Creative Making II* course. It was a group project that required building a game prototype quickly within two to three weeks. I handled all code and configuration work inside the Unity engine."
+      },
+      "002": {
+        "text": "The basic concept places classic Tetris blocks in three-dimensional space. Players use an Arduino controller to simulate the 3D space of the scene, and every rotation of the controller maps directly to the camera rotation."
+      },
+      "003": {
+        "alt": "Control diagram",
+        "description": "The player uses the controller to rotate the view."
+      },
+      "004": {
+        "alt": "Runtime screenshot",
+        "description": "The 3D rendering shows the depth relationship between blocks."
+      },
+      "005": {
+        "alt": "Concept development",
+        "description": "Early group discussion about the concept."
+      },
+      "006": {
+        "alt": "Early sketch",
+        "description": "Early sketch ideas for the prototype."
+      },
+      "007": {
+        "alt": "Logic flow",
+        "description": "A deduction of the user operation experience."
+      },
+      "008": {
+        "alt": "Controller",
+        "description": "Process image of building the controller."
+      },
+      "009": {
+        "alt": "Playtest",
+        "description": "Early playtest photo."
+      },
+      "010": {
+        "alt": "Development 1",
+        "description": "Development of the raycast detection section in Unity."
+      },
+      "011": {
+        "alt": "Development 2",
+        "description": "Development of the raycast detection section in Unity."
+      },
+      "012": {
+        "alt": "Development 3",
+        "description": "Simple UI setup in Unity."
+      }
+    },
+    "034": {
+      "001": {
+        "text": "This project belongs to Sprint 2 of my *Creative Making II* course. It was a group project that required building an interactive prototype based on TouchDesigner within two to three weeks. I handled all work inside TouchDesigner except rendering."
+      },
+      "002": {
+        "text": "The basic concept defines several foundational marine life forms, gives them a degree of interspecies relationship and personality parameters, and uses Python scripts in TD to configure the interaction logic so they can interact emergently in space. Users can influence creature behavior through the Kinect section, but the effect is only prominent when a creature's intention to \"flee\" or \"hunt\" is not obvious."
+      },
+      "003": {
+        "alt": "Visuals",
+        "description": "Three foundational marine life forms."
+      },
+      "004": {
+        "alt": "Display",
+        "description": "A projector casts the scene onto a wall, with Kinect facing the user to capture movement."
+      },
+      "005": {
+        "alt": "Development 1",
+        "description": "A component that converts creature personalities into usable variables."
+      },
+      "006": {
+        "alt": "Development 2",
+        "description": "A bus component that aggregates environmental information."
+      },
+      "007": {
+        "alt": "Development 3",
+        "description": "Debug process view."
+      }
+    }
   }
 }

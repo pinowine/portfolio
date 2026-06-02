@@ -23,7 +23,7 @@ import {
   getProjectPreviewPath,
   getProjectTitleKey,
   HomeGalleryProject,
-  toImageUrl,
+  toOriginalImageUrl,
 } from "../utils/projectData";
 
 interface ScrollerProps {
@@ -37,7 +37,7 @@ const Gallery = ({ lenis }: ScrollerProps) => {
   const { t } = useTranslation();
   const firstProject = projects[0];
   const initialPreviewSrc = firstProject
-    ? toImageUrl(getProjectPreviewPath(firstProject))
+    ? toOriginalImageUrl(getProjectPreviewPath(firstProject))
     : "";
   const initialDate = firstProject ? formatProjectDate(firstProject) : "";
 
@@ -92,7 +92,7 @@ const Gallery = ({ lenis }: ScrollerProps) => {
   }, []);
 
   const setPreviewImage = useCallback((src: string) => {
-    const nextSrc = toImageUrl(src);
+    const nextSrc = toOriginalImageUrl(src);
     if (!nextSrc || previewSrcRef.current === nextSrc) return;
 
     previewSrcRef.current = nextSrc;

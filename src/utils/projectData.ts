@@ -1,4 +1,5 @@
 import homeFeaturedProjects from "../data/manual/homeFeaturedProjects.json";
+import originalImagePaths from "../data/generated/originalImagePaths.json";
 import projectsMetadata from "../data/generated/projectsMetadata.json";
 import tags from "../data/generated/tags.json";
 import techs from "../data/generated/techs.json";
@@ -8,6 +9,8 @@ import { SelectorData } from "../types/selector";
 
 export const IMAGE_CDN_BASE =
   "https://cdn.ibuprofennist.com/gh/pinowine/portfolio-images@main";
+
+const originalImagePathMap = originalImagePaths as Record<string, string>;
 
 export type ProjectMetadata = (typeof projectsMetadata)[number];
 
@@ -74,6 +77,21 @@ addSelectorLabels(labelBySection.types, filterOptions.types);
 export const toImageUrl = (src?: string) => {
   if (!src) return "";
   return src.startsWith("http") ? src : `${IMAGE_CDN_BASE}${src}`;
+};
+
+export const toOriginalImageUrl = (src?: string) => {
+  if (!src) return "";
+
+  if (src.startsWith("http") && !src.startsWith(IMAGE_CDN_BASE)) {
+    return src;
+  }
+
+  const relativeSrc = src.startsWith(IMAGE_CDN_BASE)
+    ? src.slice(IMAGE_CDN_BASE.length)
+    : src;
+  const originalSrc = originalImagePathMap[relativeSrc] || relativeSrc;
+
+  return toImageUrl(originalSrc);
 };
 
 const uniqueTruthy = (paths: Array<string | null | undefined>) => {

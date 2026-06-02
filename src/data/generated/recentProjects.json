@@ -31,7 +31,7 @@
   },
   {
     "code": "034",
-    "title": "AQUA",
+    "title": "水形生态缸",
     "description": "使用TouchDesigner和Kinect构建的交互式海洋生态系统。",
     "date": "2026-3",
     "year": 2026,
@@ -102,7 +102,7 @@
   },
   {
     "code": "030",
-    "title": "Everyeye Eeverywhere All at Once",
+    "title": "眼的多元宇宙",
     "description": "基于p5.js生成式动画的简易平台游戏原型。",
     "date": "2025-12",
     "year": 2025,
@@ -205,7 +205,7 @@
   },
   {
     "code": "029",
-    "title": "Steam Tier List Maker",
+    "title": "从夯到拉排名你的Steam游戏",
     "description": "轻量化的Steam游戏榜单制作工具。",
     "date": "2025-8",
     "year": 2025,
