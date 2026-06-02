@@ -1,6 +1,5 @@
 import { lazy, Suspense, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
-import matter from "gray-matter";
 
 import MarkdownPlugin from "./RendererPlugins/Markdown";
 import Skeleton from "../Skeleton";
@@ -47,6 +46,19 @@ interface IframeData {
   description: string;
 }
 
+const stripFrontmatter = (source: string) => {
+  const firstDelimiter = /^---[ \t]*(?:\r?\n|$)/.exec(source);
+  if (!firstDelimiter) return source;
+
+  const closingDelimiter = /\r?\n(?:---|\.\.\.)[ \t]*(?:\r?\n|$)/g;
+  closingDelimiter.lastIndex = firstDelimiter[0].length;
+  const closingMatch = closingDelimiter.exec(source);
+
+  if (!closingMatch) return source;
+
+  return source.slice(closingMatch.index + closingMatch[0].length);
+};
+
 const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
   const [markdownContent, setMarkdownContent] = useState<string>("");
   const [mdOnLoad, setMdOnLoad] = useState<boolean>(false);
@@ -72,7 +84,7 @@ const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ filePath }) => {
           throw new Error(`${t("无法加载Markdown文件")}: ${rawFilePath}`);
         }
         const rawText = (await response.text()).replace(/^\uFEFF/, "");
-        const { content } = matter(rawText);
+        const content = stripFrontmatter(rawText);
         const translatedContent = translateMarkdownContent(
           markdownCode,
           content,

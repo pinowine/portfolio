@@ -186,11 +186,11 @@
       "description": "《明日方舟》同人创作系列又一部分。"
     },
     "029": {
-      "title": "Steam Tier List Maker",
+      "title": "从夯到拉排名你的Steam游戏",
       "description": "轻量化的Steam游戏榜单制作工具。"
     },
     "030": {
-      "title": "Everyeye Eeverywhere All at Once",
+      "title": "眼的多元宇宙",
       "description": "基于p5.js生成式动画的简易平台游戏原型。"
     },
     "031": {
@@ -206,7 +206,7 @@
       "description": "使用Arduino和Unity构建3D空间中的俄罗斯方块。"
     },
     "034": {
-      "title": "AQUA",
+      "title": "水形生态缸",
       "description": "使用TouchDesigner和Kinect构建的交互式海洋生态系统。"
     }
   },

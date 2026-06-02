@@ -1,14 +1,14 @@
 ﻿import React from "react";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Typography,
-} from "@material-tailwind/react";
 
 interface SkeletonProps {
   type: "image" | "text" | "paragraph" | "avatar" | "page" | "video"; // 根据需要添加更多类型
 }
+
+const SkeletonLine: React.FC<{ className: string }> = ({ className }) => (
+  <div aria-hidden="true" className={className}>
+    &nbsp;
+  </div>
+);
 
 const Skeleton: React.FC<SkeletonProps> = ({ type }) => {
   switch (type) {
@@ -34,112 +34,30 @@ const Skeleton: React.FC<SkeletonProps> = ({ type }) => {
     case "text":
       return (
         <div className="max-w-full animate-pulse">
-          <Typography
-            as="div"
-            variant="h1"
-            className="mb-4 h-3 w-56 rounded-full bg-gray-300"
-            placeholder={"&nbsp;"}
-            {...({} as any)}
-          >
-            &nbsp;
-          </Typography>
-          <Typography
-            as="div"
-            variant="paragraph"
-            className="mb-2 h-2 w-72 rounded-full bg-gray-300"
-            {...({} as any)}
-          >
-            &nbsp;
-          </Typography>
-          <Typography
-            as="div"
-            variant="paragraph"
-            className="mb-2 h-2 w-72 rounded-full bg-gray-300"
-            {...({} as any)}
-          >
-            &nbsp;
-          </Typography>
-          <Typography
-            as="div"
-            variant="paragraph"
-            className="mb-2 h-2 w-72 rounded-full bg-gray-300"
-            {...({} as any)}
-          >
-            &nbsp;
-          </Typography>
-          <Typography
-            as="div"
-            variant="paragraph"
-            className="mb-2 h-2 w-72 rounded-full bg-gray-300"
-            {...({} as any)}
-          >
-            &nbsp;
-          </Typography>
+          <SkeletonLine className="mb-4 h-3 w-56 rounded-full bg-gray-300" />
+          <SkeletonLine className="mb-2 h-2 w-72 rounded-full bg-gray-300" />
+          <SkeletonLine className="mb-2 h-2 w-72 rounded-full bg-gray-300" />
+          <SkeletonLine className="mb-2 h-2 w-72 rounded-full bg-gray-300" />
+          <SkeletonLine className="mb-2 h-2 w-72 rounded-full bg-gray-300" />
         </div>
       );
     case "paragraph":
       return (
-        <Card
-          className="w-full animate-pulse bg-transparent shadow-none"
-          {...({} as any)}
-        >
-          <CardBody {...({} as any)}>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="h1"
-              className="mb-10 h-6 w-56 rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="paragraph"
-              className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="paragraph"
-              className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="paragraph"
-              className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="paragraph"
-              className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-          </CardBody>
-        </Card>
+        <div className="w-full animate-pulse bg-transparent shadow-none">
+          <div className="p-6">
+            <SkeletonLine className="mb-10 h-6 w-56 rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+            <SkeletonLine className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+            <SkeletonLine className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+            <SkeletonLine className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+            <SkeletonLine className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+          </div>
+        </div>
       );
     case "avatar":
     case "page":
       return (
-        <Card
-          className="mt-6 w-full animate-pulse bg-transparent p-4 shadow-none"
-          {...({} as any)}
-        >
-          <CardHeader
-            shadow={false}
-            floated={false}
-            className="relative grid h-56 place-items-center rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            {...({} as any)}
-          >
+        <div className="mt-6 w-full animate-pulse bg-transparent p-4 shadow-none">
+          <div className="relative grid h-56 place-items-center rounded-sm bg-neutral-300 dark:bg-neutral-800">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -154,50 +72,15 @@ const Skeleton: React.FC<SkeletonProps> = ({ type }) => {
                 d="m2.25 15.75 5.159-5.159a2.25 2.25 0 0 1 3.182 0l5.159 5.159m-1.5-1.5 1.409-1.409a2.25 2.25 0 0 1 3.182 0l2.909 2.909m-18 3.75h16.5a1.5 1.5 0 0 0 1.5-1.5V6a1.5 1.5 0 0 0-1.5-1.5H3.75A1.5 1.5 0 0 0 2.25 6v12a1.5 1.5 0 0 0 1.5 1.5Zm10.5-11.25h.008v.008h-.008V8.25Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
               />
             </svg>
-          </CardHeader>
-          <CardBody {...({} as any)}>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="h1"
-              className="mb-10 h-6 w-56 rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="paragraph"
-              className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="paragraph"
-              className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="paragraph"
-              className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-            <Typography
-              {...({} as any)}
-              as="div"
-              variant="paragraph"
-              className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800"
-            >
-              &nbsp;
-            </Typography>
-          </CardBody>
-        </Card>
+          </div>
+          <div className="p-6">
+            <SkeletonLine className="mb-10 h-6 w-56 rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+            <SkeletonLine className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+            <SkeletonLine className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+            <SkeletonLine className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+            <SkeletonLine className="mb-6 h-4 w-full rounded-sm bg-neutral-300 dark:bg-neutral-800" />
+          </div>
+        </div>
       );
     case "video":
       return (
